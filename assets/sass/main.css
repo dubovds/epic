@@ -1,0 +1,193 @@
+@font-face {
+  font-family: "Helvetica";
+  src: url("../fonts/HelveticaNeue-CondensedRegular.eot");
+  src: local("HelveticaNeue-CondensedRegular"), local("../fonts/HelveticaNeue-CondensedRegular"), url("../fonts/HelveticaNeue-CondensedRegular.eot?#iefix") format("embedded-opentype"), url("../fonts/HelveticaNeue-CondensedRegular.woff2") format("woff2"), url("../fonts/HelveticaNeue-CondensedRegular.woff") format("woff"), url("../fonts/HelveticaNeue-CondensedRegular.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal; }
+@font-face {
+  font-family: "HelveticaBold";
+  src: url("../fonts/HelveticaNeue-Bold.eot");
+  src: local("Helvetica Neue Condensed Bold"), local("../fonts/HelveticaNeue-Bold"), url("../fonts/HelveticaNeue-Bold.eot?#iefix") format("embedded-opentype"), url("../fonts/HelveticaNeue-Bold.woff2") format("woff2"), url("../fonts/HelveticaNeue-Bold.woff") format("woff"), url("../fonts/HelveticaNeue-Bold.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal; }
+*,
+*::before,
+*::after {
+  box-sizing: border-box; }
+
+ul[class],
+ol[class] {
+  padding: 0; }
+
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+ul[class],
+ol[class],
+li,
+figure,
+figcaption,
+blockquote,
+dl,
+dd {
+  margin: 0; }
+
+body {
+  min-height: 100vh;
+  scroll-behavior: smooth;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5; }
+
+ul[class],
+ol[class] {
+  list-style: none; }
+
+a:not([class]) {
+  text-decoration-skip-ink: auto; }
+
+img {
+  max-width: 100%;
+  display: block; }
+
+article > * + * {
+  margin-top: 1em; }
+
+input,
+button,
+textarea,
+select {
+  font: inherit; }
+
+a {
+  text-decoration: none; }
+
+.header-wix {
+  width: 100%;
+  height: 48px;
+  background-color: grey; }
+
+.sidebar-wix {
+  background-color: #23263c;
+  width: 228px;
+  height: 100vh;
+  position: relative; }
+
+.wrapper-wix {
+  display: flex; }
+
+.wrapper {
+  position: relative;
+  flex: 1;
+  font-family: "Helvetica"; }
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  background-color: #393d56;
+  align-items: center;
+  font-family: "HelveticaBold";
+  font-size: 14px; }
+  .header__item {
+    display: flex;
+    align-items: center; }
+  .header__logo {
+    background-image: url("../images/logo.png");
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    background-size: cover;
+    width: 60px;
+    height: 60px; }
+
+.navbar {
+  display: flex;
+  flex: 1;
+  justify-content: space-between; }
+  .navbar__list {
+    display: flex; }
+  .navbar__item {
+    margin: 0 20px; }
+  .navbar__link {
+    position: relative;
+    padding: 22px 0;
+    color: #9699ab;
+    text-decoration: none;
+    -webkit-transition: all 300ms ease-in-out;
+    -moz-transition: all 300ms ease-in-out;
+    -o-transition: all 300ms ease-in-out;
+    -ms-transition: all 300ms ease-in-out;
+    transition: all 300ms ease-in-out; }
+    .navbar__link.active {
+      color: #fff; }
+      .navbar__link.active:after {
+        position: absolute;
+        content: "";
+        width: 100%;
+        height: 2px;
+        bottom: 0;
+        left: 0;
+        background-color: #f33c33; }
+    .navbar__link:hover {
+      color: #fff; }
+      .navbar__link:hover svg {
+        fill: #fff; }
+    .navbar__link_icon {
+      padding-left: 29px; }
+    .navbar__link svg {
+      width: 19px;
+      position: absolute;
+      left: 0px;
+      fill: #9699ab;
+      -webkit-transition: all 300ms ease-in-out;
+      -moz-transition: all 300ms ease-in-out;
+      -o-transition: all 300ms ease-in-out;
+      -ms-transition: all 300ms ease-in-out;
+      transition: all 300ms ease-in-out; }
+  .navbar__btn {
+    position: relative;
+    background-color: #484c62;
+    color: #b4bad9;
+    padding: 10px 15px 10px 42px;
+    border-radius: 5px;
+    -webkit-transition: all 300ms ease-in-out;
+    -moz-transition: all 300ms ease-in-out;
+    -o-transition: all 300ms ease-in-out;
+    -ms-transition: all 300ms ease-in-out;
+    transition: all 300ms ease-in-out; }
+    .navbar__btn svg {
+      width: 18px;
+      position: absolute;
+      left: 14px;
+      fill: #b4bad9;
+      -webkit-transition: all 300ms ease-in-out;
+      -moz-transition: all 300ms ease-in-out;
+      -o-transition: all 300ms ease-in-out;
+      -ms-transition: all 300ms ease-in-out;
+      transition: all 300ms ease-in-out; }
+    .navbar__btn:hover {
+      color: #ffffff; }
+      .navbar__btn:hover svg {
+        fill: #fff; }
+    .navbar__btn_editor {
+      padding: 10px 25px;
+      color: #4ba7f6; }
+    .navbar__btn_upgrade {
+      background: linear-gradient(to right, #f1534f, #f53a6d);
+      color: #fff;
+      text-transform: uppercase; }
+      .navbar__btn_upgrade:before {
+        content: "";
+        position: absolute;
+        background-image: url("../images/upgrade.png");
+        background-repeat: no-repeat;
+        background-position: 50% 50%;
+        background-size: contain;
+        width: 19px;
+        height: 17px;
+        left: 14px; }
+      .navbar__btn_upgrade:hover {
+        background: linear-gradient(to right, #f1534f, #f1534f); }
+
+/*# sourceMappingURL=main.css.map */
