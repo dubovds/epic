@@ -138,6 +138,9 @@ body {
     display: flex; }
   .navbar__item {
     margin: 0 20px; }
+    @media (max-width: 1440px) {
+      .navbar__item {
+        margin: 0 10px; } }
   .navbar__link {
     position: relative;
     padding: 22px 0;
