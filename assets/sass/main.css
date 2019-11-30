@@ -401,4 +401,28 @@ input:checked ~ .tab-content {
   .top-title__subtitle {
     color: #8e8f93; }
 
+.footer {
+  display: flex;
+  justify-content: center;
+  margin: 50px 0 30px;
+  font-size: 13px; }
+  .footer__text {
+    margin: 0 7px;
+    color: #72747c; }
+
+.navbar-footer {
+  display: flex; }
+  .navbar-footer__item {
+    margin: 0 7px; }
+  .navbar-footer__link {
+    color: #9699ab;
+    border-bottom: 1px solid #9699ab;
+    -webkit-transition: all 300ms ease-in-out;
+    -moz-transition: all 300ms ease-in-out;
+    -o-transition: all 300ms ease-in-out;
+    -ms-transition: all 300ms ease-in-out;
+    transition: all 300ms ease-in-out; }
+    .navbar-footer__link:hover {
+      border-bottom: 1px solid transparent; }
+
 /*# sourceMappingURL=main.css.map */
