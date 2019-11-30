@@ -23,6 +23,7 @@ input
   color: white
   overflow: hidden
   border-radius: 5px
+
   &-label 
     display: flex
     justify-content: space-between
@@ -78,9 +79,20 @@ input
 
   &__item
 
-    &__right
-      text-align: right
-  
+    &_right
+      display: flex
+      flex-direction: column
+      align-items: flex-end
+
+  &__arrow-next
+    width: 6px
+    height: 10px
+    background-image: url("../images/next.svg")
+    background-repeat: no-repeat
+    background-position: 50% 50%
+    margin-top: 15px
+
+
 
 
 
