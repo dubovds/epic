@@ -155,7 +155,60 @@ body {
 
 .btn {
   position: relative;
-  border-radius: 5px; }
+  border-radius: 5px;
+  -webkit-transition: all 300ms ease-in-out;
+  -moz-transition: all 300ms ease-in-out;
+  -o-transition: all 300ms ease-in-out;
+  -ms-transition: all 300ms ease-in-out;
+  transition: all 300ms ease-in-out; }
+  .btn__create-form {
+    background-color: #484c62;
+    color: #b4bad9;
+    padding: 10px 15px 10px 42px; }
+    @media (max-width: 1259px) {
+      .btn__create-form {
+        padding: 10px 15px 10px 31px; } }
+    .btn__create-form svg {
+      width: 18px;
+      position: absolute;
+      left: 14px;
+      fill: #b4bad9;
+      -webkit-transition: all 300ms ease-in-out;
+      -moz-transition: all 300ms ease-in-out;
+      -o-transition: all 300ms ease-in-out;
+      -ms-transition: all 300ms ease-in-out;
+      transition: all 300ms ease-in-out; }
+    .btn__create-form:hover {
+      color: #ffffff; }
+      .btn__create-form:hover svg {
+        fill: #fff; }
+  .btn__editor {
+    background-color: #484c62;
+    padding: 10px 25px;
+    color: #4ba7f6; }
+  .btn__upgrade {
+    padding: 10px 15px 10px 42px;
+    background: linear-gradient(to right, #f1534f, #f53a6d);
+    color: #fff;
+    text-transform: uppercase; }
+    @media (max-width: 1259px) {
+      .btn__upgrade {
+        padding: 10px 15px 10px 31px; } }
+    .btn__upgrade:before {
+      content: "";
+      position: absolute;
+      background-image: url("../images/upgrade.png");
+      background-repeat: no-repeat;
+      background-position: 50% 50%;
+      background-size: contain;
+      width: 19px;
+      height: 17px;
+      left: 14px; }
+      @media (max-width: 1259px) {
+        .btn__upgrade:before {
+          left: 7px; } }
+    .btn__upgrade:hover {
+      background: linear-gradient(to right, #f1534f, #f1534f); }
   .btn__payment {
     display: none;
     background-color: #c2de9e;
@@ -175,6 +228,9 @@ body {
       background-image: url("../images/payment.svg");
       background-repeat: no-repeat;
       background-position: 50% 50%; }
+  @media (max-width: 1259px) {
+    .btn span {
+      display: none; } }
 
 .header {
   display: flex;
@@ -246,59 +302,6 @@ body {
       transition: all 300ms ease-in-out; }
     @media (max-width: 1259px) {
       .navbar__link span {
-        display: none; } }
-  .navbar__btn {
-    position: relative;
-    background-color: #484c62;
-    color: #b4bad9;
-    padding: 10px 15px 10px 42px;
-    border-radius: 5px;
-    -webkit-transition: all 300ms ease-in-out;
-    -moz-transition: all 300ms ease-in-out;
-    -o-transition: all 300ms ease-in-out;
-    -ms-transition: all 300ms ease-in-out;
-    transition: all 300ms ease-in-out; }
-    @media (max-width: 1259px) {
-      .navbar__btn {
-        padding: 10px 15px 10px 31px; } }
-    .navbar__btn svg {
-      width: 18px;
-      position: absolute;
-      left: 14px;
-      fill: #b4bad9;
-      -webkit-transition: all 300ms ease-in-out;
-      -moz-transition: all 300ms ease-in-out;
-      -o-transition: all 300ms ease-in-out;
-      -ms-transition: all 300ms ease-in-out;
-      transition: all 300ms ease-in-out; }
-    .navbar__btn:hover {
-      color: #ffffff; }
-      .navbar__btn:hover svg {
-        fill: #fff; }
-    .navbar__btn_editor {
-      padding: 10px 25px;
-      color: #4ba7f6; }
-    .navbar__btn_upgrade {
-      background: linear-gradient(to right, #f1534f, #f53a6d);
-      color: #fff;
-      text-transform: uppercase; }
-      .navbar__btn_upgrade:before {
-        content: "";
-        position: absolute;
-        background-image: url("../images/upgrade.png");
-        background-repeat: no-repeat;
-        background-position: 50% 50%;
-        background-size: contain;
-        width: 19px;
-        height: 17px;
-        left: 14px; }
-        @media (max-width: 1259px) {
-          .navbar__btn_upgrade:before {
-            left: 7px; } }
-      .navbar__btn_upgrade:hover {
-        background: linear-gradient(to right, #f1534f, #f1534f); }
-    @media (max-width: 1259px) {
-      .navbar__btn span {
         display: none; } }
 
 input {
