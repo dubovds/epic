@@ -72,7 +72,7 @@ a {
 .sidebar-wix {
   background-color: #23263c;
   width: 228px;
-  height: 100vh;
+  height: 94.4vh;
   position: relative; }
 
 .wrapper-wix {
@@ -82,11 +82,15 @@ body {
   font-family: Helvetica; }
 
 .wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
   position: relative;
   flex: 1;
   background-color: #f3f4f8; }
 
 .wrapper-content {
+  flex: 1 0 auto;
   width: 980px;
   margin: auto;
   padding: 30px 0 0 0; }
@@ -403,6 +407,7 @@ input:checked ~ .tab-content {
 
 .footer {
   display: flex;
+  flex: 0 0 auto;
   justify-content: center;
   margin: 50px 0 30px;
   font-size: 13px; }
