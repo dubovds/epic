@@ -92,7 +92,7 @@ body {
   padding: 30px 0 0 0; }
   @media (max-width: 1259px) {
     .wrapper-content {
-      width: 800px; } }
+      width: 760px; } }
 
 .block {
   background-color: #fff;
@@ -207,7 +207,7 @@ body {
         margin: 0 10px; } }
     @media (max-width: 1080px) {
       .navbar__item {
-        margin: 0 7px; } }
+        margin: 0 6px; } }
   .navbar__link {
     position: relative;
     padding: 22px 0;
