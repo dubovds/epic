@@ -264,6 +264,9 @@ body {
         width: 19px;
         height: 17px;
         left: 14px; }
+        @media (max-width: 1259px) {
+          .navbar__btn_upgrade:before {
+            left: 7px; } }
       .navbar__btn_upgrade:hover {
         background: linear-gradient(to right, #f1534f, #f1534f); }
     @media (max-width: 1259px) {
