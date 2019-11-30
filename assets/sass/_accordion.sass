@@ -38,13 +38,15 @@ input
       background: #e8e9ed
   
     &::after 
-      content: "\276F"
+      content: ""
+      background-image: url("../images/down-grey.svg")
       width: 1em
       height: 1em
       text-align: center
       transition: all .35s
-      transform: rotate(90deg)
+      transform: rotate(0deg)
       order: 2
+      fill: red
 
     &:before
       content: ""
@@ -86,7 +88,7 @@ input
 input:checked 
   + .tab-label
     &::after 
-      transform: rotate(-90deg)
+      transform: rotate(180deg)
   
 
   ~ .tab-content 
