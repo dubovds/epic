@@ -107,7 +107,9 @@ body {
   .block_tab {
     display: flex;
     justify-content: space-between;
-    margin: 0 -15px 9px; }
+    margin: 9px -15px 0px; }
+    .block_tab:first-child {
+      margin-top: 0; }
   .block__item {
     display: flex;
     justify-content: space-between; }
@@ -338,8 +340,7 @@ input {
 .tab {
   width: 100%;
   color: white;
-  overflow: hidden;
-  border-radius: 5px; }
+  overflow: hidden; }
   .tab-label {
     display: flex;
     justify-content: space-between;
@@ -349,6 +350,7 @@ input {
     color: #72747c;
     font-size: 12px;
     text-transform: uppercase;
+    border-radius: 5px;
     /* Icon */ }
     .tab-label:hover {
       background: #e8e9ed; }
