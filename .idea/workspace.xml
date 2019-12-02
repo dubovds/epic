@@ -3,8 +3,11 @@
   <component name="ChangeListManager">
     <list default="true" id="eed34324-6f64-48e7-a3d8-f57de66e7240" name="Default" comment="">
 <<<<<<< HEAD
+<<<<<<< HEAD
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
 =======
+=======
+>>>>>>> parent of ae10968... fix accordion tabs
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/settings.html" afterPath="$PROJECT_DIR$/settings.html" />
 >>>>>>> parent of ae10968... fix accordion tabs
@@ -33,8 +36,13 @@
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
 <<<<<<< HEAD
+<<<<<<< HEAD
             <state relative-caret-position="19">
               <caret line="20" column="14" lean-forward="false" selection-start-line="20" selection-start-column="14" selection-end-line="33" selection-end-column="12" />
+=======
+            <state relative-caret-position="136">
+              <caret line="73" column="34" lean-forward="false" selection-start-line="73" selection-start-column="34" selection-end-line="73" selection-end-column="34" />
+>>>>>>> parent of ae10968... fix accordion tabs
 =======
             <state relative-caret-position="136">
               <caret line="73" column="34" lean-forward="false" selection-start-line="73" selection-start-column="34" selection-end-line="73" selection-end-column="34" />
@@ -55,6 +63,7 @@
         </entry>
       </file>
 <<<<<<< HEAD
+<<<<<<< HEAD
       <file leaf-file-name="_btn.sass" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/assets/sass/_btn.sass">
           <provider selected="true" editor-type-id="text-editor">
@@ -72,6 +81,8 @@
               <caret line="3" column="34" lean-forward="false" selection-start-line="3" selection-start-column="34" selection-end-line="3" selection-end-column="34" />
               <folding />
 =======
+=======
+>>>>>>> parent of ae10968... fix accordion tabs
       <file leaf-file-name="settings.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/settings.html">
           <provider selected="true" editor-type-id="text-editor">
@@ -94,17 +105,23 @@
         </entry>
       </file>
 <<<<<<< HEAD
+<<<<<<< HEAD
       <file leaf-file-name="_navbar.sass" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/assets/sass/_navbar.sass">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="967">
               <caret line="51" column="13" lean-forward="false" selection-start-line="51" selection-start-column="13" selection-end-line="51" selection-end-column="13" />
 =======
+=======
+>>>>>>> parent of ae10968... fix accordion tabs
       <file leaf-file-name="_settings.sass" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/assets/sass/_settings.sass">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="362">
               <caret line="46" column="17" lean-forward="true" selection-start-line="46" selection-start-column="17" selection-end-line="46" selection-end-column="17" />
+<<<<<<< HEAD
+>>>>>>> parent of ae10968... fix accordion tabs
+=======
 >>>>>>> parent of ae10968... fix accordion tabs
               <folding />
             </state>
@@ -115,8 +132,13 @@
         <entry file="file://$PROJECT_DIR$/assets/js/scipts.js">
           <provider selected="true" editor-type-id="text-editor">
 <<<<<<< HEAD
+<<<<<<< HEAD
             <state relative-caret-position="874">
               <caret line="46" column="17" lean-forward="false" selection-start-line="46" selection-start-column="17" selection-end-line="46" selection-end-column="17" />
+=======
+            <state relative-caret-position="-138">
+              <caret line="2" column="47" lean-forward="false" selection-start-line="2" selection-start-column="47" selection-end-line="2" selection-end-column="47" />
+>>>>>>> parent of ae10968... fix accordion tabs
 =======
             <state relative-caret-position="-138">
               <caret line="2" column="47" lean-forward="false" selection-start-line="2" selection-start-column="47" selection-end-line="2" selection-end-column="47" />
@@ -153,11 +175,24 @@
           </provider>
         </entry>
       </file>
+      <file leaf-file-name="_navbar.sass" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/assets/sass/_navbar.sass">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="278">
+              <caret line="28" column="20" lean-forward="false" selection-start-line="28" selection-start-column="20" selection-end-line="28" selection-end-column="20" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="_general.sass" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/assets/sass/_general.sass">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="-1067">
               <caret line="3" column="8" lean-forward="true" selection-start-line="3" selection-start-column="8" selection-end-line="3" selection-end-column="8" />
+<<<<<<< HEAD
+>>>>>>> parent of ae10968... fix accordion tabs
+=======
 >>>>>>> parent of ae10968... fix accordion tabs
               <folding />
             </state>
@@ -227,7 +262,10 @@
         <option value="$PROJECT_DIR$/assets/sass/_mixins.sass" />
         <option value="$PROJECT_DIR$/assets/sass/_header.sass" />
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> parent of ae10968... fix accordion tabs
         <option value="$PROJECT_DIR$/assets/sass/_accordion.sass" />
         <option value="$PROJECT_DIR$/assets/sass/_rest.sass" />
         <option value="$PROJECT_DIR$/assets/sass/_variables.sass" />
@@ -239,6 +277,7 @@
         <option value="$PROJECT_DIR$/assets/sass/_settings.sass" />
         <option value="$PROJECT_DIR$/settings.html" />
 <<<<<<< HEAD
+<<<<<<< HEAD
         <option value="$PROJECT_DIR$/assets/sass/_accordion.sass" />
         <option value="$PROJECT_DIR$/assets/sass/main.sass" />
         <option value="$PROJECT_DIR$/index.html" />
@@ -249,6 +288,8 @@
         <option value="$PROJECT_DIR$/assets/fonts/HelveticaNeueCyr/stylesheet.css" />
         <option value="$PROJECT_DIR$/assets/sass/_top-title.sass" />
         <option value="$PROJECT_DIR$/assets/sass/_general.sass" />
+=======
+>>>>>>> parent of ae10968... fix accordion tabs
 =======
 >>>>>>> parent of ae10968... fix accordion tabs
       </list>
@@ -421,8 +462,12 @@
       <updated>1574756235872</updated>
       <workItem from="1574756237440" duration="13700000" />
 <<<<<<< HEAD
+<<<<<<< HEAD
       <workItem from="1574948617869" duration="24403000" />
       <workItem from="1575296176958" duration="1188000" />
+=======
+      <workItem from="1574948617869" duration="18365000" />
+>>>>>>> parent of ae10968... fix accordion tabs
 =======
       <workItem from="1574948617869" duration="18365000" />
 >>>>>>> parent of ae10968... fix accordion tabs
@@ -431,7 +476,11 @@
   </component>
   <component name="TimeTrackingManager">
 <<<<<<< HEAD
+<<<<<<< HEAD
     <option name="totallyTimeSpent" value="39291000" />
+=======
+    <option name="totallyTimeSpent" value="32065000" />
+>>>>>>> parent of ae10968... fix accordion tabs
 =======
     <option name="totallyTimeSpent" value="32065000" />
 >>>>>>> parent of ae10968... fix accordion tabs
@@ -735,6 +784,14 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/assets/sass/_accordion.sass">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="752">
+          <caret line="94" column="0" lean-forward="false" selection-start-line="94" selection-start-column="0" selection-end-line="94" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/assets/sass/_footer.sass">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="228">
@@ -759,6 +816,14 @@
 <<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/assets/sass/_settings.sass">
 =======
+    <entry file="file://$PROJECT_DIR$/assets/sass/_general.sass">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1067">
+          <caret line="3" column="8" lean-forward="true" selection-start-line="3" selection-start-column="8" selection-end-line="3" selection-end-column="8" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/assets/sass/_general.sass">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-1067">
@@ -841,11 +906,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
         <state relative-caret-position="19">
           <caret line="20" column="14" lean-forward="false" selection-start-line="20" selection-start-column="14" selection-end-line="33" selection-end-column="12" />
 =======
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
+=======
+>>>>>>> parent of ae10968... fix accordion tabs
         <state relative-caret-position="136">
           <caret line="73" column="34" lean-forward="false" selection-start-line="73" selection-start-column="34" selection-end-line="73" selection-end-column="34" />
           <folding>
@@ -866,6 +934,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="232">
           <caret line="38" column="31" lean-forward="false" selection-start-line="38" selection-start-column="31" selection-end-line="38" selection-end-column="31" />
+<<<<<<< HEAD
+>>>>>>> parent of ae10968... fix accordion tabs
+=======
 >>>>>>> parent of ae10968... fix accordion tabs
           <folding>
             <element signature="n#style#0;n#svg#0;n#a#0;n#li#0;n#ul#0;n#div#0;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
