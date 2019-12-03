@@ -61,7 +61,11 @@ a {
   background-color: #23263c;
   width: 228px;
   height: 94.4vh;
-  position: relative; }
+  position: relative;
+  padding: 20px; }
+  .sidebar-wix a {
+    color: #fff;
+    display: block; }
 
 .wrapper-wix {
   display: flex; }
