@@ -21,13 +21,14 @@ input
 .tab 
   width: 100%
   color: white
+  margin-bottom: 10px
   overflow: hidden
   border-radius: $border-radius
 
   &-label 
     display: flex
     justify-content: space-between
-    padding: 9px 30px
+    padding: 9px 30px 3px
     //background: #2c3e50
     font-family: $font-bold
     cursor: pointer
@@ -63,6 +64,7 @@ input
 
   &-content 
     max-height: 0
+    opacity: 0
     padding: 0 1em
     color: #2c3e50
     @include transition
@@ -106,6 +108,7 @@ input:checked
   ~ .tab-content 
     max-height: 100vh
     padding: 1em
+    opacity: 1
 
 
 

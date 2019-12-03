@@ -7,13 +7,19 @@
     display: flex
 
   &__item
-    margin: 0 20px
+    margin: 0 19px
 
-    @media (max-width: 1440px)
+    @media (max-width: 1484px)
       margin: 0 10px
 
-    @media (max-width: 1080px)
+    @media (max-width: 1123px)
       margin: 0 6px
+
+    &_btn
+      margin: 0 3px
+
+      &:last-child
+        margin-right: 19px
 
   &__link
     position: relative
@@ -46,6 +52,9 @@
     &_icon
       padding-left: 29px
 
+      @media (max-width: 1123px)
+        padding-left: 20px
+
     svg
       width: 19px
       position: absolute
@@ -54,5 +63,5 @@
       @include transition
       
     span
-      @media (max-width: 1259px)
+      @media (max-width: 1358px)
         display: none

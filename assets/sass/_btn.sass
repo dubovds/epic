@@ -1,15 +1,19 @@
 .btn
   position: relative
   border-radius: $border-radius
+  cursor: pointer
   @include transition
 
   &__create-form
     background-color: #484c62
     color: #b4bad9
-    padding: 10px 15px 10px 42px
+    padding: 11px 15px 11px 42px
 
-    @media (max-width: 1259px)
-      padding: 10px 15px 10px 31px
+    @media (max-width: 1358px)
+      padding: 11px 22px
+
+    @media (max-width: 1123px)
+      padding: 11px 15px
 
     svg
       width: 18px
@@ -17,6 +21,9 @@
       left: 14px
       fill: #b4bad9
       @include transition
+
+      @media (max-width: 1123px)
+        left: 6px
 
     &:hover
       color: #ffffff
@@ -26,17 +33,21 @@
 
   &__editor
     background-color: #484c62
-    padding: 10px 15px
+    padding: 11px 15px
     color: #4ba7f6
 
+    @media (max-width: 1358px)
+      padding: 11px
+
   &__upgrade
-    padding: 10px 15px 10px 42px
+    padding: 11px 20px 11px 48px
     background: linear-gradient(to right, #f1534f, #f53a6d)
     color: #fff
+    font-size: 12px
     text-transform: uppercase
 
-    @media (max-width: 1259px)
-      padding: 10px 15px 10px 31px
+    @media (max-width: 1358px)
+      padding: 11px 15px 11px 31px
 
     &:before
       content: ""
@@ -49,7 +60,7 @@
       height: 17px
       left: 14px
 
-      @media (max-width: 1259px)
+      @media (max-width: 1358px)
         left: 7px
 
     &:hover
@@ -88,6 +99,6 @@
       background-color: $green-hover
 
   span
-    @media (max-width: 1259px)
+    @media (max-width: 1358px)
       display: none
 
