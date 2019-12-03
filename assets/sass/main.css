@@ -103,6 +103,35 @@ body {
 .show {
   display: block !important; }
 
+body.roboto {
+  font-family: "Roboto", sans-serif; }
+body.lato {
+  font-family: "Lato", sans-serif; }
+
+.roboto .header,
+.roboto .top-title,
+.roboto .tab-label,
+.roboto .submission__title,
+.roboto .btn__payment {
+  font-family: "Roboto";
+  font-weight: 700; }
+.roboto .top-title__subtitle,
+.roboto .submission__contact-info {
+  font-family: "Roboto";
+  font-weight: 300; }
+
+.lato .header,
+.lato .top-title,
+.lato .tab-label,
+.lato .submission__title,
+.lato .btn__payment {
+  font-family: "Lato";
+  font-weight: 700; }
+.lato .top-title__subtitle,
+.lato .submission__contact-info {
+  font-family: "Lato";
+  font-weight: 300; }
+
 .btn {
   position: relative;
   border-radius: 5px;

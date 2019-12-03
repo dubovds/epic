@@ -37,10 +37,43 @@ body
     //align-items: center
     justify-content: space-between
 
-
-
-
-
-
 .show
   display: block!important
+
+////////////
+body
+  &.roboto
+    font-family: 'Roboto', sans-serif
+
+  &.lato
+    font-family: 'Lato', sans-serif
+
+.roboto
+
+  .header,
+  .top-title,
+  .tab-label,
+  .submission__title,
+  .btn__payment
+    font-family: $roboto
+    font-weight: 700
+
+  .top-title__subtitle,
+  .submission__contact-info
+    font-family: $roboto
+    font-weight: 300
+
+.lato
+
+  .header,
+  .top-title,
+  .tab-label,
+  .submission__title,
+  .btn__payment
+    font-family: $lato
+    font-weight: 700
+
+  .top-title__subtitle,
+  .submission__contact-info
+    font-family: $lato
+    font-weight: 300
