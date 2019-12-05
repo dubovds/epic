@@ -134,7 +134,7 @@ body {
   transition: all 300ms ease-in-out;
 }
 .block__link:hover {
-  box-shadow: 0px 0px 13px -4px rgba(0, 0, 0, 0.75);
+  box-shadow: 0px 0px 13px -4px rgba(0, 0, 0, 0.3);
 }
 
 .show {
@@ -174,6 +174,32 @@ body.lato {
 .lato .submission__contact-info {
   font-family: "Lato";
   font-weight: 300;
+}
+
+.ibm .header,
+.ibm .top-title,
+.ibm .tab-label,
+.ibm .submission__title,
+.ibm .btn__payment {
+  font-family: "IBM Plex Sans";
+  font-weight: 700;
+}
+.ibm .top-title__subtitle,
+.ibm .submission__contact-info {
+  font-family: "IBM Plex Sans";
+}
+
+.ibm-roboto .header,
+.ibm-roboto .top-title,
+.ibm-roboto .tab-label,
+.ibm-roboto .submission__title,
+.ibm-roboto .btn__payment {
+  font-family: "IBM Plex Sans";
+  font-weight: 700;
+}
+.ibm-roboto .top-title__subtitle,
+.ibm-roboto .submission__contact-info {
+  font-family: "Roboto";
 }
 
 .btn {
