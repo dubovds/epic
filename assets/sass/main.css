@@ -382,6 +382,10 @@ body {
   }
 }
 
+_:-ms-fullscreen, :root .navbar__link svg {
+  top: 0;
+}
+
 input {
   position: absolute;
   opacity: 0;
