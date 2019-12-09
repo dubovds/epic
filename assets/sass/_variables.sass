@@ -7,6 +7,23 @@
 $font: 'Roboto', sans-serif
 $font-title: 'IBM Plex Sans', sans-serif
 
+//====== media query ====
+$first-query: 1374px
+$second-query: 1269px
+$third-query: 1099px
+
+@mixin first-query
+  @media (max-width: #{$first-query})
+    @content
+
+@mixin second-query
+  @media (max-width: #{$second-query})
+    @content
+
+@mixin third-query
+  @media (max-width: #{$third-query})
+    @content
+
 // COLORS
 $white: #fff
 $green: #89b659

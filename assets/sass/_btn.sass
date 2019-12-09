@@ -9,10 +9,10 @@
     color: #b4bad9
     padding: 11px 15px 11px 42px
 
-    @media (max-width: 1358px)
+    @include second-query
       padding: 11px 22px
 
-    @media (max-width: 1123px)
+    @include third-query
       padding: 11px 15px
 
     svg
@@ -22,7 +22,7 @@
       fill: #b4bad9
       @include transition
 
-      @media (max-width: 1123px)
+      @include third-query
         left: 6px
 
     &:hover
@@ -36,7 +36,7 @@
     padding: 11px 15px
     color: #4ba7f6
 
-    @media (max-width: 1358px)
+    @include second-query
       padding: 11px
 
   &__upgrade
@@ -46,7 +46,7 @@
     font-size: 12px
     text-transform: uppercase
 
-    @media (max-width: 1358px)
+    @include second-query
       padding: 11px 15px 11px 31px
 
     &:before
@@ -60,7 +60,7 @@
       height: 17px
       left: 14px
 
-      @media (max-width: 1358px)
+      @include second-query
         left: 7px
 
     &:hover
@@ -100,7 +100,7 @@
       background-color: $green-hover
 
   span
-    @media (max-width: 1358px)
+    @include second-query
       display: none
 
   &__block-link
