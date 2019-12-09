@@ -2,10 +2,14 @@
   margin-top: 30px
 
 .grid-view
-  display: flex
+  //display: flex
+  display: none
   flex-wrap: wrap
 
-.forms
+.list-view
+  display: none
+
+.forms-grid
   max-width: 470px
   margin: 0 0 10px 5px
   flex-grow: 1
@@ -15,3 +19,24 @@
 
   &:nth-child(odd)
     margin: 0 5px 10px 0
+
+.forms-list
+  display: flex
+  justify-content: space-between
+  margin-bottom: 6px
+
+.form-list
+
+  &__item
+    position: relative
+
+  &__show-block
+    width: 4px
+    height: 16px
+    padding: 0 10px
+    background-image: url("../images/three-dot.png")
+    background-repeat: no-repeat
+    background-position: 50% 50%
+    background-size: contain
+    transform: translate(0%, 100%)
+    cursor: pointer
