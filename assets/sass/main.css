@@ -709,6 +709,10 @@ input:checked ~ .tab-content {
   width: 40px;
 }
 
+_:-ms-fullscreen, :root .submission__message {
+  margin-top: 8px;
+}
+
 .title-page__section {
   display: flex;
   justify-content: space-between;
