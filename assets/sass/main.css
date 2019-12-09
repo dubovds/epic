@@ -666,7 +666,7 @@ input:checked ~ .tab-content {
   width: 10px;
   height: 10px;
   border-radius: 50%;
-  margin-top: 6px;
+  margin-top: 7px;
   margin-right: 20px;
 }
 .submission__message_new {
