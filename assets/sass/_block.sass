@@ -48,14 +48,67 @@
   &__links
     margin-top: 30px
 
+  &__edit-show
+    cursor: pointer
+
+    &:hover
+
+      .block__edit
+        display: flex
+
+      .btn__more
+        svg
+          fill: #000!important
+
+
+
+  &__edit
+    display: none
+    //display: flex
+    flex-direction: column
+    position: absolute
+    padding-top: 10px
+    right: 0
+
 .forms-list
   .block
+
     &__charts
       display: none
       margin-top: 0
 
     &__links
-      display: none
+      position: relative
+      margin-top: 0
+      margin-right: 35px
+      padding: 8px 0
+
+      &:after
+        content: ''
+        position: absolute
+        width: 2px
+        height: 24px
+        background-color: #edeff5
+        top: 50%
+        right: -16px
+        transform: translateY(-50%)
+
+
+    &__edit
+      display: block
+      position: relative
       margin-top: 0
       padding: 8px 0
 
+      &_test
+        display: none
+
+    &__links-edit
+      display: none
+
+.row-flex
+  display: flex
+  justify-content: space-between
+
+  &__item
+    position: relative

@@ -99,6 +99,13 @@
     &:hover
       background-color: $green-hover
 
+  &__more
+    padding: 0 8px
+    svg
+      width: 20px
+      height: 4px
+      fill: #bdbdc5
+
   span
     @include second-query
       display: none
@@ -106,78 +113,55 @@
   &__block-link
     display: inline-block
     padding: 9px
-    margin-right: 6px
+    margin: 0 6px 0 0
     background-color: #edeff5
     color: #8a8e9d
     font-family: $font-title
     font-weight: 700
     font-size: 14px
 
+    &_forms-grid
+      margin: 5px 0 0 0
+
     &:hover
       background-color: #d7d9e3
 
-
+    & svg
+      vertical-align: text-bottom
 
     &_responses
       svg
-        vertical-align: text-bottom
         width: 19px
         height: 19px
         margin-right: 10px
 
     &_statistics
       svg
-        vertical-align: text-bottom
         width: 18px
         height: 19px
 
     &_export
       svg
-        vertical-align: text-bottom
         width: 17px
         height: 18px
 
     &_qr
       svg
-        vertical-align: text-bottom
         width: 18px
         height: 18px
 
-.responses
-  display: inline-block
-  background-image: url("../images/responses.svg")
-  background-repeat: no-repeat
-  background-position: 50% 50%
-  background-size: cover
-  width: 19px
-  height: 19px
+    &_duplicate,
+    &_trash
+      svg
+        width: 19px
+        height: 19px
 
-.export
-  display: inline-block
-  background-image: url("../images/export.svg")
-  background-repeat: no-repeat
-  background-position: 50% 50%
-  background-size: cover
-  width: 17px
-  height: 18px
+    &_edit
+      svg
+        width: 18px
+        height: 18px
 
-.stat
-  display: inline-block
-  background-image: url("../images/statistics.svg")
-  background-repeat: no-repeat
-  background-position: 50% 50%
-  background-size: cover
-  width: 18px
-  height: 18px
 
-.qr
-  display: inline-block
-  background-image: url("../images/qr.svg")
-  background-repeat: no-repeat
-  background-position: 50% 50%
-  background-size: cover
-  width: 18px
-  height: 18px
 
 _:-ms-fullscreen, :root .btn__create-form svg
    top: 0

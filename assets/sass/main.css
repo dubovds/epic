@@ -241,6 +241,14 @@ body {
 .btn__save:hover {
   background-color: #92d050;
 }
+.btn__more {
+  padding: 0 8px;
+}
+.btn__more svg {
+  width: 20px;
+  height: 4px;
+  fill: #bdbdc5;
+}
 @media (max-width: 1269px) {
   .btn span {
     display: none;
@@ -249,74 +257,44 @@ body {
 .btn__block-link {
   display: inline-block;
   padding: 9px;
-  margin-right: 6px;
+  margin: 0 6px 0 0;
   background-color: #edeff5;
   color: #8a8e9d;
   font-family: "IBM Plex Sans", sans-serif;
   font-weight: 700;
   font-size: 14px;
 }
+.btn__block-link_forms-grid {
+  margin: 5px 0 0 0;
+}
 .btn__block-link:hover {
   background-color: #d7d9e3;
 }
-.btn__block-link_responses svg {
+.btn__block-link svg {
   vertical-align: text-bottom;
+}
+.btn__block-link_responses svg {
   width: 19px;
   height: 19px;
   margin-right: 10px;
 }
 .btn__block-link_statistics svg {
-  vertical-align: text-bottom;
   width: 18px;
   height: 19px;
 }
 .btn__block-link_export svg {
-  vertical-align: text-bottom;
   width: 17px;
   height: 18px;
 }
 .btn__block-link_qr svg {
-  vertical-align: text-bottom;
   width: 18px;
   height: 18px;
 }
-
-.responses {
-  display: inline-block;
-  background-image: url("../images/responses.svg");
-  background-repeat: no-repeat;
-  background-position: 50% 50%;
-  background-size: cover;
+.btn__block-link_duplicate svg, .btn__block-link_trash svg {
   width: 19px;
   height: 19px;
 }
-
-.export {
-  display: inline-block;
-  background-image: url("../images/export.svg");
-  background-repeat: no-repeat;
-  background-position: 50% 50%;
-  background-size: cover;
-  width: 17px;
-  height: 18px;
-}
-
-.stat {
-  display: inline-block;
-  background-image: url("../images/statistics.svg");
-  background-repeat: no-repeat;
-  background-position: 50% 50%;
-  background-size: cover;
-  width: 18px;
-  height: 18px;
-}
-
-.qr {
-  display: inline-block;
-  background-image: url("../images/qr.svg");
-  background-repeat: no-repeat;
-  background-position: 50% 50%;
-  background-size: cover;
+.btn__block-link_edit svg {
   width: 18px;
   height: 18px;
 }
@@ -377,15 +355,62 @@ _:-ms-fullscreen, :root .btn__create-form svg {
 .block__links {
   margin-top: 30px;
 }
+.block__edit-show {
+  cursor: pointer;
+}
+.block__edit-show:hover .block__edit {
+  display: flex;
+}
+.block__edit-show:hover .btn__more svg {
+  fill: #000 !important;
+}
+.block__edit {
+  display: none;
+  flex-direction: column;
+  position: absolute;
+  padding-top: 10px;
+  right: 0;
+}
 
 .forms-list .block__charts {
   display: none;
   margin-top: 0;
 }
 .forms-list .block__links {
-  display: none;
+  position: relative;
+  margin-top: 0;
+  margin-right: 35px;
+  padding: 8px 0;
+}
+.forms-list .block__links:after {
+  content: "";
+  position: absolute;
+  width: 2px;
+  height: 24px;
+  background-color: #edeff5;
+  top: 50%;
+  right: -16px;
+  transform: translateY(-50%);
+}
+.forms-list .block__edit {
+  display: block;
+  position: relative;
   margin-top: 0;
   padding: 8px 0;
+}
+.forms-list .block__edit_test {
+  display: none;
+}
+.forms-list .block__links-edit {
+  display: none;
+}
+
+.row-flex {
+  display: flex;
+  justify-content: space-between;
+}
+.row-flex__item {
+  position: relative;
 }
 
 .header {
@@ -652,8 +677,9 @@ input:checked ~ .tab-content {
   position: absolute;
   width: 3px;
   height: 3px;
-  top: 4px;
+  top: 50%;
   right: 2px;
+  transform: translateY(-50%);
   background-color: #c8c8c8;
   border-radius: 50%;
 }
@@ -898,6 +924,11 @@ _:-ms-fullscreen, :root .submission__message {
   margin: 0 0 10px 5px;
   flex-grow: 1;
 }
+@media (max-width: 1099px) {
+  .forms-grid {
+    max-width: 360px;
+  }
+}
 .forms-grid:nth-child(odd) {
   margin: 0 5px 10px 0;
 }
@@ -927,6 +958,12 @@ _:-ms-fullscreen, :root .submission__message {
   margin-right: 20px;
   padding: 0 20px;
   border-left: 2px solid #edeff5;
+}
+@media (max-width: 1099px) {
+  .chart__item {
+    margin-right: 10px;
+    padding: 0 15px;
+  }
 }
 .chart__time {
   font-family: "IBM Plex Sans", sans-serif;
