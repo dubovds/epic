@@ -101,10 +101,16 @@
 
   &__more
     padding: 0 8px
+
     svg
       width: 20px
       height: 4px
       fill: #bdbdc5
+
+    &_vert
+      svg
+        transform: rotate(90deg)
+
 
   span
     @include second-query
@@ -115,16 +121,25 @@
     padding: 9px
     margin: 0 6px 0 0
     background-color: #edeff5
+    //background-color: #dbdee6
     color: #8a8e9d
     font-family: $font-title
-    font-weight: 700
+    font-weight: 500
     font-size: 14px
+
+    & svg
+      fill: #9699ab
+      @include transition
 
     &_forms-grid
       margin: 5px 0 0 0
 
     &:hover
       background-color: #d7d9e3
+      color: #393d56
+
+      & svg
+        fill: #393d56
 
     & svg
       vertical-align: text-bottom

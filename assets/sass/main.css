@@ -99,7 +99,7 @@ body {
 
 .wrapper-content {
   flex: 1 0 auto;
-  width: 980px;
+  width: 1012px;
   margin: auto;
   padding: 35px 15px 0;
 }
@@ -249,6 +249,9 @@ body {
   height: 4px;
   fill: #bdbdc5;
 }
+.btn__more_vert svg {
+  transform: rotate(90deg);
+}
 @media (max-width: 1269px) {
   .btn span {
     display: none;
@@ -261,14 +264,26 @@ body {
   background-color: #edeff5;
   color: #8a8e9d;
   font-family: "IBM Plex Sans", sans-serif;
-  font-weight: 700;
+  font-weight: 500;
   font-size: 14px;
+}
+.btn__block-link svg {
+  fill: #9699ab;
+  -webkit-transition: all 300ms ease-in-out;
+  -moz-transition: all 300ms ease-in-out;
+  -o-transition: all 300ms ease-in-out;
+  -ms-transition: all 300ms ease-in-out;
+  transition: all 300ms ease-in-out;
 }
 .btn__block-link_forms-grid {
   margin: 5px 0 0 0;
 }
 .btn__block-link:hover {
   background-color: #d7d9e3;
+  color: #393d56;
+}
+.btn__block-link:hover svg {
+  fill: #393d56;
 }
 .btn__block-link svg {
   vertical-align: text-bottom;
@@ -319,6 +334,9 @@ _:-ms-fullscreen, :root .btn__create-form svg {
   display: flex;
   justify-content: space-between;
 }
+.block__item_row-reverse {
+  flex-direction: row-reverse;
+}
 .block__link {
   display: block;
   margin-top: 8px;
@@ -364,6 +382,20 @@ _:-ms-fullscreen, :root .btn__create-form svg {
 .block__edit-show:hover .btn__more svg {
   fill: #000 !important;
 }
+.block__change-info-list {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+.block__change-info-list:hover + .block__charts {
+  display: none;
+}
+.block__change-info-list:hover .block__links-edit {
+  display: flex;
+}
+.block__change-info-list:hover .btn__more svg {
+  fill: #000 !important;
+}
 .block__edit {
   display: none;
   flex-direction: column;
@@ -372,8 +404,15 @@ _:-ms-fullscreen, :root .btn__create-form svg {
   right: 0;
 }
 
-.forms-list .block__charts {
+.btn__more_vert:hover + .block__charts {
   display: none;
+}
+
+.btn__more_vert:hover + .block__charts + .block__links-edit {
+  display: flex;
+}
+
+.forms-list .block__charts {
   margin-top: 0;
 }
 .forms-list .block__links {
@@ -717,7 +756,7 @@ input:checked ~ .tab-content {
   background-repeat: no-repeat;
   background-position: 50% 50%;
   background-size: contain;
-  margin-top: 15px;
+  margin-top: 11px;
 }
 .submission__attach.show {
   display: block;
@@ -920,7 +959,7 @@ _:-ms-fullscreen, :root .submission__message {
 }
 
 .forms-grid {
-  max-width: 470px;
+  max-width: 486px;
   margin: 0 0 10px 5px;
   flex-grow: 1;
 }

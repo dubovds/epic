@@ -16,6 +16,9 @@
     //align-items: center
     justify-content: space-between
 
+    &_row-reverse
+      flex-direction: row-reverse
+
   &__link
     display: block
     margin-top: 8px
@@ -60,7 +63,21 @@
         svg
           fill: #000!important
 
+  &__change-info-list
+    display: flex
+    align-items: center
+    cursor: pointer
 
+    &:hover
+      + .block__charts
+        display: none
+
+      .block__links-edit
+        display: flex
+
+      .btn__more
+        svg
+          fill: #000!important
 
   &__edit
     display: none
@@ -70,11 +87,28 @@
     padding-top: 10px
     right: 0
 
+//.block__change-info-list
+  &:hover
+    + .block__charts
+      display: none
+
+    .block__links-edit
+      display: flex
+
+    .btn__more
+      svg
+        fill: #000!important
+
+.btn__more_vert:hover + .block__charts
+  display: none
+
+.btn__more_vert:hover + .block__charts + .block__links-edit
+    display: flex
 .forms-list
   .block
 
     &__charts
-      display: none
+      //display: none
       margin-top: 0
 
     &__links
@@ -105,6 +139,8 @@
 
     &__links-edit
       display: none
+
+
 
 .row-flex
   display: flex
