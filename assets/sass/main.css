@@ -963,7 +963,7 @@ _:-ms-fullscreen, :root .submission__message {
   margin: 0 0 10px 5px;
   flex-grow: 1;
 }
-@media (max-width: 1099px) {
+@media (max-width: 1269px) {
   .forms-grid {
     max-width: 360px;
   }
