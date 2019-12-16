@@ -5,6 +5,9 @@
   font-size: 12px
   color: #8a8c94
 
+  @include third-query
+  padding: 26px 15px
+
   &_tab
     display: flex
     //align-items: center
@@ -17,6 +20,7 @@
     justify-content: space-between
 
     &_row-reverse
+      position: relative
       flex-direction: row-reverse
 
   &__link
@@ -31,11 +35,24 @@
       box-shadow: 0px 0px 13px -4px rgba(0,0,0,0.3)
 
   &__title
+    max-width: 365px
     margin-bottom: 4px
     font-family: $font-title
     font-weight: 700
     font-size: 16px
     color: $block-title-color
+
+    overflow: hidden
+    white-space: nowrap
+    text-overflow: ellipsis
+
+    @include third-query
+      max-width: 280px
+
+    &:hover
+      @include  third-query
+        white-space: normal
+        cursor: pointer
 
   &__subtitle
     font-family: $font
@@ -65,6 +82,7 @@
 
   &__change-info-list
     display: flex
+    height: 54px
     align-items: center
     cursor: pointer
 
@@ -111,6 +129,17 @@
       //display: none
       margin-top: 0
 
+    &__title
+      max-width: 460px
+
+      @include third-query
+        max-width: 340px
+        cursor: pointer
+
+      &:hover
+        @include third-query
+          white-space: normal
+
     &__links
       position: relative
       margin-top: 0
@@ -139,6 +168,11 @@
 
     &__links-edit
       display: none
+
+      position: absolute
+      right: 0
+      width: 465px
+      height: 54px
 
 
 
