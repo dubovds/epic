@@ -2165,8 +2165,70 @@
 
     </div>
 </div>
+<!--popup qr-->
+<div class="popup" id="popup_qr">
+    <div class="popup__close">
+        <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                         viewBox="0 0 18 18" style="enable-background:new 0 0 18 18;" xml:space="preserve">
+            <g>
+                <defs>
+                    <path id="SVGID_1close_" d="M17.5,2.9L11.4,9l6.1,6.1c0.7,0.7,0.7,1.8,0,2.4c-0.7,0.7-1.8,0.7-2.4,0L9,11.4l-6.1,6.1
+                        c-0.7,0.7-1.8,0.7-2.4,0s-0.7-1.8,0-2.4L6.6,9L0.5,2.9c-0.7-0.7-0.7-1.8,0-2.4c0.7-0.7,1.8-0.7,2.4,0L9,6.6l6.1-6.1
+                        c0.7-0.7,1.8-0.7,2.4,0C18.2,1.2,18.2,2.3,17.5,2.9z"/>
+                </defs>
+                <use xlink:href="#SVGID_1close_"  style="overflow:visible;"/>
+                <clipPath id="SVGID_2close_">
+                    <use xlink:href="#SVGID_1close_"  style="overflow:visible;"/>
+                </clipPath>
+            </g>
+            </svg>
+    </div>
+    <div class="popup__title">
+        Subscribe
+    </div>
+    <div class="popup__subtitle">
+        Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
+        Aenean commodo ligula eget dolor. Aenean massa.
+    </div>
+    <div class="popup__content">
+        <div class="popup__qr-section">
+            <img src="./assets/images/qr.png" alt="">
+        </div>
+    </div>
+</div>
 
-
+<!--popup delete-->
+<div class="popup" id="popup_delete">
+    <div class="popup__close">
+        <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+             viewBox="0 0 18 18" style="enable-background:new 0 0 18 18;" xml:space="preserve">
+            <g>
+                <defs>
+                    <path id="SVGID_1close_" d="M17.5,2.9L11.4,9l6.1,6.1c0.7,0.7,0.7,1.8,0,2.4c-0.7,0.7-1.8,0.7-2.4,0L9,11.4l-6.1,6.1
+                        c-0.7,0.7-1.8,0.7-2.4,0s-0.7-1.8,0-2.4L6.6,9L0.5,2.9c-0.7-0.7-0.7-1.8,0-2.4c0.7-0.7,1.8-0.7,2.4,0L9,6.6l6.1-6.1
+                        c0.7-0.7,1.8-0.7,2.4,0C18.2,1.2,18.2,2.3,17.5,2.9z"/>
+                </defs>
+                <use xlink:href="#SVGID_1close_"  style="overflow:visible;"/>
+                <clipPath id="SVGID_2close_">
+                    <use xlink:href="#SVGID_1close_"  style="overflow:visible;"/>
+                </clipPath>
+            </g>
+            </svg>
+    </div>
+    <div class="popup__title">
+        Delete Form
+    </div>
+    <div class="popup__subtitle">
+        Are you sure you want to delete the form permanently?
+    </div>
+    <div class="popup__content">
+        <div class="popup__delete-buttons">
+            <a href="#" class="btn btn__delete">Yes, Delete</a>
+            <a href="" class="btn btn__delete">No, I keep</a>
+        </div>
+    </div>
+</div>
+<div class="overlay"></div>
 <script>
     var grid = document.getElementById('grid-view');
     var list = document.getElementById('list-view');
@@ -2183,14 +2245,42 @@
         grid.classList.remove('show-flex');
         list.classList.add('show');
     };
+//popup
+    let qrButtons = document.getElementsByClassName('btn__block-link_qr');
+    let qrPopup = document.getElementById('popup_qr');
 
-    // var test = document.getElementById('form-list__show-block');
-    // var charts = document.getElementById('block__charts');
-    // var links = document.getElementById('block__links');
-    // test.onclick = function(){
-    //     links.classList.toggle('show-flex');
-    //     charts.classList.toggle('show-flex');
-    // }
+    let deleteButtons = document.getElementsByClassName('btn__block-link_trash');
+    let deletePopup = document.getElementById('popup_delete');
+
+    let popups = document.getElementsByClassName('popup');
+    let overlay = document.getElementsByClassName('overlay');
+    let closeButton = document.getElementsByClassName('popup__close');
+
+    for( i = 0; i < qrButtons.length; i++){
+        qrButtons[i].onclick = function () {
+            qrPopup.classList.add('show-popup');
+            overlay[0].classList.add('show-popup')
+        }
+    }
+
+    for( i = 0; i < deleteButtons.length; i++){
+        deleteButtons[i].onclick = function () {
+            deletePopup.classList.add('show-popup');
+            overlay[0].classList.add('show-popup')
+        }
+    }
+
+    closeButton[0].onclick = function () {
+        for( i = 0; i < popups.length; i++){
+            popups[i].onclick = function () {
+                this.classList.remove('show-popup');
+                overlay[0].classList.remove('show-popup')
+            }
+        }
+
+    }
+
+
 
 </script>
 </body>

@@ -51,8 +51,14 @@
 
     &:hover
       @include  third-query
+        position: absolute
+        width: 280px
+        background-color: #fff
         white-space: normal
         cursor: pointer
+
+        + .block__subtitle
+          margin-top: 26px
 
   &__subtitle
     font-family: $font
@@ -122,6 +128,9 @@
 
 .btn__more_vert:hover + .block__charts + .block__links-edit
     display: flex
+
+
+
 .forms-list
   .block
 
@@ -138,7 +147,7 @@
 
       &:hover
         @include third-query
-          white-space: normal
+          width: 340px
 
     &__links
       position: relative
