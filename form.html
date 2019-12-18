@@ -2270,14 +2270,15 @@
         }
     }
 
-    closeButton[0].onclick = function () {
-        for( i = 0; i < popups.length; i++){
-            popups[i].onclick = function () {
-                this.classList.remove('show-popup');
-                overlay[0].classList.remove('show-popup')
+    for(cb = 0; cb < closeButton.length; cb++) {
+        closeButton[cb].onclick = function () {
+            for( i = 0; i < popups.length; i++){
+                popups[i].onclick = function () {
+                    this.classList.remove('show-popup');
+                    overlay[0].classList.remove('show-popup')
+                }
             }
         }
-
     }
 
 
