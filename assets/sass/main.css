@@ -1297,5 +1297,14 @@ _:-ms-fullscreen, :root .submission__message {
 .menu-small__link:hover:after {
   background-color: #fe544b;
 }
+.menu-small__link.active {
+  color: #393d56;
+}
+.menu-small__link.active svg {
+  fill: #fe544b;
+}
+.menu-small__link.active:after {
+  background-color: #fe544b;
+}
 
 /*# sourceMappingURL=main.css.map */
