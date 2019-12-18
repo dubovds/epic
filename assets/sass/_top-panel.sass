@@ -1,0 +1,51 @@
+.top-panel
+  display: flex
+  justify-content: space-between
+  align-items: center
+  padding: 13px
+  background-color: #fff
+  color: #9699ab
+  font-size: 14px
+  border-bottom: 1px solid rgba(220, 221, 227, 0.5)
+
+  &__link
+    padding: 10px 0
+    font-family: $font-title
+    font-size: 14px
+    font-weight: 700
+    color: $color-link-btn
+    @include transition
+
+    &:hover
+      color: $color-link-btn-hover
+
+      svg
+        fill: $color-link-btn-hover
+
+  &__top-panel-back
+    display: inline-block
+    width: 36px
+    height: 36px
+    margin-right: 10px
+    background-color: #edeff5
+    text-align: center
+    padding: 11px 11px
+
+    svg
+      width: 14px
+      height: 14px
+      fill: $color-link-btn
+      transform: rotate(90deg)
+      @include transition
+
+  &__title-block
+    text-align: center
+
+  &__title
+    color: #484c62
+    font-size: 16px
+    font-family: $font-title
+    font-weight: 700
+
+  &__subtitle
+    font-size: 12px

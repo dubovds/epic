@@ -121,8 +121,7 @@
     padding: 9px
     margin: 0 6px 0 0
     background-color: #edeff5
-    //background-color: #dbdee6
-    color: #8a8e9d
+    color: $color-link-btn
     font-family: $font-title
     font-weight: 500
     font-size: 14px
@@ -135,11 +134,11 @@
       margin: 5px 0 0 0
 
     &:hover
-      background-color: #d7d9e3
-      color: #393d56
+      background-color: $color-link-bg
+      color: $color-link-btn-hover
 
       & svg
-        fill: #393d56
+        fill: $color-link-btn-hover
 
     & svg
       vertical-align: text-bottom
@@ -193,8 +192,6 @@
 
     @include first-query
       width: 145px
-
-
 
 
 _:-ms-fullscreen, :root .btn__create-form svg

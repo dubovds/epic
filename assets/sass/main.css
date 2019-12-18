@@ -346,6 +346,9 @@ _:-ms-fullscreen, :root .btn__create-form svg {
   color: #8a8c94;
   padding: 26px 15px;
 }
+.block_no-b-p {
+  padding-bottom: 0;
+}
 .block_tab {
   display: flex;
   justify-content: space-between;
@@ -1173,6 +1176,126 @@ _:-ms-fullscreen, :root .submission__message {
 .show-popup {
   visibility: visible;
   opacity: 1;
+}
+
+.top-panel {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 13px;
+  background-color: #fff;
+  color: #9699ab;
+  font-size: 14px;
+  border-bottom: 1px solid rgba(220, 221, 227, 0.5);
+}
+.top-panel__link {
+  padding: 10px 0;
+  font-family: "IBM Plex Sans", sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+  color: #8a8e9d;
+  -webkit-transition: all 300ms ease-in-out;
+  -moz-transition: all 300ms ease-in-out;
+  -o-transition: all 300ms ease-in-out;
+  -ms-transition: all 300ms ease-in-out;
+  transition: all 300ms ease-in-out;
+}
+.top-panel__link:hover {
+  color: #393d56;
+}
+.top-panel__link:hover svg {
+  fill: #393d56;
+}
+.top-panel__top-panel-back {
+  display: inline-block;
+  width: 36px;
+  height: 36px;
+  margin-right: 10px;
+  background-color: #edeff5;
+  text-align: center;
+  padding: 11px 11px;
+}
+.top-panel__top-panel-back svg {
+  width: 14px;
+  height: 14px;
+  fill: #8a8e9d;
+  transform: rotate(90deg);
+  -webkit-transition: all 300ms ease-in-out;
+  -moz-transition: all 300ms ease-in-out;
+  -o-transition: all 300ms ease-in-out;
+  -ms-transition: all 300ms ease-in-out;
+  transition: all 300ms ease-in-out;
+}
+.top-panel__title-block {
+  text-align: center;
+}
+.top-panel__title {
+  color: #484c62;
+  font-size: 16px;
+  font-family: "IBM Plex Sans", sans-serif;
+  font-weight: 700;
+}
+.top-panel__subtitle {
+  font-size: 12px;
+}
+
+.menu-small {
+  margin: 25px -15px 0;
+  padding: 0px 15px 0;
+  border-top: 1px solid #f3f4f8;
+  text-align: center;
+}
+.menu-small__item {
+  display: inline-block;
+}
+.menu-small__link {
+  display: inline-block;
+  position: relative;
+  padding: 20px 20px 20px 40px;
+  color: #8a8e9d;
+  font-size: 14px;
+  font-family: "IBM Plex Sans", sans-serif;
+  font-weight: 700;
+  -webkit-transition: all 300ms ease-in-out;
+  -moz-transition: all 300ms ease-in-out;
+  -o-transition: all 300ms ease-in-out;
+  -ms-transition: all 300ms ease-in-out;
+  transition: all 300ms ease-in-out;
+}
+.menu-small__link:after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  background-color: transparent;
+  bottom: 0px;
+  left: 0;
+  -webkit-transition: all 300ms ease-in-out;
+  -moz-transition: all 300ms ease-in-out;
+  -o-transition: all 300ms ease-in-out;
+  -ms-transition: all 300ms ease-in-out;
+  transition: all 300ms ease-in-out;
+}
+.menu-small__link svg {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  left: 10px;
+  fill: #8a8e9d;
+  -webkit-transition: all 300ms ease-in-out;
+  -moz-transition: all 300ms ease-in-out;
+  -o-transition: all 300ms ease-in-out;
+  -ms-transition: all 300ms ease-in-out;
+  transition: all 300ms ease-in-out;
+}
+.menu-small__link:hover {
+  color: #393d56;
+}
+.menu-small__link:hover svg {
+  fill: #fe544b;
+}
+.menu-small__link:hover:after {
+  background-color: #fe544b;
 }
 
 /*# sourceMappingURL=main.css.map */

@@ -1,0 +1,48 @@
+.menu-small
+  margin: 25px -15px 0
+  padding: 0px 15px 0
+  border-top: 1px solid #f3f4f8
+  text-align: center
+
+  &__list
+
+  &__item
+    display: inline-block
+
+  &__link
+    display: inline-block
+    position: relative
+    padding: 20px 20px 20px 40px
+    color: $color-link-btn
+    font-size: 14px
+    font-family: $font-title
+    font-weight: 700
+    @include transition
+
+    &:after
+      content: ''
+      position: absolute
+      width: 100%
+      height: 2px
+      background-color: transparent
+      bottom: -0px
+      left: 0
+      @include transition
+
+    & svg
+      position: absolute
+      width: 20px
+      height: 20px
+      left: 10px
+      fill: $color-link-btn
+      @include transition
+
+    &:hover
+      color: $color-link-btn-hover
+
+      & svg
+        fill: #fe544b
+
+      &:after
+        background-color: #fe544b
+
