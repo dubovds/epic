@@ -328,6 +328,11 @@ body {
   margin-left: 8px;
   background-color: #fe544b;
 }
+@media (max-width: 1374px) {
+  .btn__delete {
+    width: 145px;
+  }
+}
 
 _:-ms-fullscreen, :root .btn__create-form svg {
   top: 0;
