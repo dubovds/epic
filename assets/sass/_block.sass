@@ -6,7 +6,7 @@
   color: #8a8c94
 
   @include third-query
-  padding: 26px 15px
+    padding: 26px 15px
 
   &_no-b-p
     padding-bottom: 0
@@ -49,11 +49,11 @@
     white-space: nowrap
     text-overflow: ellipsis
 
-    @include third-query
+    @include second-query
       max-width: 280px
 
     &:hover
-      @include  third-query
+      @include  second-query
         position: absolute
         width: 280px
         background-color: #fff
@@ -144,12 +144,12 @@
     &__title
       max-width: 460px
 
-      @include third-query
+      @include second-query
         max-width: 340px
         cursor: pointer
 
       &:hover
-        @include third-query
+        @include second-query
           width: 340px
 
     &__links

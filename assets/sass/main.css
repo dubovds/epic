@@ -209,6 +209,16 @@ body {
 .btn__upgrade:hover {
   background: linear-gradient(to right, #f1534f, #f1534f);
 }
+.btn__green {
+  display: none;
+  background-color: #c2de9e;
+  margin-right: 25px;
+  padding: 5px 10px;
+  font-family: "IBM Plex Sans", sans-serif;
+  font-weight: 700;
+  font-size: 12px;
+  color: #668e32;
+}
 .btn__payment {
   display: none;
   background-color: #c2de9e;
@@ -344,7 +354,11 @@ _:-ms-fullscreen, :root .btn__create-form svg {
   border-radius: 5px;
   font-size: 12px;
   color: #8a8c94;
-  padding: 26px 15px;
+}
+@media (max-width: 1099px) {
+  .block {
+    padding: 26px 15px;
+  }
 }
 .block_no-b-p {
   padding-bottom: 0;
@@ -388,12 +402,12 @@ _:-ms-fullscreen, :root .btn__create-form svg {
   white-space: nowrap;
   text-overflow: ellipsis;
 }
-@media (max-width: 1099px) {
+@media (max-width: 1269px) {
   .block__title {
     max-width: 280px;
   }
 }
-@media (max-width: 1099px) {
+@media (max-width: 1269px) {
   .block__title:hover {
     position: absolute;
     width: 280px;
@@ -465,13 +479,13 @@ _:-ms-fullscreen, :root .btn__create-form svg {
 .forms-list .block__title {
   max-width: 460px;
 }
-@media (max-width: 1099px) {
+@media (max-width: 1269px) {
   .forms-list .block__title {
     max-width: 340px;
     cursor: pointer;
   }
 }
-@media (max-width: 1099px) {
+@media (max-width: 1269px) {
   .forms-list .block__title:hover {
     width: 340px;
   }
@@ -1063,7 +1077,7 @@ _:-ms-fullscreen, :root .submission__message {
   padding: 0 20px;
   border-left: 2px solid #edeff5;
 }
-@media (max-width: 1099px) {
+@media (max-width: 1269px) {
   .chart__item {
     margin-right: 10px;
     padding: 0 15px;
@@ -1305,6 +1319,107 @@ _:-ms-fullscreen, :root .submission__message {
 }
 .menu-small__link.active:after {
   background-color: #fe544b;
+}
+
+.response .block {
+  margin-bottom: 10px;
+}
+.response__contact-info {
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
+  font-weight: 300;
+  font-style: normal;
+  letter-spacing: 0.5px;
+}
+.response__contact-info span {
+  position: relative;
+  padding-right: 11px;
+}
+.response__contact-info span:after {
+  content: "";
+  position: absolute;
+  width: 3px;
+  height: 3px;
+  top: 50%;
+  right: 2px;
+  transform: translateY(-50%);
+  background-color: #c8c8c8;
+  border-radius: 50%;
+}
+.response__contact-info span:last-child:after {
+  display: none;
+}
+.response__row {
+  display: flex;
+  padding: 25px 0;
+  border-bottom: 1px solid #ebedf2;
+}
+.response__row:first-child {
+  padding-top: 0;
+}
+.response__item-title {
+  width: 290px;
+  padding-right: 10px;
+  color: #aeb0ba;
+  font-family: "IBM Plex Sans", sans-serif;
+  font-weight: bold;
+  font-size: 12px;
+  text-transform: uppercase;
+}
+@media (max-width: 1269px) {
+  .response__item-title {
+    width: 130px;
+  }
+}
+.response__item-text {
+  color: #50525e;
+  font-size: 14px;
+}
+.response__email {
+  color: #fe544b;
+}
+.response__checkbox span {
+  color: #83848b;
+}
+.response em {
+  color: #bdbec6;
+}
+.response__warning {
+  background-color: #faefe1;
+  padding: 20px;
+  color: #8c7d6b;
+  border-radius: 5px;
+}
+.response__warning-title {
+  font-size: 14px;
+  font-family: "IBM Plex Sans", sans-serif;
+  font-weight: bold;
+}
+.response__warning-text {
+  margin-top: 5px;
+  font-size: 13px;
+}
+.response__files {
+  display: flex;
+  margin-top: 20px;
+}
+.response__files span {
+  position: relative;
+  padding-left: 30px;
+}
+.response__files span:before {
+  content: "";
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  background-image: url("../images/viruses.png");
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  top: -1px;
+  left: 0;
+}
+.response__files-item {
+  margin-right: 10px;
 }
 
 /*# sourceMappingURL=main.css.map */
