@@ -80,6 +80,7 @@
 
   &__files
     display: flex
+    align-items: center
     margin-top: 20px
 
     span
@@ -99,5 +100,113 @@
 
   &__files-item
     margin-right: 10px
+
+  &__upload
+    position: relative
+    display: flex
+    background-color: #edeff5
+    padding: 9px 13px 9px 36px
+    color: #9699ab
+    font-size: 14px
+    border-radius: $border-radius
+
+    &:after
+      content: ''
+      position: absolute
+      width: 14px
+      height: 16px
+      left: 13px
+      background-image: url("../images/attach.svg")
+      background-repeat: no-repeat
+      background-position: 50% 50%
+      background-size: contain
+
+  &__upload-size
+    margin-left: 20px
+    color: #7e8195
+    font-weight: bold
+
+  &__product
+    display: flex
+    justify-content: space-between
+
+  &__product-item
+    position: relative
+
+    &_right
+      margin-left: 20px
+
+    &_left
+      margin-right: 20px
+
+    &_flex
+      display: flex
+
+  &__product-info
+    width: 444px
+
+    @include second-query
+      width: 350px
+
+  &__product-title
+    color: #3a3d50
+    font-family: $font-title
+    font-weight: bold
+    font-size: 16px
+
+  &__image
+    width: 200px
+    height: 200px
+    margin-right: 40px
+    background: linear-gradient(to bottom, #e0dfdd, #eeeeee)
+    border-radius: $border-radius
+    overflow: hidden
+
+    @include second-query
+      width: 100px
+      height: 100px
+      margin-right: 20px
+
+  &__content-row
+    display: flex
+    margin-top: 30px
+
+  &__content-item
+    margin-right: 60px
+
+    @include second-query
+      margin-right: 40px
+
+  &__content-title
+    text-transform: uppercase
+    color: #aeb0ba
+    font-weight: bold
+    font-size: 12px
+
+  &__content-text
+    color: #50525e
+    margin-top: 10px
+    font-size: 14px
+
+    span
+      color: #b2b3b9
+
+  &__btn-edit
+    position: absolute
+    display: block
+    width: 157px
+    bottom: 0
+    right: 0
+    background-color: #9699ab
+    padding: 10px
+    text-align: center
+    font-size: 14px
+    font-weight: bold
+    color: #fff
+    border-radius: $border-radius
+
+  &__payment
+    width: 91px
+    margin-right: 0
 
 
