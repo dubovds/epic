@@ -367,6 +367,10 @@ _:-ms-fullscreen, :root .btn__create-form svg {
   justify-content: space-between;
   margin: 0 -15px 9px;
 }
+.block__row {
+  display: flex;
+  margin-top: 10px;
+}
 .block__item {
   display: flex;
   justify-content: space-between;
@@ -1534,6 +1538,25 @@ _:-ms-fullscreen, :root .submission__message {
 .response__payment {
   width: 91px;
   margin-right: 0;
+}
+
+.charts {
+  width: 50%;
+  margin-left: 5px;
+}
+.charts:nth-child(odd) {
+  margin-left: 0;
+  margin-right: 5px;
+}
+.charts__title {
+  color: #72747c;
+  font-size: 12px;
+  font-family: "IBM Plex Sans", sans-serif;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+.charts__total {
+  font-size: 13px;
 }
 
 /*# sourceMappingURL=main.css.map */
