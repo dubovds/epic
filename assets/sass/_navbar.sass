@@ -70,10 +70,39 @@
 
       @include third-query
         left: 7px
+
+    &_editor
+      padding: 21px 20px 21px 49px
+
+      @include third-query
+        padding: 21px 15px 21px 44px
+
+      span
+        @include second-query
+          display: inline !important
+
+        @include third-query
+          display: none !important
+
+      svg
+        left: 20px
+
+        @include third-query
+          left: 21px
+
+      &.active
+        background-color: #33374f
+
+        svg
+          fill: #fe544b
       
     span
       @include second-query
         display: none
+
+.header_editor
+  .navbar__item
+    margin: 0 3px
 
 _:-ms-fullscreen, :root .navbar__link svg
    top: 0

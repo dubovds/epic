@@ -1,6 +1,6 @@
 var x, i, j, selElmnt, a, b, c;
 /* Look for any elements with the class "custom-select": */
-x = document.getElementsByClassName("settings__select");
+x = document.getElementsByClassName("custom__select");
 for (i = 0; i < x.length; i++) {
   selElmnt = x[i].getElementsByTagName("select")[0];
   /* For each element, create a new DIV that will act as the selected item: */

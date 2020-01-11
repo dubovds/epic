@@ -58,7 +58,7 @@
         <ul class="navbar__list">
 
           <li class="navbar__item">
-            <a href="#" class="navbar__link navbar__link_icon">
+            <a href="#" class="navbar__link navbar__link_icon navbar__link_support">
               <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 	 viewBox="0 0 98 98" style="enable-background:new 0 0 98 98;" xml:space="preserve">
 <g>
@@ -99,7 +99,7 @@
               <span>Settings</span></a>
           </li>
           <li class="navbar__item navbar__item_btn">
-            <a href="#" class="btn btn__editor">Open Wix Editor</a>
+            <a href="editor.html" class="btn btn__editor">Open Wix Editor</a>
           </li>
           <li class="navbar__item navbar__item_btn">
             <a href="#" class="btn btn__upgrade">Upgrade</a>
@@ -479,6 +479,135 @@
 
   </div>
 </div>
-<script> </script>
+<!--popup create form-->
+<div class="popup popup_create-form " id="popup_create_form">
+  <div class="popup__close">
+    <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+         viewBox="0 0 18 18" style="enable-background:new 0 0 18 18;" xml:space="preserve">
+            <g>
+                <defs>
+                    <path id="SVGID_1close_" d="M17.5,2.9L11.4,9l6.1,6.1c0.7,0.7,0.7,1.8,0,2.4c-0.7,0.7-1.8,0.7-2.4,0L9,11.4l-6.1,6.1
+                        c-0.7,0.7-1.8,0.7-2.4,0s-0.7-1.8,0-2.4L6.6,9L0.5,2.9c-0.7-0.7-0.7-1.8,0-2.4c0.7-0.7,1.8-0.7,2.4,0L9,6.6l6.1-6.1
+                        c0.7-0.7,1.8-0.7,2.4,0C18.2,1.2,18.2,2.3,17.5,2.9z"/>
+                </defs>
+              <use xlink:href="#SVGID_1close_"  style="overflow:visible;"/>
+              <clipPath id="SVGID_2close_">
+                    <use xlink:href="#SVGID_1close_"  style="overflow:visible;"/>
+                </clipPath>
+            </g>
+            </svg>
+  </div>
+  <div class="popup__title">
+    Create Form
+  </div>
+  <div class="popup__subtitle">
+    Enter a form name and description. This name and
+    description is for your reference only, and can be used
+    to identify differnt forms in the future.
+  </div>
+  <div class="popup__content">
+    <div class="required">
+      <input class="input" type="text" placeholder="Form Name" required>
+    </div>
+    <textarea class="textarea" name="" id="" cols="30" rows="10" placeholder="Describtion..."></textarea>
+
+    <input type="submit" class="btn btn__submit btn_full-width" value="Create Form">
+  </div>
+</div>
+
+<!--popup support-->
+<div class="popup popup_support" id="popup_support">
+  <div class="popup__close">
+    <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+         viewBox="0 0 18 18" style="enable-background:new 0 0 18 18;" xml:space="preserve">
+            <g>
+                <defs>
+                    <path id="SVGID_1close_" d="M17.5,2.9L11.4,9l6.1,6.1c0.7,0.7,0.7,1.8,0,2.4c-0.7,0.7-1.8,0.7-2.4,0L9,11.4l-6.1,6.1
+                        c-0.7,0.7-1.8,0.7-2.4,0s-0.7-1.8,0-2.4L6.6,9L0.5,2.9c-0.7-0.7-0.7-1.8,0-2.4c0.7-0.7,1.8-0.7,2.4,0L9,6.6l6.1-6.1
+                        c0.7-0.7,1.8-0.7,2.4,0C18.2,1.2,18.2,2.3,17.5,2.9z"/>
+                </defs>
+              <use xlink:href="#SVGID_1close_"  style="overflow:visible;"/>
+              <clipPath id="SVGID_2close_">
+                    <use xlink:href="#SVGID_1close_"  style="overflow:visible;"/>
+                </clipPath>
+            </g>
+            </svg>
+  </div>
+  <div class="popup__title">
+    Write in Support
+  </div>
+  <div class="popup__subtitle">
+    Lorem ipsum dolor sit amet, consectetuer adipiscing elit.<br>
+    Aenean commodo ligula eget dolor. Aenean massa
+  </div>
+  <div class="popup__content">
+    <form action="">
+      <span class="required">
+        <input class="input" type="text" placeholder="Your name" required>
+      </span>
+      <span class="required">
+        <input class="input" type="email" placeholder="Email" required>
+      </span>
+      <div class="custom__select support__select">
+        <select>
+          <option value="">Choose a problem</option>
+          <option value="">Choose a problem</option>
+          <option value="">Choose a problem</option>
+          <option value="">Choose a problem</option>
+          <option value="">Choose a problem</option>
+          <option value="">Choose a problem</option>
+          <option value="">Choose a problem</option>
+          <option value="">Choose a problem</option>
+          <option value="">Choose a problem</option>
+          <option value="">Choose a problem</option>
+          <option value="">Choose a problem</option>
+          <option value="">Choose a problem</option>
+        </select>
+      </div>
+      <textarea class="textarea" name="" id="" cols="30" rows="10" placeholder="Message..."></textarea>
+
+      <input type="submit" value="Send Message" class="btn btn__submit">
+    </form>
+  </div>
+</div>
+<div class="overlay"></div>
+<script src="assets/js/scipts.js"></script>
+<script>
+  //popup
+  let createFormButtons = document.getElementsByClassName('btn__create-form');
+  let createFormPopup = document.getElementById('popup_create_form');
+  for( i = 0; i < createFormButtons.length; i++){
+    createFormButtons[i].onclick = function () {
+      createFormPopup.classList.add('show-popup');
+      overlay[0].classList.add('show-popup')
+    }
+  }
+
+  let supportButtons = document.getElementsByClassName('navbar__link_support');
+  let supprotPopup = document.getElementById('popup_support');
+
+
+  let popups = document.getElementsByClassName('popup');
+  let overlay = document.getElementsByClassName('overlay');
+  let closeButton = document.getElementsByClassName('popup__close');
+
+  for( i = 0; i < supportButtons.length; i++){
+    supportButtons[i].onclick = function () {
+      supprotPopup.classList.add('show-popup');
+      overlay[0].classList.add('show-popup')
+    }
+  }
+
+  for(cb = 0; cb < closeButton.length; cb++) {
+    closeButton[cb].onclick = function () {
+      for( i = 0; i < popups.length; i++){
+        popups[i].onclick = function () {
+          this.classList.remove('show-popup');
+          overlay[0].classList.remove('show-popup')
+        }
+      }
+    }
+  }
+</script>
 </body>
 </html>

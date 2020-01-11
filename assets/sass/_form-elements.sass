@@ -1,0 +1,251 @@
+::-webkit-input-placeholder  /* Chrome/Opera/Safari */
+  color: #d9dbea
+
+::-moz-placeholder  /* Firefox 19+ */
+  color: #d9dbea
+
+:-ms-input-placeholder  /* IE 10+ */
+  color: #d9dbea
+
+:-moz-placeholder  /* Firefox 18- */
+  color: #d9dbea
+
+// input styles from uiKit
+.input-default
+  position: relative
+  width: 100%
+  margin-top: 10px
+  padding: 15px
+  border: 2px solid transparent
+  outline: none
+  border-radius: $border-radius
+  font-size: 14px
+  @include transition
+
+  &_light
+    background-color: #f9faff
+    border-color: #dedfeb
+    color: #50525e
+    @include placeholder
+      color: #50525e
+
+    &:hover
+      border-color: #cfd2de
+
+    &:focus
+      background-color: #fff
+      border-color: #bcbfce
+
+  &_dark
+    background-color: #3d3e4f
+    border-color: #3d3e4f
+    color: #fff
+
+    &:hover
+      background-color: #454658
+      border-color: #454658
+
+    &:focus
+      background-color: #4c4d60
+      border-color: #4c4d60
+
+// end input styles from uiKit
+
+// select
+.custom__select
+  position: relative
+
+  select
+    display: none
+
+.select-selected
+  background-color: #fff
+
+
+/* Style the arrow inside the select element: */
+.select-selected:after
+  position: absolute
+  content: ""
+  top: 22px
+  right: 15px
+  width: 0
+  height: 0
+  border: 6px solid transparent
+  border-color: #50525e transparent transparent transparent
+
+
+/* Point the arrow upwards when the select box is open (active): */
+.select-selected.select-arrow-active:after
+  border-color: transparent transparent #50525e transparent
+  top: 16px
+
+
+/* style the items (options), including the selected item: */
+.select-selected
+  width: 100%
+  padding: 15px
+  font-size: 14px
+  color: #50525e
+  border: 2px solid #dedfeb
+  border-radius: $border-radius
+  cursor: pointer
+
+.select-items
+  background-color: $white
+  box-shadow: 0px 13px 30px 0px rgba(0,0,0,0.55)
+
+  div
+    padding: 15px
+    background-color: $white
+    font-size: 14px
+    cursor: pointer
+
+
+/* Style items (options): */
+.select-items
+  position: absolute
+  padding: 10px
+  top: 100%
+  left: 0
+  right: 0
+  z-index: 99
+
+
+/* Hide the items when the select box is closed: */
+.select-hide
+  display: none
+
+
+.select-items div:hover, .same-as-selected
+  background-color: #f3f4f8
+  border-radius: $border-radius
+// end select
+
+// checkbox
+.custom-checkbox
+  position: absolute // take it out of document flow
+  opacity: 0 // hide it
+
+  & + label 
+    position: relative
+    cursor: pointer
+    padding-left: 31px
+    color: #50525e
+
+  // Box.
+  & + label:before 
+    content: ''
+    position: absolute
+    top: 1px
+    left: 0px
+    width: 16px
+    height: 16px
+    background: #f9faff
+    border: 2px solid #dedfeb
+    border-radius: 3px
+
+  // Box checked
+  &:checked + label
+    color: #fe544b
+
+  &:checked + label:before
+    border-color: #fe544b
+
+  // Checkmark. Could be replaced with an image
+  &:checked + label:after 
+    content: ''
+    position: absolute
+    left: 6px
+    top: 7px
+    background: #fe544b
+    width: 4px
+    height: 4px
+
+
+// end checkbox
+
+.input,
+.textarea
+  position: relative
+  background-color: #444962
+  margin-bottom: 10px
+  padding: 15px
+  border-radius: $border-radius
+  font-size: 14px
+  color: #fff
+  border: none
+  outline: none
+
+.textarea
+  width: 100%
+  resize: none
+
+.required
+  position: relative
+
+  &:after
+    content: ''
+    position: absolute
+    width: 7px
+    height: 8px
+    top: -3px
+    right: 20px
+    background-image: url("../images/star_input.png")
+    background-repeat: no-repeat
+    background-position: 0 0
+    background-size: contain
+
+.popup_create-form
+  .input
+    width: 100%
+
+  .textarea
+    height: 100px
+
+  .required
+    position: relative
+
+    &:after
+      content: ''
+      top: 10px
+      right: 15px
+
+.popup_support
+  .input
+    width: 48.5%
+    margin-right: 5px
+
+    &:nth-child(2)
+      margin-right: 0
+      margin-left: 5px
+
+  .textarea
+    height: 130px
+
+
+.support__select
+  margin-top: 0
+  margin-bottom: 10px
+
+  .select-selected
+    width: auto
+    background-color: #3c4158
+    border-color: #444962
+    color: #d9dbea
+
+  .select-items
+    max-height: 190px
+    background-color: #3f435b
+    box-shadow: none
+    border-radius: $border-radius
+    overflow-y: scroll
+
+    div
+      background-color: #3f435b
+      color: #9b9ca4
+      padding: 5px
+
+      &:hover
+        background-color: #373b51
+        color: #fff
+

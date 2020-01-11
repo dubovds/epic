@@ -10,10 +10,9 @@
 
   &__link
     padding: 10px 0
-    font-family: $font-title
-    font-size: 14px
-    font-weight: 700
     color: $color-link-btn
+    @include font-title
+      font-size: 14px
     @include transition
 
     &:hover
@@ -38,14 +37,27 @@
       transform: rotate(90deg)
       @include transition
 
+    &_editor
+      background-color: #484c62
+
+  &__back-to-list
+    &_editor
+      margin-left: 20px
+
+      .top-panel__link
+        &:hover
+          color: #fff
+
+          svg
+            fill: #fff
+
   &__title-block
     text-align: center
 
   &__title
     color: #484c62
-    font-size: 16px
-    font-family: $font-title
-    font-weight: 700
+    @include font-title
+      font-size: 16px
 
   &__subtitle
     font-size: 12px

@@ -14,9 +14,8 @@
     position: relative
     padding: 20px 20px 20px 40px
     color: $color-link-btn
-    font-size: 14px
-    font-family: $font-title
-    font-weight: 700
+    @include font-title
+      font-size: 14px
     @include transition
 
     &:after

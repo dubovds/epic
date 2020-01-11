@@ -1,0 +1,54 @@
+.switch 
+  display: inline-block
+  height: 26px
+  position: relative
+  width: 46px
+
+  & input
+    display: none
+
+  &__container
+    display: flex
+    align-items: center
+    margin-right: 40px
+
+  &__text
+    padding-left: 15px
+    @include font-title
+      font-size: 14px
+    color: #697176
+
+.slider 
+  background-color: #ccc
+  bottom: 0
+  cursor: pointer
+  left: 0
+  position: absolute
+  right: 0
+  top: 0
+  @include transition
+
+  &:before
+    background-color: #fff
+    content: ""
+    width: 22px
+    height: 22px
+    bottom: 2px
+    left: 2px
+    position: absolute
+    transition: .4s
+
+input:checked + .slider 
+  background-color: #fe544b
+
+
+input:checked + .slider:before 
+  transform: translateX(20px)
+
+
+.slider.round 
+  border-radius: 34px
+
+
+.slider.round:before 
+  border-radius: 50%

@@ -3,9 +3,11 @@
   justify-content: space-between
   background-color: #393d56
   align-items: center
-  font-family: $font-title
-  font-weight: 500
-  font-size: 14px
+  @include font-title-500
+    font-size: 14px
+
+  &_editor
+    padding-right: 22px
 
   //@media (max-width: 1123px)
     font-size: 13px

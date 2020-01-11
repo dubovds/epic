@@ -1,0 +1,84 @@
+.constructor
+
+  &__row
+    display: flex
+
+  &__component
+    position: relative
+    width: 100%
+    margin-bottom: 5px
+    padding: 15px 20px
+    border: 2px solid transparent
+    cursor: pointer
+
+    &:hover
+      border-color: #e9ebec
+      border-radius: $border-radius
+
+    &:after
+      content: ''
+      position: absolute
+      background-image: url("../images/more_component.svg")
+      background-repeat: no-repeat
+      background-position: 0 0
+      width: 18px
+      height: 4px
+      top: 15px
+      right: 15px
+
+  &__component-title
+    margin-bottom: 10px
+    color: #393d56
+    @include font-title
+      font-size: 12px
+    text-transform: uppercase
+
+  &__component-description
+    margin-top: 10px
+    font-size: 14px
+    color: #a4a5ab
+
+  &__add-component
+    margin-top: 30px
+    padding: 14px
+    text-align: center
+    color: #fe544b
+    @include font-title
+      font-size: 14px
+    border: 2px dashed #e0e1e3
+    cursor: pointer
+    @include transition
+
+    span
+      position: relative
+
+      &:before
+        content: ''
+        position: absolute
+        background-image: url("../images/add-component.svg")
+        background-repeat: no-repeat
+        background-position: 0 0
+        width: 18px
+        height: 18px
+        left: -27px
+
+    &:hover
+      border-color: #fe544b
+
+  .custom__select
+    margin-top: 20px
+
+  &__checkbox-container
+    margin-bottom: 10px
+
+  .custom-checkbox
+
+    & + label
+      font-weight: 500
+      font-size: 14px
+
+      &:before
+        top: 0
+
+    &:checked + label:after
+      top: 6px

@@ -4,6 +4,9 @@
   cursor: pointer
   @include transition
 
+  &_full-width
+    width: 100%
+
   &__create-form
     background-color: #484c62
     color: #b4bad9
@@ -30,6 +33,35 @@
 
       svg
         fill: #fff
+
+  &__menu-editor
+    background-color: #484c62
+    color: #b4bad9
+    padding: 9px 18px
+
+    svg
+      width: 18px
+      position: absolute
+      left: 9px
+      fill: #b4bad9
+      @include transition
+
+      @include third-query
+        left: 6px
+
+    &:hover
+      color: #ffffff
+
+      svg
+        fill: #fff
+
+  &__publish-form
+    background-color: #89b659
+    color: #fff
+    padding: 9px 18px
+
+    &:hover
+      background-color: #92d050
 
   &__editor
     background-color: #484c62
@@ -71,9 +103,8 @@
     display: none
     background-color: #c2de9e
     padding: 5px 10px
-    font-family: $font-title
-    font-weight: 700
-    font-size: 12px
+    @include font-title
+      font-size: 12px
     color: #668e32
 
   &__payment
@@ -82,9 +113,8 @@
     margin-right: 25px
     padding: 5px 5px 4px 25px
     top: -5px
-    font-family: $font-title
-    font-weight: 700
-    font-size: 12px
+    @include font-title
+      font-size: 12px
     color: #668e32
 
     &:before
@@ -131,9 +161,8 @@
     margin: 0 6px 0 0
     background-color: #edeff5
     color: $color-link-btn
-    font-family: $font-title
-    font-weight: 500
-    font-size: 14px
+    @include font-title-500
+      font-size: 14px
 
     & svg
       fill: #9699ab
@@ -202,6 +231,32 @@
     @include first-query
       width: 145px
 
+  &__submit
+    background-color: #fe544b
+    border: none
+    color: #fff
+    padding: 14px 22px
+    @include transition
+
+    &:hover
+      background-color: #ff6d65
+
+  &__open-editor
+    background-color: #9699ab
+    color: #fff
+    padding: 9px 18px
+    @include font-title
+      font-size: 14px
+
+    &:hover
+      background-color: #bcbfce
+
+  &__constructor
+    background-color: #393d56
+    padding: 14px 30px
+    @include font-title
+      font-size: 14px
+    color: #fff
 
 _:-ms-fullscreen, :root .btn__create-form svg
    top: 0
