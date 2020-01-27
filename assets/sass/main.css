@@ -397,6 +397,12 @@ body {
 .btn__submit:hover {
   background-color: #ff6d65;
 }
+.btn__submit_green {
+  background-color: #89b659;
+}
+.btn__submit_green:hover {
+  background-color: #92d050;
+}
 .btn__open-editor {
   background-color: #9699ab;
   color: #fff;
@@ -1201,9 +1207,9 @@ _:-ms-fullscreen, :root .submission__message {
 }
 .popup__title {
   color: #fff;
-  color-font-family: "IBM Plex Sans", sans-serif;
-  color-font-weight: 500;
-  color-font-size: 24px;
+  font-family: "IBM Plex Sans", sans-serif;
+  font-weight: 500;
+  font-size: 24px;
 }
 .popup__subtitle {
   margin-top: 10px;
@@ -1925,6 +1931,22 @@ _:-ms-fullscreen, :root .submission__message {
 }
 .popup_support .textarea {
   height: 130px;
+}
+
+.popup_edit-form .required {
+  position: relative;
+}
+.popup_edit-form .required:after {
+  content: "";
+  top: 10px;
+  right: 15px;
+}
+.popup_edit-form .input {
+  width: 100%;
+}
+.popup_edit-form .btn {
+  width: 100%;
+  margin-bottom: 15px;
 }
 
 .support__select {
