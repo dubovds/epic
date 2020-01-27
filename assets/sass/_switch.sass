@@ -12,11 +12,22 @@
     align-items: center
     margin-right: 40px
 
+    &_action:after
+      content: ''
+      border-bottom: 1px solid #f0f0f0
+      position: absolute
+      width: 97%
+      bottom: 0
+
   &__text
     padding-left: 15px
     @include font-title
       font-size: 14px
     color: #697176
+
+  &__text-email
+    color: #fe544b
+    text-decoration: underline
 
 .slider 
   background-color: #ccc

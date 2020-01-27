@@ -1978,12 +1978,23 @@ _:-ms-fullscreen, :root .submission__message {
   align-items: center;
   margin-right: 40px;
 }
+.switch__container_action:after {
+  content: "";
+  border-bottom: 1px solid #f0f0f0;
+  position: absolute;
+  width: 97%;
+  bottom: 0;
+}
 .switch__text {
   padding-left: 15px;
   font-family: "IBM Plex Sans", sans-serif;
   font-weight: 700;
   font-size: 14px;
   color: #697176;
+}
+.switch__text-email {
+  color: #fe544b;
+  text-decoration: underline;
 }
 
 .slider {
