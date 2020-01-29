@@ -1,0 +1,54 @@
+.ql-toolbar.ql-snow
+  border: none
+
+.ql-container.ql-snow
+  background-color: #f9faff
+  border: 2px solid #dedfeb
+  color: #50525e
+  border-radius: $border-radius
+
+.ql-toolbar.ql-snow + .ql-container.ql-snow
+  border-top: 2px solid #dedfeb
+
+.ql-snow .ql-picker.ql-header
+  background-color: #ebecf1
+  width: 150px
+  height: 30px
+  border-radius: $border-radius
+
+.ql-toolbar.ql-snow .ql-picker-label
+  padding: 4px 10px
+
+.ql-snow.ql-toolbar button,
+.ql-snow .ql-toolbar button
+  width: 30px
+  height: 30px
+  background-color: #ebecf1
+  padding: 6px
+  margin: 0 0.5px
+  color: #9699ab
+
+  &:first-child
+    border-bottom-left-radius: $border-radius
+    border-top-left-radius: $border-radius
+
+  &:last-child
+    border-bottom-right-radius: $border-radius
+    border-top-right-radius: $border-radius
+
+  &:hover
+    background-color: #e1e2e8
+    color: #3d3e4f
+
+    .ql-stroke
+      stroke: #3d3e4f
+
+.ql-snow .ql-stroke
+  stroke: #9699ab
+
+.ql-snow.ql-toolbar button.ql-active
+  background-color: #e1e2e8
+  color: #3d3e4f
+
+.ql-snow.ql-toolbar button.ql-active .ql-stroke
+  stroke: #3d3e4f
