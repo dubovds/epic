@@ -1,0 +1,94 @@
+.slide-part
+    width: 100%
+    @include transition
+
+.components-panel
+    position: absolute
+    width: 572px
+    height: 100%
+    background-color: #323341
+    top: 59px
+    right: -700px
+    visibility: hidden
+    opacity: 0
+    @include transition
+
+    padding: 20px 40px
+
+    &__section
+        color: #9699ab
+        @include font-title
+            font-size: 12px
+        padding: 20px 0
+        border-bottom: 1px solid rgba(205, 207, 222, .1)
+
+    &__section-title
+        text-transform: uppercase
+        margin-bottom: 18px
+
+    &__item-box
+        display: flex
+        flex-wrap: wrap
+
+    &__item
+        position: relative
+        width: 120px
+        height: 80px
+        background-color: #3b3d50
+        border-radius: $border-radius
+        padding: 10px
+        margin: 2px
+        cursor: pointer
+        text-align: center
+        @include transition
+
+        &:nth-child(4n+1)
+            margin-left: 0
+
+        &:nth-child(4n+4)
+            margin-right: 0
+
+        &_half
+            width: 49.3%
+
+        &:hover
+            background-color: #3e4255
+            color: #fff
+
+        &_unactive
+            background-color: #353645
+
+            &:hover
+                background-color: #353645
+                color: #9699ab
+
+            .components-panel__item-text,
+            .components-panel__item-icon
+                opacity: 0.4
+
+        &_upgrade
+            background-image: url("../images/upgrade-red.svg")
+            background-repeat: no-repeat
+            background-position: 10px 10px
+            background-size: 14px
+            color: #FE544B
+
+            &:hover
+                color: #FE544B
+
+    &__item-icon
+        margin-top: 10px
+        margin-bottom: 8px
+        img
+            display: inline-block
+            height: 24px
+
+
+.components-panel-open
+    .slide-part
+        width: 800px
+
+    .components-panel
+        right: 0
+        visibility: visible
+        opacity: 1

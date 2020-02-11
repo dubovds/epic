@@ -16,7 +16,7 @@
     <div class="sidebar-wix">
 
     </div>
-    <div class="wrapper wrapper_white">
+    <div class="wrapper wrapper_white wrapper_hidden">
         <header class="header header_editor">
             <div class="header__item">
                 <div class="header__logo"></div>
@@ -63,7 +63,7 @@
                             <span>Form Fields</span></a>
                     </li>
                     <li class="navbar__item">
-                        <a href="settings.html" class="navbar__link navbar__link_icon navbar__link_editor">
+                        <a href="actions.html" class="navbar__link navbar__link_icon navbar__link_editor">
                             <svg version="1.1" id="Layer_1_actions" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
                                  viewBox="0 0 255 315" style="enable-background:new 0 0 255 315;" xml:space="preserve">
 <g>
@@ -132,38 +132,40 @@
                 </ul>
             </div>
         </header>
-        <div class="top-panel-editor">
-            <div class="top-panel-editor__item top-panel-editor__item_flex">
-                <div class="switch__container">
-                    <label class="switch" for="checkbox-title">
-                        <input type="checkbox" id="checkbox-title" checked/>
-                        <div class="slider round"></div>
-                    </label>
-                    <span class="switch__text">Show Title</span>
-                </div>
-                <div class="switch__container">
-                    <label class="switch" for="checkbox-description">
-                        <input type="checkbox" id="checkbox-description" checked/>
-                        <div class="slider round"></div>
-                    </label>
-                    <span class="switch__text">Show Description</span>
-                </div>
-            </div>
-            <div class="top-panel-editor__item">
-                <div class="block-view__container">
-                    <div class="block-view__item choose">
-                        <div class="block-view__view-one"></div>
+
+        <div class="slide-part">
+            <div class="top-panel-editor">
+                <div class="top-panel-editor__item top-panel-editor__item_flex">
+                    <div class="switch__container">
+                        <label class="switch" for="checkbox-title">
+                            <input type="checkbox" id="checkbox-title" checked/>
+                            <div class="slider round"></div>
+                        </label>
+                        <span class="switch__text">Show Title</span>
                     </div>
-                    <div class="block-view__item">
-                        <div class="block-view__column"></div>
+                    <div class="switch__container">
+                        <label class="switch" for="checkbox-description">
+                            <input type="checkbox" id="checkbox-description" checked/>
+                            <div class="slider round"></div>
+                        </label>
+                        <span class="switch__text">Show Description</span>
                     </div>
                 </div>
-            </div>
-            <div class="top-panel-editor__item">
-                <div class="top-panel__links-block">
-                    <a href="#" class="btn btn__block-link btn__block-link_duplicate">
-                        <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-                             viewBox="0 0 18 18" style="enable-background:new 0 0 18 18;" xml:space="preserve">
+                <div class="top-panel-editor__item">
+                    <div class="block-view__container">
+                        <div class="block-view__item choose">
+                            <div class="block-view__view-one"></div>
+                        </div>
+                        <div class="block-view__item">
+                            <div class="block-view__column"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="top-panel-editor__item">
+                    <div class="top-panel__links-block">
+                        <a href="#" class="btn btn__block-link btn__block-link_duplicate">
+                            <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                                 viewBox="0 0 18 18" style="enable-background:new 0 0 18 18;" xml:space="preserve">
 <g>
 	<defs>
 		<path id="SVGID_1duplicate_"   d="M3.2,16.1H9c0.7,0,1.3-0.6,1.3-1.3h1.9c0,1.8-1.4,3.2-3.2,3.2H3.2C1.4,18,0,16.6,0,14.8V9
@@ -179,10 +181,10 @@
 	</clipPath>
 </g>
 </svg>
-                    </a>
-                    <a href="#" class="btn btn__block-link btn__block-link_edit">
-                        <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-                             viewBox="0 0 18 18" style="enable-background:new 0 0 18 18;" xml:space="preserve">
+                        </a>
+                        <a href="#" class="btn btn__block-link btn__block-link_edit">
+                            <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                                 viewBox="0 0 18 18" style="enable-background:new 0 0 18 18;" xml:space="preserve">
 <g>
 	<path  d="M14.5,14.4L14.5,14.4c0,0.9-0.7,1.7-1.7,1.7H3.6c-0.9,0-1.7-0.8-1.7-1.7V5.2c0-0.9,0.8-1.7,1.7-1.7h5.3l1.8-1.8H3.6
 		c-1.9,0-3.5,1.6-3.5,3.5v9.2c0,1.9,1.6,3.5,3.5,3.5h9.2c1.9,0,3.5-1.6,3.5-3.5V7.3l-1.8,1.8V14.4z"/>
@@ -190,11 +192,11 @@
     <path  d="M5.8,12.9l2.5-0.8c0.5-0.2,1-0.5,1.4-0.8l-3-3C6.3,8.8,6.1,9.2,5.9,9.7l-0.8,2.5C4.9,12.6,5.3,13.1,5.8,12.9z"/>
 </g>
 </svg>
-                    </a>
-                    <a href="#" class="btn btn__block-link btn__block-link_trash">
-                        <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-                             width="408.483px" height="408.483px" viewBox="0 0 408.483 408.483" style="enable-background:new 0 0 408.483 408.483;"
-                             xml:space="preserve">
+                        </a>
+                        <a href="#" class="btn btn__block-link btn__block-link_trash">
+                            <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                                 width="408.483px" height="408.483px" viewBox="0 0 408.483 408.483" style="enable-background:new 0 0 408.483 408.483;"
+                                 xml:space="preserve">
 <g>
 	<g>
 		<path  d="M87.748,388.784c0.461,11.01,9.521,19.699,20.539,19.699h191.911c11.018,0,20.078-8.689,20.539-19.699l13.705-289.316
@@ -208,124 +210,147 @@
 	</g>
 </g>
 </svg>
-                    </a>
-                    <a href="#" class="btn btn__open-editor">Open Wix Editor</a>
-                </div>
+                        </a>
+                        <a href="#" class="btn btn__open-editor">Open Wix Editor</a>
+                    </div>
 
+                </div>
             </div>
-        </div>
 
-        <div class="editor-wrapper">
-            <section class="constructor">
+            <div class="editor-wrapper">
+                <section class="constructor">
 
-                <div class="constructor__component">
-                    <div class="top-title">
-                        Put the form title here
-                    </div>
-                    <div class="top-title__subtitle">
-                        Here is the place of the form description
-                    </div>
-                </div>
-                <div class="constructor__component">
-                    <div class="constructor__component-title">
-                        name title
-                    </div>
-                    <input type="text" class="input-default input-default_light" placeholder="Your Name">
-                    <div class="constructor__component-description">
-                        Input description
-                    </div>
-                </div>
-                <div class="constructor__component">
-                    <div class="constructor__component-title">
-                        email title
-                    </div>
-                    <input type="text" class="input-default input-default_light" placeholder="Your Email">
-                    <div class="constructor__component-description">
-                        Input description
-                    </div>
-                </div>
-                <div class="constructor__row">
                     <div class="constructor__component">
-                        <div class="constructor__component-title">
-                            checkbox title
+                        <div class="top-title">
+                            Put the form title here
                         </div>
-                        <div class="constructor__checkbox-container">
-                            <input class="custom-checkbox" id="styled-checkbox-1" type="checkbox" value="value1">
-                            <label for="styled-checkbox-1">Default Label A</label>
-                        </div>
-                        <div class="constructor__checkbox-container">
-                            <input class="custom-checkbox" id="styled-checkbox-2" type="checkbox" value="value1">
-                            <label for="styled-checkbox-2">Default Label B</label>
-                        </div>
-                        <div class="constructor__checkbox-container">
-                            <input class="custom-checkbox" id="styled-checkbox-3" type="checkbox" value="value1">
-                            <label for="styled-checkbox-3">Default Label C</label>
-                        </div>
-                        <div class="constructor__component-description">
-                            Checkbox list description
+                        <div class="top-title__subtitle">
+                            Here is the place of the form description
                         </div>
                     </div>
                     <div class="constructor__component">
                         <div class="constructor__component-title">
-                            checkbox title
+                            name title
                         </div>
-                        <div class="constructor__checkbox-container">
-                            <input class="custom-checkbox" id="styled-checkbox-4" type="checkbox" value="value4">
-                            <label for="styled-checkbox-4">Default Label A</label>
-                        </div>
-                        <div class="constructor__checkbox-container">
-                            <input class="custom-checkbox" id="styled-checkbox-5" type="checkbox" value="value5">
-                            <label for="styled-checkbox-5">Default Label B</label>
-                        </div>
-                        <div class="constructor__checkbox-container">
-                            <input class="custom-checkbox" id="styled-checkbox-6" type="checkbox" value="value6">
-                            <label for="styled-checkbox-6">Default Label C</label>
-                        </div>
-                        <div class="constructor__component-description">
-                            Checkbox list description
-                        </div>
-                    </div>
-                </div>
-                <div class="constructor__component">
-                    <div id="editor">
-                        <p>Hello World!</p>
-                        <p>Some initial <strong>bold</strong> text</p>
-                        <p><br></p>
-                    </div>
-                </div>
-                <div class="constructor__row">
-                    <div class="constructor__component">
-                        <div class="constructor__component-title">
-                            address 1 title
-                        </div>
-                        <input type="text" class="input-default input-default_light" placeholder="Address 1">
+                        <input type="text" class="input-default input-default_light" placeholder="Your Name">
                         <div class="constructor__component-description">
                             Input description
                         </div>
                     </div>
                     <div class="constructor__component">
                         <div class="constructor__component-title">
-                            address 2 title
+                            email title
                         </div>
-                        <input type="text" class="input-default input-default_light" placeholder="Address 2">
+                        <input type="text" class="input-default input-default_light" placeholder="Your Email">
                         <div class="constructor__component-description">
                             Input description
                         </div>
                     </div>
-                </div>
-                <div class="constructor__row">
-                    <div class="constructor__component">
-                        <div class="constructor__component-title">
-                            country title
+                    <div class="constructor__row">
+                        <div class="constructor__component">
+                            <div class="constructor__component-title">
+                                checkbox title
+                            </div>
+                            <div class="constructor__checkbox-container">
+                                <input class="custom-checkbox" id="styled-checkbox-1" type="checkbox" value="value1">
+                                <label for="styled-checkbox-1">Default Label A</label>
+                            </div>
+                            <div class="constructor__checkbox-container">
+                                <input class="custom-checkbox" id="styled-checkbox-2" type="checkbox" value="value1">
+                                <label for="styled-checkbox-2">Default Label B</label>
+                            </div>
+                            <div class="constructor__checkbox-container">
+                                <input class="custom-checkbox" id="styled-checkbox-3" type="checkbox" value="value1">
+                                <label for="styled-checkbox-3">Default Label C</label>
+                            </div>
+                            <div class="constructor__component-description">
+                                Checkbox list description
+                            </div>
                         </div>
-                        <input type="text" class="input-default input-default_light" placeholder="Country">
-                        <div class="constructor__component-description">
-                            Input description
+                        <div class="constructor__component">
+                            <div class="constructor__component-title">
+                                checkbox title
+                            </div>
+                            <div class="constructor__checkbox-container">
+                                <input class="custom-checkbox" id="styled-checkbox-4" type="checkbox" value="value4">
+                                <label for="styled-checkbox-4">Default Label A</label>
+                            </div>
+                            <div class="constructor__checkbox-container">
+                                <input class="custom-checkbox" id="styled-checkbox-5" type="checkbox" value="value5">
+                                <label for="styled-checkbox-5">Default Label B</label>
+                            </div>
+                            <div class="constructor__checkbox-container">
+                                <input class="custom-checkbox" id="styled-checkbox-6" type="checkbox" value="value6">
+                                <label for="styled-checkbox-6">Default Label C</label>
+                            </div>
+                            <div class="constructor__component-description">
+                                Checkbox list description
+                            </div>
+                        </div>
+                    </div>
+                    <div class="constructor__component">
+                        <div id="editor">
+                            <p>Hello World!</p>
+                            <p>Some initial <strong>bold</strong> text</p>
+                            <p><br></p>
+                        </div>
+                    </div>
+                    <div class="constructor__row">
+                        <div class="constructor__component">
+                            <div class="constructor__component-title">
+                                address 1 title
+                            </div>
+                            <input type="text" class="input-default input-default_light" placeholder="Address 1">
+                            <div class="constructor__component-description">
+                                Input description
+                            </div>
+                        </div>
+                        <div class="constructor__component">
+                            <div class="constructor__component-title">
+                                address 2 title
+                            </div>
+                            <input type="text" class="input-default input-default_light" placeholder="Address 2">
+                            <div class="constructor__component-description">
+                                Input description
+                            </div>
+                        </div>
+                    </div>
+                    <div class="constructor__row">
+                        <div class="constructor__component">
+                            <div class="constructor__component-title">
+                                country title
+                            </div>
+                            <input type="text" class="input-default input-default_light" placeholder="Country">
+                            <div class="constructor__component-description">
+                                Input description
+                            </div>
+                        </div>
+                        <div class="constructor__component">
+                            <div class="constructor__component-title">
+                                state/region title
+                            </div>
+                            <div class="custom__select">
+                                <select>
+                                    <option timeZoneId="1" gmtAdjustment="GMT-12:00" useDaylightTime="0" value="-12">(GMT-12:00) International Date Line West</option>
+                                    <option timeZoneId="2" gmtAdjustment="GMT-11:00" useDaylightTime="0" value="-11">(GMT-11:00) Midway Island, Samoa</option>
+                                    <option timeZoneId="3" gmtAdjustment="GMT-10:00" useDaylightTime="0" value="-10">(GMT-10:00) Hawaii</option>
+                                    <option timeZoneId="4" gmtAdjustment="GMT-09:00" useDaylightTime="1" value="-9">(GMT-09:00) Alaska</option>
+                                    <option timeZoneId="5" gmtAdjustment="GMT-08:00" useDaylightTime="1" value="-8">(GMT-08:00) Pacific Time (US & Canada)</option>
+                                    <option timeZoneId="6" gmtAdjustment="GMT-08:00" useDaylightTime="1" value="-8">(GMT-08:00) Tijuana, Baja California</option>
+                                    <option timeZoneId="7" gmtAdjustment="GMT-07:00" useDaylightTime="0" value="-7">(GMT-07:00) Arizona</option>
+                                    <option timeZoneId="8" gmtAdjustment="GMT-07:00" useDaylightTime="1" value="-7">(GMT-07:00) Chihuahua, La Paz, Mazatlan</option>
+                                    <option timeZoneId="9" gmtAdjustment="GMT-07:00" useDaylightTime="1" value="-7">(GMT-07:00) Mountain Time (US & Canada)</option>
+
+                                </select>
+                            </div>
+                            <div class="constructor__component-description">
+                                Input description
+                            </div>
                         </div>
                     </div>
                     <div class="constructor__component">
                         <div class="constructor__component-title">
-                            state/region title
+                            dropbox title
                         </div>
                         <div class="custom__select">
                             <select>
@@ -338,86 +363,365 @@
                                 <option timeZoneId="7" gmtAdjustment="GMT-07:00" useDaylightTime="0" value="-7">(GMT-07:00) Arizona</option>
                                 <option timeZoneId="8" gmtAdjustment="GMT-07:00" useDaylightTime="1" value="-7">(GMT-07:00) Chihuahua, La Paz, Mazatlan</option>
                                 <option timeZoneId="9" gmtAdjustment="GMT-07:00" useDaylightTime="1" value="-7">(GMT-07:00) Mountain Time (US & Canada)</option>
-
+                                <option timeZoneId="10" gmtAdjustment="GMT-06:00" useDaylightTime="0" value="-6">(GMT-06:00) Central America</option>
+                                <option timeZoneId="11" gmtAdjustment="GMT-06:00" useDaylightTime="1" value="-6">(GMT-06:00) Central Time (US & Canada)</option>
+                                <option timeZoneId="12" gmtAdjustment="GMT-06:00" useDaylightTime="1" value="-6">(GMT-06:00) Guadalajara, Mexico City, Monterrey</option>
+                                <option timeZoneId="13" gmtAdjustment="GMT-06:00" useDaylightTime="0" value="-6">(GMT-06:00) Saskatchewan</option>
+                                <option timeZoneId="14" gmtAdjustment="GMT-05:00" useDaylightTime="0" value="-5">(GMT-05:00) Bogota, Lima, Quito, Rio Branco</option>
+                                <option timeZoneId="15" gmtAdjustment="GMT-05:00" useDaylightTime="1" value="-5">(GMT-05:00) Eastern Time (US & Canada)</option>
+                                <option timeZoneId="16" gmtAdjustment="GMT-05:00" useDaylightTime="1" value="-5">(GMT-05:00) Indiana (East)</option>
+                                <option timeZoneId="17" gmtAdjustment="GMT-04:00" useDaylightTime="1" value="-4">(GMT-04:00) Atlantic Time (Canada)</option>
+                                <option timeZoneId="18" gmtAdjustment="GMT-04:00" useDaylightTime="0" value="-4">(GMT-04:00) Caracas, La Paz</option>
+                                <option timeZoneId="19" gmtAdjustment="GMT-04:00" useDaylightTime="0" value="-4">(GMT-04:00) Manaus</option>
                             </select>
                         </div>
                         <div class="constructor__component-description">
-                            Input description
+                            Dropdown List description
+                        </div>
+                    </div>
+                    <div class="constructor__component">
+                        <input type="submit" class="btn btn__constructor" value="Submit Button">
+                    </div>
+                    <div class="constructor__add-component">
+                        <span>Add Component</span>
+                    </div>
+                </section>
+
+
+            </div>
+            <footer class="footer">
+                <div class="footer__item">
+                    <div class="footer__text">
+                        Proudly delivered to you by Epic Form Builder
+                    </div>
+                </div>
+                <div class="footer__item">
+                    <ul class="navbar-footer">
+                        <li class="navbar-footer__item">
+                            <a href="#" class="navbar-footer__link">
+                                Privacy policy
+                            </a>
+                        </li>
+                        <li class="navbar-footer__item">
+                            <a href="#" class="navbar-footer__link">
+                                Cookie Statement
+                            </a>
+                        </li>
+                        <li class="navbar-footer__item">
+                            <a href="#" class="navbar-footer__link">
+                                Terms Of Use
+                            </a>
+                        </li>
+                        <li class="navbar-footer__item">
+                            <a href="#" class="navbar-footer__link">
+                                Acceptable Use Policy
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </footer>
+        </div>
+
+        <div class="components-panel">
+            <div class="components-panel__section">
+                <div class="components-panel__title">
+                    Components
+                </div>
+            </div>
+            <div class="components-panel__section">
+                <div class="components-panel__section-title">
+                    layout
+                </div>
+                <div class="components-panel__item-box">
+                    <div class="components-panel__item">
+                        <div class="components-panel__item-icon">
+                            <img src="./assets/images/commponents/title.svg" alt="">
+                        </div>
+                        <div class="components-panel__item-text">
+                            Title
+                        </div>
+                    </div>
+                    <div class="components-panel__item">
+                        <div class="components-panel__item-icon">
+                            <img src="./assets/images/commponents/subtitle.svg" alt="">
+                        </div>
+                        <div class="components-panel__item-text">
+                            Subtitle
+                        </div>
+                    </div>
+                    <div class="components-panel__item">
+                        <div class="components-panel__item-icon">
+                            <img src="./assets/images/commponents/blank.svg" alt="">
+                        </div>
+                        <div class="components-panel__item-text">
+                            Blank
+                        </div>
+                    </div>
+                    <div class="components-panel__item components-panel__item_upgrade">
+                        <div class="components-panel__item-icon">
+                            <img src="./assets/images/commponents/imageGallery.svg" alt="">
+                        </div>
+                        <div class="components-panel__item-text">
+                            Image Gallery
+                        </div>
+                    </div>
+                    <div class="components-panel__item">
+                        <div class="components-panel__item-icon">
+                            <img src="./assets/images/commponents/downloadLink.svg" alt="">
+                        </div>
+                        <div class="components-panel__item-text">
+                            Download Link
+                        </div>
+                    </div>
+                    <div class="components-panel__item">
+                        <div class="components-panel__item-icon">
+                            <img src="./assets/images/commponents/freeText.svg" alt="">
+                        </div>
+                        <div class="components-panel__item-text">
+                            Free Text
                         </div>
                     </div>
                 </div>
-                <div class="constructor__component">
-                    <div class="constructor__component-title">
-                        dropbox title
+            </div>
+            <div class="components-panel__section">
+                <div class="components-panel__section-title">
+                    input
+                </div>
+                <div class="components-panel__item-box">
+                    <div class="components-panel__item">
+                        <div class="components-panel__item-icon">
+                            <img src="./assets/images/commponents/text.svg" alt="">
+                        </div>
+                        <div class="components-panel__item-text">
+                            Text
+                        </div>
                     </div>
-                    <div class="custom__select">
-                        <select>
-                            <option timeZoneId="1" gmtAdjustment="GMT-12:00" useDaylightTime="0" value="-12">(GMT-12:00) International Date Line West</option>
-                            <option timeZoneId="2" gmtAdjustment="GMT-11:00" useDaylightTime="0" value="-11">(GMT-11:00) Midway Island, Samoa</option>
-                            <option timeZoneId="3" gmtAdjustment="GMT-10:00" useDaylightTime="0" value="-10">(GMT-10:00) Hawaii</option>
-                            <option timeZoneId="4" gmtAdjustment="GMT-09:00" useDaylightTime="1" value="-9">(GMT-09:00) Alaska</option>
-                            <option timeZoneId="5" gmtAdjustment="GMT-08:00" useDaylightTime="1" value="-8">(GMT-08:00) Pacific Time (US & Canada)</option>
-                            <option timeZoneId="6" gmtAdjustment="GMT-08:00" useDaylightTime="1" value="-8">(GMT-08:00) Tijuana, Baja California</option>
-                            <option timeZoneId="7" gmtAdjustment="GMT-07:00" useDaylightTime="0" value="-7">(GMT-07:00) Arizona</option>
-                            <option timeZoneId="8" gmtAdjustment="GMT-07:00" useDaylightTime="1" value="-7">(GMT-07:00) Chihuahua, La Paz, Mazatlan</option>
-                            <option timeZoneId="9" gmtAdjustment="GMT-07:00" useDaylightTime="1" value="-7">(GMT-07:00) Mountain Time (US & Canada)</option>
-                            <option timeZoneId="10" gmtAdjustment="GMT-06:00" useDaylightTime="0" value="-6">(GMT-06:00) Central America</option>
-                            <option timeZoneId="11" gmtAdjustment="GMT-06:00" useDaylightTime="1" value="-6">(GMT-06:00) Central Time (US & Canada)</option>
-                            <option timeZoneId="12" gmtAdjustment="GMT-06:00" useDaylightTime="1" value="-6">(GMT-06:00) Guadalajara, Mexico City, Monterrey</option>
-                            <option timeZoneId="13" gmtAdjustment="GMT-06:00" useDaylightTime="0" value="-6">(GMT-06:00) Saskatchewan</option>
-                            <option timeZoneId="14" gmtAdjustment="GMT-05:00" useDaylightTime="0" value="-5">(GMT-05:00) Bogota, Lima, Quito, Rio Branco</option>
-                            <option timeZoneId="15" gmtAdjustment="GMT-05:00" useDaylightTime="1" value="-5">(GMT-05:00) Eastern Time (US & Canada)</option>
-                            <option timeZoneId="16" gmtAdjustment="GMT-05:00" useDaylightTime="1" value="-5">(GMT-05:00) Indiana (East)</option>
-                            <option timeZoneId="17" gmtAdjustment="GMT-04:00" useDaylightTime="1" value="-4">(GMT-04:00) Atlantic Time (Canada)</option>
-                            <option timeZoneId="18" gmtAdjustment="GMT-04:00" useDaylightTime="0" value="-4">(GMT-04:00) Caracas, La Paz</option>
-                            <option timeZoneId="19" gmtAdjustment="GMT-04:00" useDaylightTime="0" value="-4">(GMT-04:00) Manaus</option>
-                        </select>
+                    <div class="components-panel__item">
+                        <div class="components-panel__item-icon">
+                            <img src="./assets/images/commponents/email.svg" alt="">
+                        </div>
+                        <div class="components-panel__item-text">
+                            Email
+                        </div>
                     </div>
-                    <div class="constructor__component-description">
-                        Dropdown List description
+                    <div class="components-panel__item">
+                        <div class="components-panel__item-icon">
+                            <img src="./assets/images/commponents/phone.svg" alt="">
+                        </div>
+                        <div class="components-panel__item-text">
+                            Phone
+                        </div>
+                    </div>
+                    <div class="components-panel__item">
+                        <div class="components-panel__item-icon">
+                            <img src="./assets/images/commponents/paragraph.svg" alt="">
+                        </div>
+                        <div class="components-panel__item-text">
+                            Paragraph
+                        </div>
+                    </div>
+                    <div class="components-panel__item components-panel__item_upgrade">
+                        <div class="components-panel__item-icon">
+                            <img src="./assets/images/commponents/fileUpload.svg" alt="">
+                        </div>
+                        <div class="components-panel__item-text">
+                            File Upload
+                        </div>
+                    </div>
+                    <div class="components-panel__item components-panel__item_upgrade">
+                        <div class="components-panel__item-icon">
+                            <img src="./assets/images/commponents/signaturePad.svg" alt="">
+                        </div>
+                        <div class="components-panel__item-text">
+                            SignaturePad
+                        </div>
+                    </div>
+                    <div class="components-panel__item">
+                        <div class="components-panel__item-icon">
+                            <img src="./assets/images/commponents/chackbox.svg" alt="">
+                        </div>
+                        <div class="components-panel__item-text">
+                            Checkbox
+                        </div>
+                    </div>
+                    <div class="components-panel__item">
+                        <div class="components-panel__item-icon">
+                            <img src="./assets/images/commponents/radio.svg" alt="">
+                        </div>
+                        <div class="components-panel__item-text">
+                            Radio
+                        </div>
+                    </div>
+                    <div class="components-panel__item">
+                        <div class="components-panel__item-icon">
+                            <img src="./assets/images/commponents/selector.svg" alt="">
+                        </div>
+                        <div class="components-panel__item-text">
+                            Select
+                        </div>
+                    </div>
+                    <div class="components-panel__item">
+                        <div class="components-panel__item-icon">
+                            <img src="./assets/images/commponents/confirmation.svg" alt="">
+                        </div>
+                        <div class="components-panel__item-text">
+                            Confirmation
+                        </div>
+                    </div>
+                    <div class="components-panel__item components-panel__item_unactive">
+                        <div class="components-panel__item-icon">
+                            <img src="./assets/images/commponents/submitButton.svg" alt="">
+                        </div>
+                        <div class="components-panel__item-text">
+                            Submit Button
+                        </div>
                     </div>
                 </div>
-                <div class="constructor__component">
-                    <input type="submit" class="btn btn__constructor" value="Submit Button">
+            </div>
+            <div class="components-panel__section">
+                <div class="components-panel__section-title">
+                    address
                 </div>
-                <div class="constructor__add-component">
-                    <span>Add Component</span>
+                <div class="components-panel__item-box">
+                    <div class="components-panel__item">
+                        <div class="components-panel__item-icon">
+                            <img src="./assets/images/commponents/firstName.svg" alt="">
+                        </div>
+                        <div class="components-panel__item-text">
+                            First Name
+                        </div>
+                    </div>
+                    <div class="components-panel__item">
+                        <div class="components-panel__item-icon">
+                            <img src="./assets/images/commponents/lastName.svg" alt="">
+                        </div>
+                        <div class="components-panel__item-text">
+                            Last Name
+                        </div>
+                    </div>
+                    <div class="components-panel__item">
+                        <div class="components-panel__item-icon">
+                            <img src="./assets/images/commponents/address1.svg" alt="">
+                        </div>
+                        <div class="components-panel__item-text">
+                            Address 1
+                        </div>
+                    </div>
+                    <div class="components-panel__item">
+                        <div class="components-panel__item-icon">
+                            <img src="./assets/images/commponents/address2.svg" alt="">
+                        </div>
+                        <div class="components-panel__item-text">
+                            Address 2
+                        </div>
+                    </div>
+                    <div class="components-panel__item">
+                        <div class="components-panel__item-icon">
+                            <img src="./assets/images/commponents/country.svg" alt="">
+                        </div>
+                        <div class="components-panel__item-text">
+                            Country
+                        </div>
+                    </div>
+                    <div class="components-panel__item">
+                        <div class="components-panel__item-icon">
+                            <img src="./assets/images/commponents/state.svg" alt="">
+                        </div>
+                        <div class="components-panel__item-text">
+                            State/Region
+                        </div>
+                    </div>
+                    <div class="components-panel__item">
+                        <div class="components-panel__item-icon">
+                            <img src="./assets/images/commponents/city.svg" alt="">
+                        </div>
+                        <div class="components-panel__item-text">
+                            City
+                        </div>
+                    </div>
+                    <div class="components-panel__item">
+                        <div class="components-panel__item-icon">
+                            <img src="./assets/images/commponents/zip.svg" alt="">
+                        </div>
+                        <div class="components-panel__item-text">
+                            Zip/Post Code
+                        </div>
+                    </div>
                 </div>
-            </section>
-
+            </div>
+            <div class="components-panel__section">
+                <div class="components-panel__section-title">
+                    E-commerce product cards
+                </div>
+                <div class="components-panel__item-box">
+                    <div class="components-panel__item components-panel__item_upgrade">
+<!--                        <div class="components-panel__item-upgrade"></div>-->
+                        <div class="components-panel__item-icon">
+                            <img src="./assets/images/commponents/product.svg" alt="">
+                        </div>
+                        <div class="components-panel__item-text">
+                            Product
+                        </div>
+                    </div>
+                    <div class="components-panel__item components-panel__item_upgrade">
+                        <div class="components-panel__item-icon">
+                            <img src="./assets/images/commponents/pricing.svg" alt="">
+                        </div>
+                        <div class="components-panel__item-text">
+                            Pricing
+                        </div>
+                    </div>
+                    <div class="components-panel__item components-panel__item_upgrade">
+                        <div class="components-panel__item-icon">
+                            <img src="./assets/images/commponents/registration.svg" alt="">
+                        </div>
+                        <div class="components-panel__item-text">
+                            Registration
+                        </div>
+                    </div>
+                    <div class="components-panel__item components-panel__item_unactive">
+                        <div class="components-panel__item-icon">
+                            <img src="./assets/images/commponents/donation.svg" alt="">
+                        </div>
+                        <div class="components-panel__item-text">
+                            Donation
+                        </div>
+                    </div>
+                    <div class="components-panel__item">
+                        <div class="components-panel__item-icon">
+                            <img src="./assets/images/commponents/subscribtion.svg" alt="">
+                        </div>
+                        <div class="components-panel__item-text">
+                            Subscription
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="components-panel__section">
+                <div class="components-panel__section-title">
+                    advanced
+                </div>
+                <div class="components-panel__item-box">
+                    <div class="components-panel__item components-panel__item_half components-panel__item_unactive">
+                        <div class="components-panel__item-icon">
+                            <img src="./assets/images/commponents/multistep.png" alt="">
+                        </div>
+                        <div class="components-panel__item-text">
+                            Multistep Form
+                        </div>
+                    </div>
+                    <div class="components-panel__item components-panel__item_half components-panel__item_unactive">
+                        <div class="components-panel__item-icon">
+                            <img src="./assets/images/commponents/paper.png" alt="">
+                        </div>
+                        <div class="components-panel__item-text">
+                            Paper Form Download
+                        </div>
+                    </div>
+                </div>
+            </div>
 
         </div>
-        <footer class="footer">
-            <div class="footer__item">
-                <div class="footer__text">
-                    Proudly delivered to you by Epic Form Builder
-                </div>
-            </div>
-            <div class="footer__item">
-                <ul class="navbar-footer">
-                    <li class="navbar-footer__item">
-                        <a href="#" class="navbar-footer__link">
-                            Privacy policy
-                        </a>
-                    </li>
-                    <li class="navbar-footer__item">
-                        <a href="#" class="navbar-footer__link">
-                            Cookie Statement
-                        </a>
-                    </li>
-                    <li class="navbar-footer__item">
-                        <a href="#" class="navbar-footer__link">
-                            Terms Of Use
-                        </a>
-                    </li>
-                    <li class="navbar-footer__item">
-                        <a href="#" class="navbar-footer__link">
-                            Acceptable Use Policy
-                        </a>
-                    </li>
-                </ul>
-            </div>
-        </footer>
 
     </div>
 </div>
@@ -576,7 +880,7 @@
     editFormButtons[i].onclick = function () {
         editFormPopup.classList.add('show-popup');
         overlay[0].classList.add('show-popup')
-    }
+    };
 
     let popups = document.getElementsByClassName('popup');
     let overlay = document.getElementsByClassName('overlay');
@@ -599,6 +903,11 @@
             }
         }
     }
+
+    let addComponent = document.querySelector('.constructor__add-component');
+    addComponent.addEventListener('click', function(){
+        document.querySelector('.wrapper').classList.add('components-panel-open')
+    })
 </script>
 </body>
 </html>
