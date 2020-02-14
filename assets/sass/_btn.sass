@@ -263,5 +263,29 @@
       font-size: 14px
     color: #fff
 
+  &__close-panel
+    background-color: #3b3d50
+    padding: 10px 12px
+    @include transition
+    cursor: pointer
+
+    @include large-screen
+      display: none
+
+    svg
+      position: relative
+      width: 13px
+      height: 13px
+      top: 2px
+      fill: #9699ab
+      @include transition
+
+    &:hover
+      background-color: #3e4255
+
+      svg
+        fill: #fff
+
+
 _:-ms-fullscreen, :root .btn__create-form svg
    top: 0

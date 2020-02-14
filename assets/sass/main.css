@@ -127,6 +127,10 @@ body {
   background-color: #e1e2e8;
 }
 
+.flex {
+  display: flex;
+}
+
 .btn {
   position: relative;
   border-radius: 5px;
@@ -424,6 +428,39 @@ body {
   font-weight: 700;
   font-size: 14px;
   color: #fff;
+}
+.btn__close-panel {
+  background-color: #3b3d50;
+  padding: 10px 12px;
+  -webkit-transition: all 300ms ease-in-out;
+  -moz-transition: all 300ms ease-in-out;
+  -o-transition: all 300ms ease-in-out;
+  -ms-transition: all 300ms ease-in-out;
+  transition: all 300ms ease-in-out;
+  cursor: pointer;
+}
+@media (min-width: 1920px) {
+  .btn__close-panel {
+    display: none;
+  }
+}
+.btn__close-panel svg {
+  position: relative;
+  width: 13px;
+  height: 13px;
+  top: 2px;
+  fill: #9699ab;
+  -webkit-transition: all 300ms ease-in-out;
+  -moz-transition: all 300ms ease-in-out;
+  -o-transition: all 300ms ease-in-out;
+  -ms-transition: all 300ms ease-in-out;
+  transition: all 300ms ease-in-out;
+}
+.btn__close-panel:hover {
+  background-color: #3e4255;
+}
+.btn__close-panel:hover svg {
+  fill: #fff;
 }
 
 _:-ms-fullscreen, :root .btn__create-form svg {
@@ -2117,6 +2154,11 @@ input:checked + .slider:before {
   -ms-transition: all 300ms ease-in-out;
   transition: all 300ms ease-in-out;
 }
+@media (min-width: 1920px) {
+  .constructor__add-component {
+    display: none;
+  }
+}
 .constructor__add-component span {
   position: relative;
 }
@@ -2233,6 +2275,11 @@ input:checked + .slider:before {
   -ms-transition: all 300ms ease-in-out;
   transition: all 300ms ease-in-out;
 }
+@media (min-width: 1920px) {
+  .slide-part {
+    width: calc(100% - 572px);
+  }
+}
 
 .components-panel {
   position: absolute;
@@ -2248,7 +2295,20 @@ input:checked + .slider:before {
   -o-transition: all 300ms ease-in-out;
   -ms-transition: all 300ms ease-in-out;
   transition: all 300ms ease-in-out;
-  padding: 20px 40px;
+  padding: 0px 40px 20px;
+}
+@media (min-width: 1920px) {
+  .components-panel {
+    visibility: visible;
+    opacity: 1;
+    right: 0;
+  }
+}
+.components-panel__title {
+  margin-left: 15px;
+  font-family: "IBM Plex Sans", sans-serif;
+  font-weight: 700;
+  font-size: 24px;
 }
 .components-panel__section {
   color: #9699ab;
@@ -2257,6 +2317,11 @@ input:checked + .slider:before {
   font-size: 12px;
   padding: 20px 0;
   border-bottom: 1px solid rgba(205, 207, 222, 0.1);
+}
+.components-panel__section_flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 .components-panel__section-title {
   text-transform: uppercase;
@@ -2290,6 +2355,12 @@ input:checked + .slider:before {
 }
 .components-panel__item_half {
   width: 49.3%;
+}
+.components-panel__item_half:nth-child(odd) {
+  margin-left: 0;
+}
+.components-panel__item_half:nth-child(even) {
+  margin-right: 0;
 }
 .components-panel__item:hover {
   background-color: #3e4255;

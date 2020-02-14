@@ -15,7 +15,7 @@
     <div class="sidebar-wix">
 
     </div>
-    <div class="wrapper wrapper_white">
+    <div class="wrapper wrapper_white wrapper_hidden components-panel-open">
         <header class="header header_editor">
             <div class="header__item">
                 <div class="header__logo"></div>
@@ -132,78 +132,192 @@
             </div>
         </header>
 
+        <div class="slide-part">
+            <div class="editor-wrapper">
+                <section class="constructor">
+                    <div class="constructor__component">
+                        <div class="switch__container switch__container_action">
+                            <label class="switch" for="email-notification">
+                                <input type="checkbox" id="email-notification" checked/>
+                                <div class="slider round"></div>
+                            </label>
+                            <span class="switch__text">Email notification to &nbsp;</span>
+                            <span class="switch__text-email">alfonso.cassin@hotmail.com</span>
+                        </div>
+                    </div>
 
-        <div class="editor-wrapper">
-            <section class="constructor">
-                <div class="constructor__component">
-                    <div class="switch__container switch__container_action">
-                        <label class="switch" for="email-notification">
-                            <input type="checkbox" id="email-notification" checked/>
-                            <div class="slider round"></div>
-                        </label>
-                        <span class="switch__text">Email notification to &nbsp;</span>
-                        <span class="switch__text-email">alfonso.cassin@hotmail.com</span>
+                    <div class="constructor__component">
+                        <div class="switch__container switch__container_action">
+                            <label class="switch" for="email-confirmation">
+                                <input type="checkbox" id="email-confirmation"/>
+                                <div class="slider round"></div>
+                            </label>
+                            <span class="switch__text">Email Confirmation</span>
+                        </div>
+                    </div>
+
+                    <div class="constructor__component">
+                        <div class="switch__container switch__container_action">
+                            <label class="switch" for="paypal-express">
+                                <input type="checkbox" id="paypal-express" checked/>
+                                <div class="slider round"></div>
+                            </label>
+                            <span class="switch__text">PayPal Express</span>
+                        </div>
+                    </div>
+
+                    <div class="constructor__add-component">
+                        <span>Add Action</span>
+                    </div>
+                </section>
+
+
+            </div>
+            <footer class="footer">
+                <div class="footer__item">
+                    <div class="footer__text">
+                        Proudly delivered to you by Epic Form Builder
                     </div>
                 </div>
+                <div class="footer__item">
+                    <ul class="navbar-footer">
+                        <li class="navbar-footer__item">
+                            <a href="#" class="navbar-footer__link">
+                                Privacy policy
+                            </a>
+                        </li>
+                        <li class="navbar-footer__item">
+                            <a href="#" class="navbar-footer__link">
+                                Cookie Statement
+                            </a>
+                        </li>
+                        <li class="navbar-footer__item">
+                            <a href="#" class="navbar-footer__link">
+                                Terms Of Use
+                            </a>
+                        </li>
+                        <li class="navbar-footer__item">
+                            <a href="#" class="navbar-footer__link">
+                                Acceptable Use Policy
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </footer>
+        </div>
 
-                <div class="constructor__component">
-                    <div class="switch__container switch__container_action">
-                        <label class="switch" for="email-confirmation">
-                            <input type="checkbox" id="email-confirmation"/>
-                            <div class="slider round"></div>
-                        </label>
-                        <span class="switch__text">Email Confirmation</span>
+        <div class="components-panel">
+            <div class="components-panel__section components-panel__section_flex">
+                <div class="flex">
+                    <span class="btn btn__close-panel">
+                        <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                             viewBox="0 0 18 18" style="enable-background:new 0 0 18 18;" xml:space="preserve">
+<g>
+	<defs>
+		<path id="SVGID_1_" d="M17.5,2.9L11.4,9l6.1,6.1c0.7,0.7,0.7,1.8,0,2.4c-0.7,0.7-1.8,0.7-2.4,0L9,11.4l-6.1,6.1
+			c-0.7,0.7-1.8,0.7-2.4,0s-0.7-1.8,0-2.4L6.6,9L0.5,2.9c-0.7-0.7-0.7-1.8,0-2.4c0.7-0.7,1.8-0.7,2.4,0L9,6.6l6.1-6.1
+			c0.7-0.7,1.8-0.7,2.4,0C18.2,1.2,18.2,2.3,17.5,2.9z"/>
+	</defs>
+    <use xlink:href="#SVGID_1_"  style="overflow:visible;"/>
+    <clipPath id="SVGID_2_">
+		<use xlink:href="#SVGID_1_"  style="overflow:visible;"/>
+	</clipPath>
+</g>
+</svg>
+                    </span>
+                    <div class="components-panel__title">
+                        Actions
                     </div>
                 </div>
+                <div class="components-panel__btn">
+                    <a href="#" class="btn btn__upgrade">Upgrade</a>
+                </div>
+            </div>
 
-                <div class="constructor__component">
-                    <div class="switch__container switch__container_action">
-                        <label class="switch" for="paypal-express">
-                            <input type="checkbox" id="paypal-express" checked/>
-                            <div class="slider round"></div>
-                        </label>
-                        <span class="switch__text">PayPal Express</span>
+            <div class="components-panel__section">
+                <div class="components-panel__section-title">
+                    EMAIL
+                </div>
+                <div class="components-panel__item-box">
+                    <div class="components-panel__item">
+                        <div class="components-panel__item-icon">
+                            <img src="./assets/images/commponents/subscribtion.svg" alt="">
+                        </div>
+                        <div class="components-panel__item-text">
+                            Notification
+                        </div>
+                    </div>
+                    <div class="components-panel__item">
+                        <div class="components-panel__item-icon">
+                            <img src="./assets/images/commponents/confirmation.svg" alt="">
+                        </div>
+                        <div class="components-panel__item-text">
+                            Confirmation
+                        </div>
+                    </div>
+                    <div class="components-panel__item">
+                        <div class="components-panel__item-icon">
+                            <img src="./assets/images/commponents/product.svg" alt="">
+                        </div>
+                        <div class="components-panel__item-text">
+                            Autoresponder
+                        </div>
                     </div>
                 </div>
-
-                <div class="constructor__add-component">
-                    <span>Add Action</span>
+            </div>
+            <div class="components-panel__section">
+                <div class="components-panel__section-title">
+                    Payment gatewey
                 </div>
-            </section>
+                <div class="components-panel__item-box">
+                    <div class="components-panel__item components-panel__item_half">
+                        <div class="components-panel__item-icon">
+                            <img src="./assets/images/commponents/multistep.png" alt="">
+                        </div>
+                        
+                    </div>
+                    <div class="components-panel__item components-panel__item_half">
+                        <div class="components-panel__item-icon">
+                            <img src="./assets/images/commponents/paper.png" alt="">
+                        </div>
 
+                    </div>
+                </div>
+            </div>
+            <div class="components-panel__section">
+                <div class="components-panel__section-title">
+                    Integrations
+                </div>
+                <div class="components-panel__item-box">
+                    <div class="components-panel__item components-panel__item_half">
+                        <div class="components-panel__item-icon">
+                            <img src="./assets/images/commponents/multistep.png" alt="">
+                        </div>
+
+                    </div>
+                    <div class="components-panel__item components-panel__item_half">
+                        <div class="components-panel__item-icon">
+                            <img src="./assets/images/commponents/paper.png" alt="">
+                        </div>
+
+                    </div>
+                    <div class="components-panel__item components-panel__item_half">
+                        <div class="components-panel__item-icon">
+                            <img src="./assets/images/commponents/multistep.png" alt="">
+                        </div>
+
+                    </div>
+                    <div class="components-panel__item components-panel__item_half">
+                        <div class="components-panel__item-icon">
+                            <img src="./assets/images/commponents/paper.png" alt="">
+                        </div>
+
+                    </div>
+                </div>
+            </div>
 
         </div>
-        <footer class="footer">
-            <div class="footer__item">
-                <div class="footer__text">
-                    Proudly delivered to you by Epic Form Builder
-                </div>
-            </div>
-            <div class="footer__item">
-                <ul class="navbar-footer">
-                    <li class="navbar-footer__item">
-                        <a href="#" class="navbar-footer__link">
-                            Privacy policy
-                        </a>
-                    </li>
-                    <li class="navbar-footer__item">
-                        <a href="#" class="navbar-footer__link">
-                            Cookie Statement
-                        </a>
-                    </li>
-                    <li class="navbar-footer__item">
-                        <a href="#" class="navbar-footer__link">
-                            Terms Of Use
-                        </a>
-                    </li>
-                    <li class="navbar-footer__item">
-                        <a href="#" class="navbar-footer__link">
-                            Acceptable Use Policy
-                        </a>
-                    </li>
-                </ul>
-            </div>
-        </footer>
+
 
     </div>
 </div>
@@ -336,6 +450,16 @@
             }
         }
     }
+
+    let addComponent = document.querySelector('.constructor__add-component');
+    addComponent.addEventListener('click', function(){
+        document.querySelector('.wrapper').classList.add('components-panel-open')
+    })
+
+    let closePanelComponent = document.querySelector('.btn__close-panel');
+    closePanelComponent.addEventListener('click', function(){
+        document.querySelector('.wrapper').classList.remove('components-panel-open')
+    })
 </script>
 </body>
 </html>
