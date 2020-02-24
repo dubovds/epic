@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 360 150" style="enable-background:new 0 0 360 150;" xml:space="preserve">
+<style type="text/css">
+	.st0{clip-path:url(#SVGID_2_); fill: #9699ab;}
+	.st1{clip-path:url(#SVGID_4_); fill: #9699ab;}
+	.st2{clip-path:url(#SVGID_6_); fill: #9699ab;}
+	.st3{clip-path:url(#SVGID_8_); fill: #9699ab;}
+	.st4{clip-path:url(#SVGID_10_); fill: #9699ab;}
+	.st5{clip-path:url(#SVGID_12_); fill: #9699ab;}
+	.st6{clip-path:url(#SVGID_14_); fill: #9699ab;}
+</style>
+<g>
+	<defs>
+		<path id="SVGID_1_"  d="M310.6,67.9c0-11.3,6.9-16,13.2-16c6.1,0,12.6,4.7,12.6,16H310.6z M360,77.4c0-25.6-12.4-45.8-36.1-45.8
+			c-23.8,0-38.2,20.2-38.2,45.6c0,30.1,17,45.3,41.4,45.3c11.9,0,20.9-2.7,27.7-6.5V96c-6.8,3.4-14.6,5.5-24.5,5.5
+			c-9.7,0-18.3-3.4-19.4-15.2h48.9C359.8,85,360,79.8,360,77.4z"/>
+	</defs>
+	<use xlink:href="#SVGID_1_"  style="overflow:visible;fill-rule:evenodd;clip-rule:evenodd;"/>
+	<clipPath id="SVGID_2_">
+		<use xlink:href="#SVGID_1_"  style="overflow:visible;"/>
+	</clipPath>
+	<rect x="280.7" y="26.6" class="st0" width="84.3" height="100.9"/>
+</g>
+<g>
+	<defs>
+		<path id="SVGID_3_" class="color" d="M241.1,100.5c-5.9,0-9.4-2.1-11.8-4.7l-0.1-37.1c2.6-2.9,6.2-4.9,11.9-4.9c9.1,0,15.4,10.2,15.4,23.3
+			C256.5,90.5,250.3,100.5,241.1,100.5z M247.1,31.6c-9.8,0-16.1,4.6-19.6,7.8l-1.3-6.2h-22v116.6l25-5.3l0.1-28.3
+			c3.6,2.6,8.9,6.3,17.7,6.3c17.9,0,34.2-14.4,34.2-46.1C281.1,47.4,264.6,31.6,247.1,31.6z"/>
+	</defs>
+	<use xlink:href="#SVGID_3_"  style="overflow:visible;fill-rule:evenodd;clip-rule:evenodd;"/>
+	<clipPath id="SVGID_4_">
+		<use xlink:href="#SVGID_3_"  style="overflow:visible;"/>
+	</clipPath>
+	<rect x="199.2" y="26.6" class="st1" width="87" height="128.2"/>
+</g>
+<g>
+	<defs>
+		<polygon id="SVGID_5_" points="169.8,25.7 194.9,20.3 194.9,0 169.8,5.3 		"/>
+	</defs>
+	<use xlink:href="#SVGID_5_"  style="overflow:visible;fill-rule:evenodd;clip-rule:evenodd;"/>
+	<clipPath id="SVGID_6_">
+		<use xlink:href="#SVGID_5_"  style="overflow:visible;"/>
+	</clipPath>
+	<rect x="164.8" y="-5" class="st2" width="35.1" height="35.7"/>
+</g>
+<g>
+	<defs>
+		<rect id="SVGID_7_" x="169.8" y="33.3" width="25.1" height="87.5"/>
+	</defs>
+	<use xlink:href="#SVGID_7_"  style="overflow:visible;"/>
+	<clipPath id="SVGID_8_">
+		<use xlink:href="#SVGID_7_"  style="overflow:visible;"/>
+	</clipPath>
+	<rect x="164.8" y="28.3" class="st3" width="35.1" height="97.5"/>
+</g>
+<g>
+	<defs>
+		<path id="SVGID_9_" d="M142.9,40.7l-1.6-7.4h-21.6v87.5h25V61.5c5.9-7.7,15.9-6.3,19-5.2v-23C160.5,32.1,148.8,29.9,142.9,40.7z"
+			/>
+	</defs>
+	<use xlink:href="#SVGID_9_"  style="overflow:visible;fill-rule:evenodd;clip-rule:evenodd;"/>
+	<clipPath id="SVGID_10_">
+		<use xlink:href="#SVGID_9_"  style="overflow:visible;"/>
+	</clipPath>
+	<rect x="114.7" y="27.3" class="st4" width="54" height="98.5"/>
+</g>
+<g>
+	<defs>
+		<path id="SVGID_11_" d="M92.9,11.6l-24.4,5.2l-0.1,80.1c0,14.8,11.1,25.7,25.9,25.7c8.2,0,14.2-1.5,17.5-3.3V99
+			c-3.2,1.3-19,5.9-19-8.9V54.6h19V33.3h-19L92.9,11.6z"/>
+	</defs>
+	<use xlink:href="#SVGID_11_"  style="overflow:visible;fill-rule:evenodd;clip-rule:evenodd;"/>
+	<clipPath id="SVGID_12_">
+		<use xlink:href="#SVGID_11_"  style="overflow:visible;"/>
+	</clipPath>
+	<rect x="63.4" y="6.6" class="st5" width="53.4" height="121"/>
+</g>
+<g>
+	<defs>
+		<path id="SVGID_13_"  d="M25.3,58.7c0-3.9,3.2-5.4,8.5-5.4c7.6,0,17.2,2.3,24.8,6.4V36.2c-8.3-3.3-16.5-4.6-24.8-4.6
+			C13.5,31.6,0,42.2,0,59.9C0,87.5,38,83.1,38,95c0,4.6-4,6.1-9.6,6.1c-8.3,0-18.9-3.4-27.3-8v23.8c9.3,4,18.7,5.7,27.3,5.7
+			c20.8,0,35.1-10.3,35.1-28.2C63.4,64.6,25.3,69.9,25.3,58.7z"/>
+	</defs>
+	<use xlink:href="#SVGID_13_"  style="overflow:visible;fill-rule:evenodd;clip-rule:evenodd;"/>
+	<clipPath id="SVGID_14_">
+		<use xlink:href="#SVGID_13_"  style="overflow:visible;"/>
+	</clipPath>
+	<rect x="-5" y="26.6" class="st6" width="73.5" height="101"/>
+</g>
+</svg>

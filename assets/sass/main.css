@@ -2362,6 +2362,9 @@ input:checked + .slider:before {
 .components-panel__item_half:nth-child(even) {
   margin-right: 0;
 }
+.components-panel__item_icon {
+  height: 66px;
+}
 .components-panel__item:hover {
   background-color: #3e4255;
   color: #fff;
