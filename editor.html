@@ -16,7 +16,7 @@
     <div class="sidebar-wix">
 
     </div>
-    <div class="wrapper wrapper_white wrapper_hidden">
+    <div class="wrapper wrapper_white wrapper_hidden component-settings-panel-open">
         <header class="header header_editor">
             <div class="header__item">
                 <div class="header__logo"></div>
@@ -247,7 +247,7 @@
                         </div>
                     </div>
                     <div class="constructor__row">
-                        <div class="constructor__component">
+                        <div class="constructor__component checkbox-click">
                             <div class="constructor__component-title">
                                 checkbox title
                             </div>
@@ -422,9 +422,11 @@
             </footer>
         </div>
 
+
         <div class="components-panel">
-            <div class="components-panel__section components-panel__section_flex">
-                <div class="flex">
+            <div class="components-panel-content">
+                <div class="components-panel__section components-panel__section_flex">
+                    <div class="flex">
                     <span class="btn btn__close-panel">
                         <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
                              viewBox="0 0 18 18" style="enable-background:new 0 0 18 18;" xml:space="preserve">
@@ -441,305 +443,480 @@
 </g>
 </svg>
                     </span>
-                    <div class="components-panel__title">
-                        Components
+                        <div class="components-panel__title">
+                            Components
+                        </div>
+                    </div>
+                    <div class="components-panel__btn">
+                        <a href="#" class="btn btn__upgrade">Upgrade</a>
                     </div>
                 </div>
-                <div class="components-panel__btn">
-                    <a href="#" class="btn btn__upgrade">Upgrade</a>
+                <div class="components-panel__section">
+                    <div class="components-panel__section-title">
+                        layout
+                    </div>
+                    <div class="components-panel__item-box">
+                        <div class="components-panel__item">
+                            <div class="components-panel__item-icon">
+                                <img src="./assets/images/commponents/title.svg" alt="">
+                            </div>
+                            <div class="components-panel__item-text">
+                                Title
+                            </div>
+                        </div>
+                        <div class="components-panel__item">
+                            <div class="components-panel__item-icon">
+                                <img src="./assets/images/commponents/subtitle.svg" alt="">
+                            </div>
+                            <div class="components-panel__item-text">
+                                Subtitle
+                            </div>
+                        </div>
+                        <div class="components-panel__item">
+                            <div class="components-panel__item-icon">
+                                <img src="./assets/images/commponents/blank.svg" alt="">
+                            </div>
+                            <div class="components-panel__item-text">
+                                Blank
+                            </div>
+                        </div>
+                        <div class="components-panel__item components-panel__item_upgrade">
+                            <div class="components-panel__item-icon">
+                                <img src="./assets/images/commponents/imageGallery.svg" alt="">
+                            </div>
+                            <div class="components-panel__item-text">
+                                Image Gallery
+                            </div>
+                        </div>
+                        <div class="components-panel__item">
+                            <div class="components-panel__item-icon">
+                                <img src="./assets/images/commponents/downloadLink.svg" alt="">
+                            </div>
+                            <div class="components-panel__item-text">
+                                Download Link
+                            </div>
+                        </div>
+                        <div class="components-panel__item">
+                            <div class="components-panel__item-icon">
+                                <img src="./assets/images/commponents/freeText.svg" alt="">
+                            </div>
+                            <div class="components-panel__item-text">
+                                Free Text
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="components-panel__section">
+                    <div class="components-panel__section-title">
+                        input
+                    </div>
+                    <div class="components-panel__item-box">
+                        <div class="components-panel__item">
+                            <div class="components-panel__item-icon">
+                                <img src="./assets/images/commponents/text.svg" alt="">
+                            </div>
+                            <div class="components-panel__item-text">
+                                Text
+                            </div>
+                        </div>
+                        <div class="components-panel__item">
+                            <div class="components-panel__item-icon">
+                                <img src="./assets/images/commponents/email.svg" alt="">
+                            </div>
+                            <div class="components-panel__item-text">
+                                Email
+                            </div>
+                        </div>
+                        <div class="components-panel__item">
+                            <div class="components-panel__item-icon">
+                                <img src="./assets/images/commponents/phone.svg" alt="">
+                            </div>
+                            <div class="components-panel__item-text">
+                                Phone
+                            </div>
+                        </div>
+                        <div class="components-panel__item">
+                            <div class="components-panel__item-icon">
+                                <img src="./assets/images/commponents/paragraph.svg" alt="">
+                            </div>
+                            <div class="components-panel__item-text">
+                                Paragraph
+                            </div>
+                        </div>
+                        <div class="components-panel__item components-panel__item_upgrade">
+                            <div class="components-panel__item-icon">
+                                <img src="./assets/images/commponents/fileUpload.svg" alt="">
+                            </div>
+                            <div class="components-panel__item-text">
+                                File Upload
+                            </div>
+                        </div>
+                        <div class="components-panel__item components-panel__item_upgrade">
+                            <div class="components-panel__item-icon">
+                                <img src="./assets/images/commponents/signaturePad.svg" alt="">
+                            </div>
+                            <div class="components-panel__item-text">
+                                SignaturePad
+                            </div>
+                        </div>
+                        <div class="components-panel__item">
+                            <div class="components-panel__item-icon">
+                                <img src="./assets/images/commponents/chackbox.svg" alt="">
+                            </div>
+                            <div class="components-panel__item-text">
+                                Checkbox
+                            </div>
+                        </div>
+                        <div class="components-panel__item">
+                            <div class="components-panel__item-icon">
+                                <img src="./assets/images/commponents/radio.svg" alt="">
+                            </div>
+                            <div class="components-panel__item-text">
+                                Radio
+                            </div>
+                        </div>
+                        <div class="components-panel__item">
+                            <div class="components-panel__item-icon">
+                                <img src="./assets/images/commponents/selector.svg" alt="">
+                            </div>
+                            <div class="components-panel__item-text">
+                                Select
+                            </div>
+                        </div>
+                        <div class="components-panel__item">
+                            <div class="components-panel__item-icon">
+                                <img src="./assets/images/commponents/confirmation.svg" alt="">
+                            </div>
+                            <div class="components-panel__item-text">
+                                Confirmation
+                            </div>
+                        </div>
+                        <div class="components-panel__item components-panel__item_unactive">
+                            <div class="components-panel__item-icon">
+                                <img src="./assets/images/commponents/submitButton.svg" alt="">
+                            </div>
+                            <div class="components-panel__item-text">
+                                Submit Button
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="components-panel__section">
+                    <div class="components-panel__section-title">
+                        address
+                    </div>
+                    <div class="components-panel__item-box">
+                        <div class="components-panel__item">
+                            <div class="components-panel__item-icon">
+                                <img src="./assets/images/commponents/firstName.svg" alt="">
+                            </div>
+                            <div class="components-panel__item-text">
+                                First Name
+                            </div>
+                        </div>
+                        <div class="components-panel__item">
+                            <div class="components-panel__item-icon">
+                                <img src="./assets/images/commponents/lastName.svg" alt="">
+                            </div>
+                            <div class="components-panel__item-text">
+                                Last Name
+                            </div>
+                        </div>
+                        <div class="components-panel__item">
+                            <div class="components-panel__item-icon">
+                                <img src="./assets/images/commponents/address1.svg" alt="">
+                            </div>
+                            <div class="components-panel__item-text">
+                                Address 1
+                            </div>
+                        </div>
+                        <div class="components-panel__item">
+                            <div class="components-panel__item-icon">
+                                <img src="./assets/images/commponents/address2.svg" alt="">
+                            </div>
+                            <div class="components-panel__item-text">
+                                Address 2
+                            </div>
+                        </div>
+                        <div class="components-panel__item">
+                            <div class="components-panel__item-icon">
+                                <img src="./assets/images/commponents/country.svg" alt="">
+                            </div>
+                            <div class="components-panel__item-text">
+                                Country
+                            </div>
+                        </div>
+                        <div class="components-panel__item">
+                            <div class="components-panel__item-icon">
+                                <img src="./assets/images/commponents/state.svg" alt="">
+                            </div>
+                            <div class="components-panel__item-text">
+                                State/Region
+                            </div>
+                        </div>
+                        <div class="components-panel__item">
+                            <div class="components-panel__item-icon">
+                                <img src="./assets/images/commponents/city.svg" alt="">
+                            </div>
+                            <div class="components-panel__item-text">
+                                City
+                            </div>
+                        </div>
+                        <div class="components-panel__item">
+                            <div class="components-panel__item-icon">
+                                <img src="./assets/images/commponents/zip.svg" alt="">
+                            </div>
+                            <div class="components-panel__item-text">
+                                Zip/Post Code
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="components-panel__section">
+                    <div class="components-panel__section-title">
+                        E-commerce product cards
+                    </div>
+                    <div class="components-panel__item-box">
+                        <div class="components-panel__item components-panel__item_upgrade">
+                            <!--                        <div class="components-panel__item-upgrade"></div>-->
+                            <div class="components-panel__item-icon">
+                                <img src="./assets/images/commponents/product.svg" alt="">
+                            </div>
+                            <div class="components-panel__item-text">
+                                Product
+                            </div>
+                        </div>
+                        <div class="components-panel__item components-panel__item_upgrade">
+                            <div class="components-panel__item-icon">
+                                <img src="./assets/images/commponents/pricing.svg" alt="">
+                            </div>
+                            <div class="components-panel__item-text">
+                                Pricing
+                            </div>
+                        </div>
+                        <div class="components-panel__item components-panel__item_upgrade">
+                            <div class="components-panel__item-icon">
+                                <img src="./assets/images/commponents/registration.svg" alt="">
+                            </div>
+                            <div class="components-panel__item-text">
+                                Registration
+                            </div>
+                        </div>
+                        <div class="components-panel__item components-panel__item_unactive">
+                            <div class="components-panel__item-icon">
+                                <img src="./assets/images/commponents/donation.svg" alt="">
+                            </div>
+                            <div class="components-panel__item-text">
+                                Donation
+                            </div>
+                        </div>
+                        <div class="components-panel__item">
+                            <div class="components-panel__item-icon">
+                                <img src="./assets/images/commponents/subscribtion.svg" alt="">
+                            </div>
+                            <div class="components-panel__item-text">
+                                Subscription
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="components-panel__section">
+                    <div class="components-panel__section-title">
+                        advanced
+                    </div>
+                    <div class="components-panel__item-box">
+                        <div class="components-panel__item components-panel__item_half components-panel__item_unactive">
+                            <div class="components-panel__item-icon">
+                                <img src="./assets/images/commponents/multistep.png" alt="">
+                            </div>
+                            <div class="components-panel__item-text">
+                                Multistep Form
+                            </div>
+                        </div>
+                        <div class="components-panel__item components-panel__item_half components-panel__item_unactive">
+                            <div class="components-panel__item-icon">
+                                <img src="./assets/images/commponents/paper.png" alt="">
+                            </div>
+                            <div class="components-panel__item-text">
+                                Paper Form Download
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
-            <div class="components-panel__section">
-                <div class="components-panel__section-title">
-                    layout
-                </div>
-                <div class="components-panel__item-box">
-                    <div class="components-panel__item">
-                        <div class="components-panel__item-icon">
-                            <img src="./assets/images/commponents/title.svg" alt="">
-                        </div>
-                        <div class="components-panel__item-text">
-                            Title
-                        </div>
-                    </div>
-                    <div class="components-panel__item">
-                        <div class="components-panel__item-icon">
-                            <img src="./assets/images/commponents/subtitle.svg" alt="">
-                        </div>
-                        <div class="components-panel__item-text">
-                            Subtitle
-                        </div>
-                    </div>
-                    <div class="components-panel__item">
-                        <div class="components-panel__item-icon">
-                            <img src="./assets/images/commponents/blank.svg" alt="">
-                        </div>
-                        <div class="components-panel__item-text">
-                            Blank
+
+            <div class="components-panel-settings">
+                <div class="components-panel__section components-panel__section_flex">
+                    <div class="flex">
+                    <span class="btn btn__close-panel btn__close-panel_settings">
+                        <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                             viewBox="0 0 18 18" style="enable-background:new 0 0 18 18;" xml:space="preserve">
+<g>
+	<defs>
+		<path id="SVGID_1_" d="M17.5,2.9L11.4,9l6.1,6.1c0.7,0.7,0.7,1.8,0,2.4c-0.7,0.7-1.8,0.7-2.4,0L9,11.4l-6.1,6.1
+			c-0.7,0.7-1.8,0.7-2.4,0s-0.7-1.8,0-2.4L6.6,9L0.5,2.9c-0.7-0.7-0.7-1.8,0-2.4c0.7-0.7,1.8-0.7,2.4,0L9,6.6l6.1-6.1
+			c0.7-0.7,1.8-0.7,2.4,0C18.2,1.2,18.2,2.3,17.5,2.9z"/>
+	</defs>
+    <use xlink:href="#SVGID_1_"  style="overflow:visible;"/>
+    <clipPath id="SVGID_2_">
+		<use xlink:href="#SVGID_1_"  style="overflow:visible;"/>
+	</clipPath>
+</g>
+</svg>
+                    </span>
+                        <div class="components-panel__title">
+                            Radio settings
                         </div>
                     </div>
-                    <div class="components-panel__item components-panel__item_upgrade">
-                        <div class="components-panel__item-icon">
-                            <img src="./assets/images/commponents/imageGallery.svg" alt="">
-                        </div>
-                        <div class="components-panel__item-text">
-                            Image Gallery
-                        </div>
-                    </div>
-                    <div class="components-panel__item">
-                        <div class="components-panel__item-icon">
-                            <img src="./assets/images/commponents/downloadLink.svg" alt="">
-                        </div>
-                        <div class="components-panel__item-text">
-                            Download Link
-                        </div>
-                    </div>
-                    <div class="components-panel__item">
-                        <div class="components-panel__item-icon">
-                            <img src="./assets/images/commponents/freeText.svg" alt="">
-                        </div>
-                        <div class="components-panel__item-text">
-                            Free Text
-                        </div>
+                    <div class="components-panel__btn">
+                        <a href="#" class="btn btn__upgrade">Upgrade</a>
                     </div>
                 </div>
-            </div>
-            <div class="components-panel__section">
-                <div class="components-panel__section-title">
-                    input
-                </div>
-                <div class="components-panel__item-box">
-                    <div class="components-panel__item">
-                        <div class="components-panel__item-icon">
-                            <img src="./assets/images/commponents/text.svg" alt="">
+
+                    <div class="tabs">
+                        <div class="components-panel__section">
+                            <div class="tab">
+                                <input type="checkbox" id="chck1">
+                                <label class="tab-label" for="chck1">general</label>
+                                <div class="tab-content">
+                                    <div class="component-settings__section">
+                                        <div class="component-settings__row-flex">
+                                            <div class="component-settings__title">
+                                                <img src="assets/images/settings/lable.svg" alt="">
+                                                Show Label
+                                            </div>
+                                            <div class="switch__container">
+                                                <label class="switch" for="checkbox-set-3">
+                                                    <input type="checkbox" id="checkbox-set-3" checked/>
+                                                    <div class="slider round"></div>
+                                                </label>
+                                            </div>
+                                        </div>
+                                        <div class="component-settings__row">
+                                            <input type="text" class="input-default input-default_dark" value="Error text">
+                                            <div class="component-settings__description">
+                                                Field label is a explanatory title for the content you expect your users to enter.
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="component-settings__section">
+                                        <div class="component-settings__row-flex">
+                                            <div class="component-settings__title">
+                                                <img src="assets/images/settings/options.svg" alt="">
+                                                Options
+                                            </div>
+                                            <div class="switch__container">
+                                                <label class="switch" for="checkbox-set-4">
+                                                    <input type="checkbox" id="checkbox-set-4" checked/>
+                                                    <div class="slider round"></div>
+                                                </label>
+                                            </div>
+                                        </div>
+                                        <div class="component-settings__row-flex">
+                                            <div class="component-settings__description component-settings__description_14">
+                                                Display list items inline
+                                            </div>
+                                            <div class="switch__container">
+                                                <label class="switch" for="checkbox-set-3">
+                                                    <input type="checkbox" id="checkbox-set-3"/>
+                                                    <div class="slider round"></div>
+                                                </label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="component-settings__section">
+                                        <div class="component-settings__row-flex">
+                                            <div class="component-settings__title">
+                                                <img src="assets/images/settings/hint.svg" alt="">
+                                                Show Hint
+                                            </div>
+                                            <div class="switch__container">
+                                                <label class="switch" for="checkbox-set-5">
+                                                    <input type="checkbox" id="checkbox-set-5" checked/>
+                                                    <div class="slider round"></div>
+                                                </label>
+                                            </div>
+                                        </div>
+                                        <div class="component-settings__row">
+                                            <input type="text" class="input-default input-default_dark" value="Error text">
+                                            <div class="component-settings__description">
+                                                Enter hint text belou the input.
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
-                        <div class="components-panel__item-text">
-                            Text
+                        <div class="components-panel__section">
+                            <div class="tab">
+                                <input type="checkbox" id="chck2">
+                                <label class="tab-label" for="chck2">Validation and error messages</label>
+                                <div class="tab-content">
+                                    <div class="component-settings__section">
+                                        <div class="component-settings__row-flex">
+                                            <div class="component-settings__title">
+                                                <img src="assets/images/settings/required.svg" alt="">
+                                                Input required
+                                            </div>
+                                            <div class="switch__container">
+                                                <label class="switch" for="checkbox-set-2">
+                                                    <input type="checkbox" id="checkbox-set-2" checked/>
+                                                    <div class="slider round"></div>
+                                                </label>
+                                            </div>
+                                        </div>
+                                        <div class="component-settings__row">
+                                            <input type="text" class="input-default input-default_dark" value="Error text">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
-                    </div>
-                    <div class="components-panel__item">
-                        <div class="components-panel__item-icon">
-                            <img src="./assets/images/commponents/email.svg" alt="">
+                        <div class="components-panel__section">
+                            <div class="tab">
+                                <input type="checkbox" id="chck3">
+                                <label class="tab-label" for="chck3">advanced</label>
+                                <div class="tab-content">
+                                    <div class="component-settings__section">
+                                        <div class="component-settings__row-flex">
+                                            <div class="component-settings__title">
+                                                <img src="assets/images/settings/tag.svg" alt="">
+                                                Data tag
+                                            </div>
+                                        </div>
+                                        <div class="component-settings__row">
+                                            <input type="text" class="input-default input-default_dark" value="Data tag 4563">
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
                         </div>
-                        <div class="components-panel__item-text">
-                            Email
-                        </div>
-                    </div>
-                    <div class="components-panel__item">
-                        <div class="components-panel__item-icon">
-                            <img src="./assets/images/commponents/phone.svg" alt="">
-                        </div>
-                        <div class="components-panel__item-text">
-                            Phone
-                        </div>
-                    </div>
-                    <div class="components-panel__item">
-                        <div class="components-panel__item-icon">
-                            <img src="./assets/images/commponents/paragraph.svg" alt="">
-                        </div>
-                        <div class="components-panel__item-text">
-                            Paragraph
-                        </div>
-                    </div>
-                    <div class="components-panel__item components-panel__item_upgrade">
-                        <div class="components-panel__item-icon">
-                            <img src="./assets/images/commponents/fileUpload.svg" alt="">
-                        </div>
-                        <div class="components-panel__item-text">
-                            File Upload
-                        </div>
-                    </div>
-                    <div class="components-panel__item components-panel__item_upgrade">
-                        <div class="components-panel__item-icon">
-                            <img src="./assets/images/commponents/signaturePad.svg" alt="">
-                        </div>
-                        <div class="components-panel__item-text">
-                            SignaturePad
-                        </div>
-                    </div>
-                    <div class="components-panel__item">
-                        <div class="components-panel__item-icon">
-                            <img src="./assets/images/commponents/chackbox.svg" alt="">
-                        </div>
-                        <div class="components-panel__item-text">
-                            Checkbox
-                        </div>
-                    </div>
-                    <div class="components-panel__item">
-                        <div class="components-panel__item-icon">
-                            <img src="./assets/images/commponents/radio.svg" alt="">
-                        </div>
-                        <div class="components-panel__item-text">
-                            Radio
-                        </div>
-                    </div>
-                    <div class="components-panel__item">
-                        <div class="components-panel__item-icon">
-                            <img src="./assets/images/commponents/selector.svg" alt="">
-                        </div>
-                        <div class="components-panel__item-text">
-                            Select
-                        </div>
-                    </div>
-                    <div class="components-panel__item">
-                        <div class="components-panel__item-icon">
-                            <img src="./assets/images/commponents/confirmation.svg" alt="">
-                        </div>
-                        <div class="components-panel__item-text">
-                            Confirmation
-                        </div>
-                    </div>
-                    <div class="components-panel__item components-panel__item_unactive">
-                        <div class="components-panel__item-icon">
-                            <img src="./assets/images/commponents/submitButton.svg" alt="">
-                        </div>
-                        <div class="components-panel__item-text">
-                            Submit Button
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="components-panel__section">
-                <div class="components-panel__section-title">
-                    address
-                </div>
-                <div class="components-panel__item-box">
-                    <div class="components-panel__item">
-                        <div class="components-panel__item-icon">
-                            <img src="./assets/images/commponents/firstName.svg" alt="">
-                        </div>
-                        <div class="components-panel__item-text">
-                            First Name
-                        </div>
-                    </div>
-                    <div class="components-panel__item">
-                        <div class="components-panel__item-icon">
-                            <img src="./assets/images/commponents/lastName.svg" alt="">
-                        </div>
-                        <div class="components-panel__item-text">
-                            Last Name
-                        </div>
-                    </div>
-                    <div class="components-panel__item">
-                        <div class="components-panel__item-icon">
-                            <img src="./assets/images/commponents/address1.svg" alt="">
-                        </div>
-                        <div class="components-panel__item-text">
-                            Address 1
-                        </div>
-                    </div>
-                    <div class="components-panel__item">
-                        <div class="components-panel__item-icon">
-                            <img src="./assets/images/commponents/address2.svg" alt="">
-                        </div>
-                        <div class="components-panel__item-text">
-                            Address 2
-                        </div>
-                    </div>
-                    <div class="components-panel__item">
-                        <div class="components-panel__item-icon">
-                            <img src="./assets/images/commponents/country.svg" alt="">
-                        </div>
-                        <div class="components-panel__item-text">
-                            Country
-                        </div>
-                    </div>
-                    <div class="components-panel__item">
-                        <div class="components-panel__item-icon">
-                            <img src="./assets/images/commponents/state.svg" alt="">
-                        </div>
-                        <div class="components-panel__item-text">
-                            State/Region
+                        <div class="components-panel__section">
+                            <div class="tab">
+                                <input type="checkbox" id="chck4">
+                                <label class="tab-label" for="chck4">help center</label>
+                                <div class="tab-content">
+                                    <div class="">
+                                        <a href="#" class="components-panel__link">
+                                            How to use Data Tags?
+                                        </a>
+                                    </div>
+                                    <div class="">
+                                        <a href="#" class="components-panel__link">
+                                            What are predefined Data Tags ?
+                                        </a>
+                                    </div>
+                                    <div class="">
+                                        <a href="#" class="components-panel__link">
+                                            How to export data into Wix Contacts?
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
-                    <div class="components-panel__item">
-                        <div class="components-panel__item-icon">
-                            <img src="./assets/images/commponents/city.svg" alt="">
-                        </div>
-                        <div class="components-panel__item-text">
-                            City
-                        </div>
-                    </div>
-                    <div class="components-panel__item">
-                        <div class="components-panel__item-icon">
-                            <img src="./assets/images/commponents/zip.svg" alt="">
-                        </div>
-                        <div class="components-panel__item-text">
-                            Zip/Post Code
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="components-panel__section">
-                <div class="components-panel__section-title">
-                    E-commerce product cards
-                </div>
-                <div class="components-panel__item-box">
-                    <div class="components-panel__item components-panel__item_upgrade">
-<!--                        <div class="components-panel__item-upgrade"></div>-->
-                        <div class="components-panel__item-icon">
-                            <img src="./assets/images/commponents/product.svg" alt="">
-                        </div>
-                        <div class="components-panel__item-text">
-                            Product
-                        </div>
-                    </div>
-                    <div class="components-panel__item components-panel__item_upgrade">
-                        <div class="components-panel__item-icon">
-                            <img src="./assets/images/commponents/pricing.svg" alt="">
-                        </div>
-                        <div class="components-panel__item-text">
-                            Pricing
-                        </div>
-                    </div>
-                    <div class="components-panel__item components-panel__item_upgrade">
-                        <div class="components-panel__item-icon">
-                            <img src="./assets/images/commponents/registration.svg" alt="">
-                        </div>
-                        <div class="components-panel__item-text">
-                            Registration
-                        </div>
-                    </div>
-                    <div class="components-panel__item components-panel__item_unactive">
-                        <div class="components-panel__item-icon">
-                            <img src="./assets/images/commponents/donation.svg" alt="">
-                        </div>
-                        <div class="components-panel__item-text">
-                            Donation
-                        </div>
-                    </div>
-                    <div class="components-panel__item">
-                        <div class="components-panel__item-icon">
-                            <img src="./assets/images/commponents/subscribtion.svg" alt="">
-                        </div>
-                        <div class="components-panel__item-text">
-                            Subscription
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="components-panel__section">
-                <div class="components-panel__section-title">
-                    advanced
-                </div>
-                <div class="components-panel__item-box">
-                    <div class="components-panel__item components-panel__item_half components-panel__item_unactive">
-                        <div class="components-panel__item-icon">
-                            <img src="./assets/images/commponents/multistep.png" alt="">
-                        </div>
-                        <div class="components-panel__item-text">
-                            Multistep Form
-                        </div>
-                    </div>
-                    <div class="components-panel__item components-panel__item_half components-panel__item_unactive">
-                        <div class="components-panel__item-icon">
-                            <img src="./assets/images/commponents/paper.png" alt="">
-                        </div>
-                        <div class="components-panel__item-text">
-                            Paper Form Download
-                        </div>
-                    </div>
-                </div>
             </div>
 
         </div>
@@ -928,12 +1105,24 @@
     let addComponent = document.querySelector('.constructor__add-component');
     addComponent.addEventListener('click', function(){
         document.querySelector('.wrapper').classList.add('components-panel-open')
-    })
+    });
 
     let closePanelComponent = document.querySelector('.btn__close-panel');
     closePanelComponent.addEventListener('click', function(){
-        document.querySelector('.wrapper').classList.remove('components-panel-open')
-    })
+        document.querySelector('.wrapper').classList.remove('components-panel-open');
+    });
+
+    let settingsComponent = document.querySelector('.checkbox-click');
+    settingsComponent.addEventListener('click', function(){
+        document.querySelector('.wrapper').classList.add('component-settings-panel-open')
+    });
+
+    let closePanelComponentSettings = document.querySelector('.btn__close-panel_settings');
+    closePanelComponentSettings.addEventListener('click', function(){
+        document.querySelector('.wrapper').classList.remove('component-settings-panel-open')
+    });
+
+
 </script>
 </body>
 </html>

@@ -2398,6 +2398,64 @@ input:checked + .slider:before {
   display: inline-block;
   height: 24px;
 }
+.components-panel__link {
+  font-family: "Roboto", sans-serif;
+  font-weight: normal;
+  font-size: 14px;
+  color: #fe544b;
+  line-height: 2;
+}
+.components-panel .switch__container {
+  margin-right: 0;
+}
+
+.component-settings__section {
+  margin-bottom: 10px;
+  padding: 20px;
+  background: #353645;
+  border-radius: 5px;
+}
+.component-settings__row-flex {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+.component-settings__row {
+  margin-bottom: 20px;
+}
+.component-settings__row input {
+  position: relative;
+  z-index: 1;
+  opacity: 1;
+  font-family: "Roboto", sans-serif;
+  font-weight: normal;
+}
+.component-settings__description {
+  font-family: "Roboto", sans-serif;
+  font-weight: normal;
+  font-size: 12px;
+  margin-top: 10px;
+  color: #9699ab;
+}
+.component-settings__description_14 {
+  font-size: 14px;
+}
+.component-settings__title {
+  display: flex;
+  align-items: center;
+  font-family: "IBM Plex Sans", sans-serif;
+  font-weight: 500;
+  font-size: 14px;
+}
+.component-settings__title img {
+  width: 18px;
+  margin-right: 15px;
+}
+
+.components-panel-content,
+.components-panel-settings {
+  display: none;
+}
 
 .components-panel-open .slide-part {
   width: 800px;
@@ -2406,6 +2464,89 @@ input:checked + .slider:before {
   right: 0;
   visibility: visible;
   opacity: 1;
+}
+.components-panel-open .components-panel-content {
+  display: block;
+}
+
+.components-panel {
+  /* Accordion styles */
+}
+.components-panel .tabs {
+  margin-top: 0;
+  border-radius: 5px;
+  overflow: hidden;
+}
+.components-panel .tab {
+  width: 100%;
+  margin-bottom: 0;
+  overflow: hidden;
+}
+.components-panel .tab-label {
+  display: flex;
+  justify-content: space-between;
+  padding: 0;
+  font-weight: bold;
+  color: #9699ab;
+  cursor: pointer;
+  text-transform: uppercase;
+  /* Icon */
+}
+.components-panel .tab-label:hover {
+  background: none;
+}
+.components-panel .tab-label::before {
+  display: none;
+}
+.components-panel .tab-content {
+  max-height: 0;
+  padding: 0;
+  color: #fff;
+  background: #323341;
+  border-radius: 5px;
+  -webkit-transition: all 300ms ease-in-out;
+  -moz-transition: all 300ms ease-in-out;
+  -o-transition: all 300ms ease-in-out;
+  -ms-transition: all 300ms ease-in-out;
+  transition: all 300ms ease-in-out;
+  visibility: hidden;
+  opacity: 0;
+}
+.components-panel .tab-close {
+  display: flex;
+  justify-content: flex-end;
+  padding: 0;
+  font-size: 0.75em;
+  background: red;
+  cursor: pointer;
+}
+.components-panel .tab-close:hover {
+  background: #cc0000;
+}
+.components-panel input:checked + .tab-label {
+  background: none;
+}
+.components-panel input:checked + .tab-label::after {
+  transform: rotate(180deg);
+}
+.components-panel input:checked ~ .tab-content {
+  max-height: 100vh;
+  padding: 0;
+  margin-top: 18px;
+  visibility: visible;
+  opacity: 1;
+}
+
+.component-settings-panel-open .slide-part {
+  width: 800px;
+}
+.component-settings-panel-open .components-panel {
+  right: 0;
+  visibility: visible;
+  opacity: 1;
+}
+.component-settings-panel-open .components-panel-settings {
+  display: block;
 }
 
 /*# sourceMappingURL=main.css.map */
