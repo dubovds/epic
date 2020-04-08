@@ -2451,9 +2451,15 @@ input:checked + .slider:before {
   width: 18px;
   margin-right: 15px;
 }
+.component-settings__title-small {
+  font-size: 14px;
+  color: #61657a;
+}
 
 .components-panel-content,
-.components-panel-settings {
+.components-panel-settings,
+.components-panel-settings-input,
+.components-panel-settings-submit {
   display: none;
 }
 
@@ -2546,6 +2552,30 @@ input:checked + .slider:before {
   opacity: 1;
 }
 .component-settings-panel-open .components-panel-settings {
+  display: block;
+}
+
+.component-settings-panel-input-open .slide-part {
+  width: 800px;
+}
+.component-settings-panel-input-open .components-panel {
+  right: 0;
+  visibility: visible;
+  opacity: 1;
+}
+.component-settings-panel-input-open .components-panel-settings-input {
+  display: block;
+}
+
+.component-settings-panel-submit-open .slide-part {
+  width: 800px;
+}
+.component-settings-panel-submit-open .components-panel {
+  right: 0;
+  visibility: visible;
+  opacity: 1;
+}
+.component-settings-panel-submit-open .components-panel-settings-submit {
   display: block;
 }
 

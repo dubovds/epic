@@ -16,7 +16,7 @@
     <div class="sidebar-wix">
 
     </div>
-    <div class="wrapper wrapper_white wrapper_hidden component-settings-panel-open">
+    <div class="wrapper wrapper_white wrapper_hidden component-settings-panel-input-open">
         <header class="header header_editor">
             <div class="header__item">
                 <div class="header__logo"></div>
@@ -228,7 +228,7 @@
                             Here is the place of the form description
                         </div>
                     </div>
-                    <div class="constructor__component">
+                    <div class="constructor__component input-click">
                         <div class="constructor__component-title">
                             name title
                         </div>
@@ -379,7 +379,7 @@
                             Dropdown List description
                         </div>
                     </div>
-                    <div class="constructor__component">
+                    <div class="constructor__component submit-click">
                         <input type="submit" class="btn btn__constructor" value="Submit Button">
                     </div>
                     <div class="constructor__add-component">
@@ -919,6 +919,273 @@
                     </div>
             </div>
 
+            <div class="components-panel-settings-input">
+                <div class="components-panel__section components-panel__section_flex">
+                    <div class="flex">
+                    <span class="btn btn__close-panel btn__close-panel_input">
+                        <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                             viewBox="0 0 18 18" style="enable-background:new 0 0 18 18;" xml:space="preserve">
+<g>
+	<defs>
+		<path id="SVGID_1_" d="M17.5,2.9L11.4,9l6.1,6.1c0.7,0.7,0.7,1.8,0,2.4c-0.7,0.7-1.8,0.7-2.4,0L9,11.4l-6.1,6.1
+			c-0.7,0.7-1.8,0.7-2.4,0s-0.7-1.8,0-2.4L6.6,9L0.5,2.9c-0.7-0.7-0.7-1.8,0-2.4c0.7-0.7,1.8-0.7,2.4,0L9,6.6l6.1-6.1
+			c0.7-0.7,1.8-0.7,2.4,0C18.2,1.2,18.2,2.3,17.5,2.9z"/>
+	</defs>
+    <use xlink:href="#SVGID_1_"  style="overflow:visible;"/>
+    <clipPath id="SVGID_2_">
+		<use xlink:href="#SVGID_1_"  style="overflow:visible;"/>
+	</clipPath>
+</g>
+</svg>
+                    </span>
+                        <div class="components-panel__title">
+                            Input settings
+                        </div>
+                    </div>
+                    <div class="components-panel__btn">
+                        <a href="#" class="btn btn__upgrade">Upgrade</a>
+                    </div>
+                </div>
+
+                <div class="tabs">
+                    <div class="components-panel__section">
+                        <div class="tab">
+                            <input type="checkbox" id="inputSettingsPanel-1">
+                            <label class="tab-label" for="inputSettingsPanel-1">general</label>
+                            <div class="tab-content">
+                                <div class="component-settings__section">
+                                    <div class="component-settings__row-flex">
+                                        <div class="component-settings__title">
+                                            <img src="assets/images/settings/lable.svg" alt="">
+                                            Show Label
+                                        </div>
+                                        <div class="switch__container">
+                                            <label class="switch" for="checkbox-set-3">
+                                                <input type="checkbox" id="checkbox-set-3" checked/>
+                                                <div class="slider round"></div>
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <div class="component-settings__row">
+                                        <input type="text" class="input-default input-default_dark" value="Radio title">
+                                        <div class="component-settings__description">
+                                            Field label is a explanatory title for the content you expect your users to enter.
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="component-settings__section">
+                                    <div class="component-settings__row-flex">
+                                        <div class="component-settings__title">
+                                            <img src="assets/images/settings/placeholder.svg" alt="">
+                                            Placeholder
+                                        </div>
+                                    </div>
+                                    <div class="component-settings__row">
+                                        <input type="text" class="input-default input-default_dark" value="Radio title">
+                                        <div class="component-settings__description">
+                                            Usually a placeholder is a simple of what input you expedt. Lorem ipsum dolor sit
+                                            amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean
+                                            massa. Cum sociis natoque
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="component-settings__section">
+                                    <div class="component-settings__row-flex">
+                                        <div class="component-settings__title">
+                                            <img src="assets/images/settings/hint.svg" alt="">
+                                            Show Hint
+                                        </div>
+                                        <div class="switch__container">
+                                            <label class="switch" for="checkbox-set-5">
+                                                <input type="checkbox" id="checkbox-set-5" checked/>
+                                                <div class="slider round"></div>
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <div class="component-settings__row">
+                                        <input type="text" class="input-default input-default_dark" value="Error text">
+                                        <div class="component-settings__description">
+                                            Enter hint text belou the input.
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="components-panel__section">
+                        <div class="tab">
+                            <input type="checkbox" id="inputSettingsPanel-2">
+                            <label class="tab-label" for="inputSettingsPanel-2">Validation and error messages</label>
+                            <div class="tab-content">
+                                <div class="component-settings__section">
+                                    <div class="component-settings__row-flex">
+                                        <div class="component-settings__title">
+                                            <img src="assets/images/settings/required.svg" alt="">
+                                            Input required
+                                        </div>
+                                        <div class="switch__container">
+                                            <label class="switch" for="checkbox-set-2">
+                                                <input type="checkbox" id="checkbox-set-2" checked/>
+                                                <div class="slider round"></div>
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <div class="component-settings__row">
+                                        <div class="component-settings__title-small">
+                                            Error message for: “Filed can not be empty”
+                                        </div>
+                                        <input type="text" class="input-default input-default_dark" value="Error text">
+                                        <div class="component-settings__description">
+                                            Enter error message text in case filed was left untoched.
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="component-settings__section">
+                                    <div class="component-settings__row">
+                                        <div class="component-settings__title-small">
+                                            Error message for: “Email you provided is of a wrong format.”
+                                        </div>
+                                        <input type="text" class="input-default input-default_dark" value="Entered text does not look like a proper email address.">
+                                        <div class="component-settings__description">
+                                            Enter error message text in case filed was left untoched.
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="components-panel__section">
+                        <div class="tab">
+                            <input type="checkbox" id="inputSettingsPanel-3">
+                            <label class="tab-label" for="inputSettingsPanel-3">advanced</label>
+                            <div class="tab-content">
+                                <div class="component-settings__section">
+                                    <div class="component-settings__row-flex">
+                                        <div class="component-settings__title">
+                                            <img src="assets/images/settings/tag.svg" alt="">
+                                            Data tag
+                                        </div>
+                                    </div>
+                                    <div class="component-settings__row">
+                                        <input type="text" class="input-default input-default_dark" value="Data tag 4563">
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="components-panel__section">
+                        <div class="tab">
+                            <input type="checkbox" id="inputSettingsPanel-4">
+                            <label class="tab-label" for="inputSettingsPanel-4">help center</label>
+                            <div class="tab-content">
+                                <div class="">
+                                    <a href="#" class="components-panel__link">
+                                        How to use Data Tags?
+                                    </a>
+                                </div>
+                                <div class="">
+                                    <a href="#" class="components-panel__link">
+                                        What are predefined Data Tags ?
+                                    </a>
+                                </div>
+                                <div class="">
+                                    <a href="#" class="components-panel__link">
+                                        How to export data into Wix Contacts?
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="components-panel-settings-submit">
+                <div class="components-panel__section components-panel__section_flex">
+                    <div class="flex">
+                    <span class="btn btn__close-panel btn__close-panel_submit">
+                        <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                             viewBox="0 0 18 18" style="enable-background:new 0 0 18 18;" xml:space="preserve">
+<g>
+	<defs>
+		<path id="SVGID_1_" d="M17.5,2.9L11.4,9l6.1,6.1c0.7,0.7,0.7,1.8,0,2.4c-0.7,0.7-1.8,0.7-2.4,0L9,11.4l-6.1,6.1
+			c-0.7,0.7-1.8,0.7-2.4,0s-0.7-1.8,0-2.4L6.6,9L0.5,2.9c-0.7-0.7-0.7-1.8,0-2.4c0.7-0.7,1.8-0.7,2.4,0L9,6.6l6.1-6.1
+			c0.7-0.7,1.8-0.7,2.4,0C18.2,1.2,18.2,2.3,17.5,2.9z"/>
+	</defs>
+    <use xlink:href="#SVGID_1_"  style="overflow:visible;"/>
+    <clipPath id="SVGID_2_">
+		<use xlink:href="#SVGID_1_"  style="overflow:visible;"/>
+	</clipPath>
+</g>
+</svg>
+                    </span>
+                        <div class="components-panel__title">
+                            Submit settings
+                        </div>
+                    </div>
+                    <div class="components-panel__btn">
+                        <a href="#" class="btn btn__upgrade">Upgrade</a>
+                    </div>
+                </div>
+
+                <div class="tabs">
+                    <div class="components-panel__section">
+                        <div class="tab">
+                            <input type="checkbox" id="submitSettingsPanel-1">
+                            <label class="tab-label" for="submitSettingsPanel-1">general</label>
+                            <div class="tab-content">
+                                <div class="component-settings__section">
+                                    <div class="component-settings__row-flex">
+                                        <div class="component-settings__title">
+                                            <img src="assets/images/settings/lable.svg" alt="">
+                                            Show Label
+                                        </div>
+                                        <div class="switch__container">
+                                            <label class="switch" for="switch-submit-1">
+                                                <input type="checkbox" id="switch-submit-1" checked/>
+                                                <div class="slider round"></div>
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <div class="component-settings__row">
+                                        <input type="text" class="input-default input-default_dark" value="Radio title">
+                                        <div class="component-settings__description">
+                                            Field label is a explanatory title for the content you expect your users to enter.
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="components-panel__section">
+                        <div class="tab">
+                            <input type="checkbox" id="submitSettingsPanel-2">
+                            <label class="tab-label" for="submitSettingsPanel-2">help center</label>
+                            <div class="tab-content">
+                                <div class="">
+                                    <a href="#" class="components-panel__link">
+                                        How to use Data Tags?
+                                    </a>
+                                </div>
+                                <div class="">
+                                    <a href="#" class="components-panel__link">
+                                        What are predefined Data Tags ?
+                                    </a>
+                                </div>
+                                <div class="">
+                                    <a href="#" class="components-panel__link">
+                                        How to export data into Wix Contacts?
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
         </div>
 
     </div>
@@ -1120,6 +1387,26 @@
     let closePanelComponentSettings = document.querySelector('.btn__close-panel_settings');
     closePanelComponentSettings.addEventListener('click', function(){
         document.querySelector('.wrapper').classList.remove('component-settings-panel-open')
+    });
+
+    // open and close settings panel for input
+    let settingsComponentInput = document.querySelector('.input-click');
+    settingsComponentInput.addEventListener('click', function(){
+        document.querySelector('.wrapper').classList.add('component-settings-panel-input-open')
+    });
+    let closePanelComponentInputSettings = document.querySelector('.btn__close-panel_input');
+    closePanelComponentInputSettings.addEventListener('click', function(){
+        document.querySelector('.wrapper').classList.remove('component-settings-panel-input-open')
+    });
+
+    // open and close settings panel for submit
+    let settingsComponentSubmit = document.querySelector('.submit-click');
+    settingsComponentSubmit.addEventListener('click', function(){
+        document.querySelector('.wrapper').classList.add('component-settings-panel-submit-open')
+    });
+    let closePanelComponentSubmitSettings = document.querySelector('.btn__close-panel_submit');
+    closePanelComponentSubmitSettings.addEventListener('click', function(){
+        document.querySelector('.wrapper').classList.remove('component-settings-panel-submit-open')
     });
 
 

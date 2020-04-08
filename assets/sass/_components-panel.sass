@@ -163,8 +163,14 @@
             width: 18px
             margin-right: 15px
 
+    &__title-small
+        font-size: 14px
+        color: #61657a
+
 .components-panel-content,
-.components-panel-settings
+.components-panel-settings,
+.components-panel-settings-input,
+.components-panel-settings-submit
     display: none
 
 .components-panel-open
@@ -265,4 +271,28 @@
         opacity: 1
 
     .components-panel-settings
+        display: block
+
+.component-settings-panel-input-open
+    .slide-part
+        width: 800px
+
+    .components-panel
+        right: 0
+        visibility: visible
+        opacity: 1
+
+    .components-panel-settings-input
+        display: block
+
+.component-settings-panel-submit-open
+    .slide-part
+        width: 800px
+
+    .components-panel
+        right: 0
+        visibility: visible
+        opacity: 1
+
+    .components-panel-settings-submit
         display: block
