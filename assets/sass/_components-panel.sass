@@ -6,7 +6,7 @@
         width: calc(100% - 572px)
 
 .components-panel
-    position: absolute
+    position: fixed
     width: 572px
     min-height: 100%
     height: auto
@@ -128,6 +128,18 @@
         padding: 20px
         background: #353645
         border-radius: $border-radius
+
+        &_flex
+            flex: 1
+            &:first-child
+                margin-right: 5px
+
+            &:last-child
+                margin-left: 5px
+
+
+    &__flex-row-default
+        display: flex
 
     &__row-flex
         display: flex
@@ -264,7 +276,7 @@
 
 
         ~ .tab-content
-            max-height: 150vh
+            max-height: 160vh
             padding: 0
             margin-top: 18px
             visibility: visible
@@ -291,6 +303,7 @@
             transform: translateX(-86%)
 
     .components-panel
+        position: absolute
         right: 0
         visibility: visible
         opacity: 1
@@ -308,6 +321,7 @@
             transform: translateX(-86%)
 
     .components-panel
+        position: absolute
         right: 0
         visibility: visible
         opacity: 1
@@ -325,6 +339,7 @@
             transform: translateX(-86%)
 
     .components-panel
+        position: absolute
         right: 0
         visibility: visible
         opacity: 1
@@ -343,6 +358,7 @@
 
 
     .components-panel
+        position: absolute
         right: 0
         visibility: visible
         opacity: 1
@@ -361,6 +377,7 @@
 
 
     .components-panel
+        position: absolute
         right: 0
         visibility: visible
         opacity: 1
@@ -379,9 +396,12 @@
 
 
     .components-panel
+        position: absolute
         right: 0
         visibility: visible
         opacity: 1
 
     .components-panel-settings-actions
         display: block
+
+
