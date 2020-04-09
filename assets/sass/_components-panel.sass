@@ -8,7 +8,8 @@
 .components-panel
     position: absolute
     width: 572px
-    height: 100%
+    min-height: 100%
+    height: auto
     background-color: #323341
     top: 59px
     right: -700px
@@ -167,11 +168,18 @@
         font-size: 14px
         color: #61657a
 
-.components-panel-content,
-.components-panel-settings,
-.components-panel-settings-input,
-.components-panel-settings-submit
-    display: none
+    &__tag
+        display: inline-block
+        background-color: #323341
+        padding: 5px 10px
+        border-radius: $border-radius
+
+    &__line
+        height: 2px
+        background-color: #323341
+        margin: 0 -20px 20px
+
+.reset-btn
 
 .components-panel-open
     .slide-part
@@ -189,9 +197,12 @@
 .components-panel
     /* Accordion styles */
     .tabs
-        margin-top: 0
+        margin-top: 0px
         border-radius: $border-radius
         overflow: hidden
+
+        .components-panel__section
+            padding: 0
 
     .tab
         width: 100%
@@ -201,7 +212,7 @@
         &-label
             display: flex
             justify-content: space-between
-            padding: 0
+            padding: 20px 0
             font-weight: bold
             color: #9699ab
             cursor: pointer
@@ -253,7 +264,7 @@
 
 
         ~ .tab-content
-            max-height: 100vh
+            max-height: 150vh
             padding: 0
             margin-top: 18px
             visibility: visible
@@ -261,9 +272,23 @@
 
 
 
+.components-panel-content,
+.components-panel-settings,
+.components-panel-settings-input,
+.components-panel-settings-submit,
+.components-panel-settings-country,
+.components-panel-settings-states,
+.components-panel-settings-actions
+    display: none
+
 .component-settings-panel-open
     .slide-part
         width: 800px
+
+        @include large-screen
+            position: relative
+            left: 50%
+            transform: translateX(-86%)
 
     .components-panel
         right: 0
@@ -277,6 +302,11 @@
     .slide-part
         width: 800px
 
+        @include large-screen
+            position: relative
+            left: 50%
+            transform: translateX(-86%)
+
     .components-panel
         right: 0
         visibility: visible
@@ -289,10 +319,69 @@
     .slide-part
         width: 800px
 
+        @include large-screen
+            position: relative
+            left: 50%
+            transform: translateX(-86%)
+
     .components-panel
         right: 0
         visibility: visible
         opacity: 1
 
     .components-panel-settings-submit
+        display: block
+
+.component-settings-panel-country-open
+    .slide-part
+        width: 800px
+
+        @include large-screen
+            position: relative
+            left: 50%
+            transform: translateX(-86%)
+
+
+    .components-panel
+        right: 0
+        visibility: visible
+        opacity: 1
+
+    .components-panel-settings-country
+        display: block
+
+.component-settings-panel-states-open
+    .slide-part
+        width: 800px
+
+        @include large-screen
+            position: relative
+            left: 50%
+            transform: translateX(-86%)
+
+
+    .components-panel
+        right: 0
+        visibility: visible
+        opacity: 1
+
+    .components-panel-settings-states
+        display: block
+
+.component-settings-panel-actions-open
+    .slide-part
+        width: 800px
+
+        @include large-screen
+            position: relative
+            left: 50%
+            transform: translateX(-86%)
+
+
+    .components-panel
+        right: 0
+        visibility: visible
+        opacity: 1
+
+    .components-panel-settings-actions
         display: block

@@ -7,6 +7,7 @@
     <title>Actions</title>
     <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Sans:300,400,500,600,700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&display=swap" rel="stylesheet">
+    <link href="https://cdn.quilljs.com/1.3.6/quill.snow.css" rel="stylesheet">
     <link href="assets/sass/main.css" rel="stylesheet">
 </head>
 <body>
@@ -135,7 +136,7 @@
         <div class="slide-part">
             <div class="editor-wrapper">
                 <section class="constructor">
-                    <div class="constructor__component">
+                    <div class="constructor__component actions-click">
                         <div class="switch__container switch__container_action">
                             <label class="switch" for="email-notification">
                                 <input type="checkbox" id="email-notification" checked/>
@@ -207,8 +208,9 @@
         </div>
 
         <div class="components-panel">
-            <div class="components-panel__section components-panel__section_flex">
-                <div class="flex">
+            <div class="components-panel-content">
+                <div class="components-panel__section components-panel__section_flex">
+                    <div class="flex">
                     <span class="btn btn__close-panel">
                         <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
                              viewBox="0 0 18 18" style="enable-background:new 0 0 18 18;" xml:space="preserve">
@@ -225,97 +227,268 @@
 </g>
 </svg>
                     </span>
-                    <div class="components-panel__title">
-                        Actions
+                        <div class="components-panel__title">
+                            Actions
+                        </div>
+                    </div>
+                    <div class="components-panel__btn">
+                        <a href="#" class="btn btn__upgrade">Upgrade</a>
                     </div>
                 </div>
-                <div class="components-panel__btn">
-                    <a href="#" class="btn btn__upgrade">Upgrade</a>
+
+                <div class="components-panel__section">
+                    <div class="components-panel__section-title">
+                        EMAIL
+                    </div>
+                    <div class="components-panel__item-box">
+                        <div class="components-panel__item">
+                            <div class="components-panel__item-icon">
+                                <img src="./assets/images/commponents/subscribtion.svg" alt="">
+                            </div>
+                            <div class="components-panel__item-text">
+                                Notification
+                            </div>
+                        </div>
+                        <div class="components-panel__item">
+                            <div class="components-panel__item-icon">
+                                <img src="./assets/images/commponents/confirmation.svg" alt="">
+                            </div>
+                            <div class="components-panel__item-text">
+                                Confirmation
+                            </div>
+                        </div>
+                        <div class="components-panel__item">
+                            <div class="components-panel__item-icon">
+                                <img src="./assets/images/commponents/autoresponder.svg" alt="">
+                            </div>
+                            <div class="components-panel__item-text">
+                                Autoresponder
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="components-panel__section">
+                    <div class="components-panel__section-title">
+                        Payment gatewey
+                    </div>
+                    <div class="components-panel__item-box">
+                        <div class="components-panel__item components-panel__item_icon components-panel__item_half">
+                            <div class="components-panel__item-icon">
+                                <img src="./assets/images/commponents/paypal.svg" alt="">
+                            </div>
+
+                        </div>
+                        <div class="components-panel__item components-panel__item_icon components-panel__item_half">
+                            <div class="components-panel__item-icon">
+                                <img src="./assets/images/commponents/stripe.svg" alt="">
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="components-panel__section">
+                    <div class="components-panel__section-title">
+                        Integrations
+                    </div>
+                    <div class="components-panel__item-box">
+                        <div class="components-panel__item components-panel__item_icon components-panel__item_half">
+                            <div class="components-panel__item-icon">
+                                <img src="./assets/images/commponents/mailchimp.svg" alt="">
+                            </div>
+
+                        </div>
+                        <div class="components-panel__item components-panel__item_icon components-panel__item_half">
+                            <div class="components-panel__item-icon">
+                                <img src="./assets/images/commponents/silesforce.svg" alt="">
+                            </div>
+
+                        </div>
+                        <div class="components-panel__item components-panel__item_icon components-panel__item_half">
+                            <div class="components-panel__item-icon">
+                                <img src="./assets/images/commponents/zapier.svg" alt="">
+                            </div>
+
+                        </div>
+                        <div class="components-panel__item components-panel__item_icon components-panel__item_half">
+                            <div class="components-panel__item-icon">
+                                <img src="./assets/images/commponents/webhooks.png" alt="">
+                            </div>
+
+                        </div>
+                    </div>
                 </div>
             </div>
-
-            <div class="components-panel__section">
-                <div class="components-panel__section-title">
-                    EMAIL
+            <div class="components-panel-settings-actions">
+                <div class="components-panel__section components-panel__section_flex">
+                    <div class="flex">
+                    <span class="btn btn__close-panel btn__close-panel_actions">
+                        <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                             viewBox="0 0 18 18" style="enable-background:new 0 0 18 18;" xml:space="preserve">
+<g>
+	<defs>
+		<path id="SVGID_1_" d="M17.5,2.9L11.4,9l6.1,6.1c0.7,0.7,0.7,1.8,0,2.4c-0.7,0.7-1.8,0.7-2.4,0L9,11.4l-6.1,6.1
+			c-0.7,0.7-1.8,0.7-2.4,0s-0.7-1.8,0-2.4L6.6,9L0.5,2.9c-0.7-0.7-0.7-1.8,0-2.4c0.7-0.7,1.8-0.7,2.4,0L9,6.6l6.1-6.1
+			c0.7-0.7,1.8-0.7,2.4,0C18.2,1.2,18.2,2.3,17.5,2.9z"/>
+	</defs>
+    <use xlink:href="#SVGID_1_"  style="overflow:visible;"/>
+    <clipPath id="SVGID_2_">
+		<use xlink:href="#SVGID_1_"  style="overflow:visible;"/>
+	</clipPath>
+</g>
+</svg>
+                    </span>
+                        <div class="components-panel__title">
+                            Actions Settings
+                        </div>
+                    </div>
+                    <div class="components-panel__btn">
+                        <a href="#" class="btn btn__upgrade">Upgrade</a>
+                    </div>
                 </div>
-                <div class="components-panel__item-box">
-                    <div class="components-panel__item">
-                        <div class="components-panel__item-icon">
-                            <img src="./assets/images/commponents/subscribtion.svg" alt="">
-                        </div>
-                        <div class="components-panel__item-text">
-                            Notification
+
+                <div class="tabs">
+                    <div class="components-panel__section">
+                        <div class="tab">
+                            <input type="checkbox" id="submitSettingsPanel-1">
+                            <label class="tab-label" for="submitSettingsPanel-1">general</label>
+                            <div class="tab-content">
+                                <div class="component-settings__section">
+                                    <div class="component-settings__row-flex">
+                                        <div class="component-settings__title">
+                                            <img src="assets/images/settings/lable.svg" alt="">
+                                            Email Addres
+                                        </div>
+                                    </div>
+                                    <div class="component-settings__row">
+                                        <input type="text" class="input-default input-default_dark" value="Radio title">
+                                        <div class="component-settings__description">
+                                            Field label is a explanatory title for the content you expect your users to enter.
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="component-settings__section">
+                                    <div class="component-settings__row-flex">
+                                        <div class="component-settings__title">
+                                            <img src="assets/images/settings/lable.svg" alt="">
+                                            Subject
+                                        </div>
+                                    </div>
+                                    <div class="component-settings__row">
+                                        <input type="text" class="input-default input-default_dark" value="Radio title">
+                                        <div class="component-settings__description">
+                                            Field label is a explanatory title for the content you expect your users to enter.
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="component-settings__section">
+                                    <div class="component-settings__row-flex">
+                                        <div class="component-settings__title">
+                                            <img src="assets/images/settings/lable.svg" alt="">
+                                            Notification
+                                        </div>
+                                    </div>
+                                    <div class="component-settings__row">
+                                        <div id="editor">
+                                            <p>Hello World!</p>
+                                            <p>Some initial <strong>bold</strong> text</p>
+                                            <p><br></p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="component-settings__section">
+                                    <div class="component-settings__row-flex">
+                                        <div class="component-settings__title">
+                                            <img src="assets/images/settings/lable.svg" alt="">
+                                            Autoresponder Text
+                                        </div>
+                                    </div>
+                                    <div class="component-settings__row">
+                                        <div id="editor-autoresponder">
+                                            <p>Hello World!</p>
+                                            <p>Some initial <strong>bold</strong> text</p>
+                                            <p><br></p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="">
+                                    <div class="component-settings__section">
+                                        <div class="component-settings__row-flex">
+                                            <div class="component-settings__title">
+                                                <img src="assets/images/settings/lable.svg" alt="">
+                                                Delay
+                                            </div>
+                                        </div>
+                                        <div class="component-settings__row">
+
+                                        </div>
+                                    </div>
+
+                                    <div class="component-settings__section">
+                                        <div class="component-settings__row-flex">
+                                            <div class="component-settings__title">
+                                                <img src="assets/images/settings/lable.svg" alt="">
+                                                Period
+                                            </div>
+                                        </div>
+                                        <div class="component-settings__row">
+
+                                        </div>
+                                    </div>
+                                    <div class="component-settings__section">
+                                        <div class="component-settings__row">
+                                            <div class="component-settings__tag">
+                                                @confirmationUrl
+                                            </div>
+                                            <div class="component-settings__description">
+                                                Field label is a explanatory title for the content you expect your users to enter. Field
+                                                label is a explanatory title for the content you expect your users to enter.
+                                            </div>
+                                        </div>
+                                        <div class="component-settings__line"></div>
+                                        <div class="component-settings__row">
+                                            <div class="component-settings__tag">
+                                                @confirmationUrl
+                                            </div>
+                                            <div class="component-settings__description">
+                                                Field label is a explanatory title for the content you expect your users to enter. Field
+                                                label is a explanatory title for the content you expect your users to enter.
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
                         </div>
                     </div>
-                    <div class="components-panel__item">
-                        <div class="components-panel__item-icon">
-                            <img src="./assets/images/commponents/confirmation.svg" alt="">
-                        </div>
-                        <div class="components-panel__item-text">
-                            Confirmation
-                        </div>
-                    </div>
-                    <div class="components-panel__item">
-                        <div class="components-panel__item-icon">
-                            <img src="./assets/images/commponents/autoresponder.svg" alt="">
-                        </div>
-                        <div class="components-panel__item-text">
-                            Autoresponder
+                    <div class="components-panel__section">
+                        <div class="tab">
+                            <input type="checkbox" id="submitSettingsPanel-2">
+                            <label class="tab-label" for="submitSettingsPanel-2">help center</label>
+                            <div class="tab-content">
+                                <div class="">
+                                    <a href="#" class="components-panel__link">
+                                        How to use Data Tags?
+                                    </a>
+                                </div>
+                                <div class="">
+                                    <a href="#" class="components-panel__link">
+                                        What are predefined Data Tags ?
+                                    </a>
+                                </div>
+                                <div class="">
+                                    <a href="#" class="components-panel__link">
+                                        How to export data into Wix Contacts?
+                                    </a>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="components-panel__section">
-                <div class="components-panel__section-title">
-                    Payment gatewey
-                </div>
-                <div class="components-panel__item-box">
-                    <div class="components-panel__item components-panel__item_icon components-panel__item_half">
-                        <div class="components-panel__item-icon">
-                            <img src="./assets/images/commponents/paypal.svg" alt="">
-                        </div>
-
-                    </div>
-                    <div class="components-panel__item components-panel__item_icon components-panel__item_half">
-                        <div class="components-panel__item-icon">
-                            <img src="./assets/images/commponents/stripe.svg" alt="">
-                        </div>
-
-                    </div>
-                </div>
-            </div>
-            <div class="components-panel__section">
-                <div class="components-panel__section-title">
-                    Integrations
-                </div>
-                <div class="components-panel__item-box">
-                    <div class="components-panel__item components-panel__item_icon components-panel__item_half">
-                        <div class="components-panel__item-icon">
-                            <img src="./assets/images/commponents/mailchimp.svg" alt="">
-                        </div>
-
-                    </div>
-                    <div class="components-panel__item components-panel__item_icon components-panel__item_half">
-                        <div class="components-panel__item-icon">
-                            <img src="./assets/images/commponents/silesforce.svg" alt="">
-                        </div>
-
-                    </div>
-                    <div class="components-panel__item components-panel__item_icon components-panel__item_half">
-                        <div class="components-panel__item-icon">
-                            <img src="./assets/images/commponents/zapier.svg" alt="">
-                        </div>
-
-                    </div>
-                    <div class="components-panel__item components-panel__item_icon components-panel__item_half">
-                        <div class="components-panel__item-icon">
-                            <img src="./assets/images/commponents/webhooks.png" alt="">
-                        </div>
-
-                    </div>
-                </div>
-            </div>
-
         </div>
 
 
@@ -413,8 +586,17 @@
     </div>
 </div>
 <div class="overlay"></div>
+<script src="https://cdn.quilljs.com/1.3.6/quill.js"></script>
 <script src="assets/js/scipts.js"></script>
 <script>
+    var quill = new Quill('#editor', {
+
+        theme: 'snow'
+    });
+
+    var quillAutoresponder = new Quill('#editor-autoresponder', {
+        theme: 'snow'
+    })
     //popup
     let createFormButtons = document.getElementsByClassName('btn__create-form');
     let createFormPopup = document.getElementById('popup_create_form');
@@ -460,6 +642,16 @@
     closePanelComponent.addEventListener('click', function(){
         document.querySelector('.wrapper').classList.remove('components-panel-open')
     })
+
+    // open and close settings panel for actions
+    let settingsComponentActions = document.querySelector('.actions-click');
+    settingsComponentActions.addEventListener('click', function(){
+        document.querySelector('.wrapper').classList.add('component-settings-panel-actions-open')
+    });
+    let closePanelComponentActionsSettings = document.querySelector('.btn__close-panel_actions');
+    closePanelComponentActionsSettings.addEventListener('click', function(){
+        document.querySelector('.wrapper').classList.remove('component-settings-panel-actions-open')
+    });
 </script>
 </body>
 </html>
