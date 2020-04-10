@@ -2113,6 +2113,7 @@ input:checked + .slider:before {
 .constructor__component:hover {
   border-color: #e9ebec;
   border-radius: 5px;
+  z-index: 20;
 }
 .constructor__dots {
   position: absolute;
