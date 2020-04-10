@@ -813,6 +813,9 @@ _:-ms-fullscreen, :root .btn__create-form svg {
 .header_editor .navbar__item {
   margin: 0 3px;
 }
+.header_editor .navbar__link.active:after {
+  bottom: 0;
+}
 
 _:-ms-fullscreen, :root .navbar__link svg {
   top: 0;
@@ -2379,6 +2382,7 @@ input:checked + .slider:before {
   -ms-transition: all 300ms ease-in-out;
   transition: all 300ms ease-in-out;
   padding: 0px 40px 20px;
+  z-index: 50;
 }
 @media (min-width: 1920px) {
   .components-panel {
