@@ -124,10 +124,11 @@
 .component-settings
 
     &__section
-        margin-bottom: 10px
+        margin-bottom: 0px
         padding: 20px
         background: #353645
         border-radius: $border-radius
+        @include transition
 
         &_flex
             flex: 1
@@ -137,6 +138,9 @@
             &:last-child
                 margin-left: 5px
 
+    &__section-help
+        margin-bottom: 0px
+        @include transition
 
     &__flex-row-default
         display: flex
@@ -278,9 +282,13 @@
         ~ .tab-content
             max-height: 160vh
             padding: 0
-            margin-top: 18px
+            margin-top: 0px
             visibility: visible
             opacity: 1
+
+            .component-settings__section,
+            .component-settings__section-help
+                margin-bottom: 10px
 
 
 

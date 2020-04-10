@@ -2492,10 +2492,15 @@ input:checked + .slider:before {
 }
 
 .component-settings__section {
-  margin-bottom: 10px;
+  margin-bottom: 0px;
   padding: 20px;
   background: #353645;
   border-radius: 5px;
+  -webkit-transition: all 300ms ease-in-out;
+  -moz-transition: all 300ms ease-in-out;
+  -o-transition: all 300ms ease-in-out;
+  -ms-transition: all 300ms ease-in-out;
+  transition: all 300ms ease-in-out;
 }
 .component-settings__section_flex {
   flex: 1;
@@ -2505,6 +2510,14 @@ input:checked + .slider:before {
 }
 .component-settings__section_flex:last-child {
   margin-left: 5px;
+}
+.component-settings__section-help {
+  margin-bottom: 0px;
+  -webkit-transition: all 300ms ease-in-out;
+  -moz-transition: all 300ms ease-in-out;
+  -o-transition: all 300ms ease-in-out;
+  -ms-transition: all 300ms ease-in-out;
+  transition: all 300ms ease-in-out;
 }
 .component-settings__flex-row-default {
   display: flex;
@@ -2639,9 +2652,13 @@ input:checked + .slider:before {
 .components-panel input:checked ~ .tab-content {
   max-height: 160vh;
   padding: 0;
-  margin-top: 18px;
+  margin-top: 0px;
   visibility: visible;
   opacity: 1;
+}
+.components-panel input:checked ~ .tab-content .component-settings__section,
+.components-panel input:checked ~ .tab-content .component-settings__section-help {
+  margin-bottom: 10px;
 }
 
 .components-panel-content,
