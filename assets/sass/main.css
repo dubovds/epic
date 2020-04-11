@@ -424,7 +424,7 @@ body {
   }
 }
 .navbar__link_editor {
-  padding: 21px 20px 21px 49px;
+  padding: 20px 20px 19px;
 }
 @media (max-width: 1099px) {
   .navbar__link_editor {
@@ -519,11 +519,12 @@ _:-ms-fullscreen, :root .navbar__link svg {
   background-color: #484c62;
   color: #b4bad9;
   padding: 9px 18px;
+  border-bottom: none;
 }
 .btn__menu-editor svg {
   width: 18px;
-  position: absolute;
-  left: 9px;
+  height: 18px;
+  margin-right: 0;
   fill: #b4bad9;
   -webkit-transition: all 700ms ease-in-out;
   -moz-transition: all 700ms ease-in-out;
@@ -545,7 +546,7 @@ _:-ms-fullscreen, :root .navbar__link svg {
 .btn__publish-form {
   background-color: #89b659;
   color: #fff;
-  padding: 9px 18px;
+  padding: 8px 18px;
 }
 .btn__publish-form:hover {
   background-color: #92d050;
@@ -582,6 +583,8 @@ _:-ms-fullscreen, :root .navbar__link svg {
   width: 19px;
   height: 17px;
   left: 14px;
+  top: 50%;
+  transform: translateY(-50%);
 }
 @media (max-width: 1269px) {
   .btn__upgrade:before {

@@ -36,11 +36,12 @@
     background-color: #484c62
     color: #b4bad9
     padding: 9px 18px
+    border-bottom: none
 
     svg
       width: 18px
-      position: absolute
-      left: 9px
+      height: 18px
+      margin-right: 0
       fill: #b4bad9
       @include transition
 
@@ -56,7 +57,7 @@
   &__publish-form
     background-color: #89b659
     color: #fff
-    padding: 9px 18px
+    padding: 8px 18px
 
     &:hover
       background-color: #92d050
@@ -89,6 +90,8 @@
       width: 19px
       height: 17px
       left: 14px
+      top: 50%
+      transform: translateY(-50%)
 
       @include second-query
         left: 7px
