@@ -5,6 +5,7 @@
 
   &__list
     display: flex
+    align-items: center
 
   &__item
     margin: 0 19px
@@ -22,19 +23,23 @@
         margin-right: 19px
 
   &__link
+    display: flex
+
     position: relative
-    padding: 22px 0
+    padding: 20px 0 19px
     color: #9699ab
     text-decoration: none
     @include transition
+    border-bottom: 2px solid transparent
 
     &.active
       color: #fff
+      border-color: #f33c33
 
       svg
         fill: $white
 
-      &:after
+      //&:after
         position: absolute
         content: ''
         width: 100%
