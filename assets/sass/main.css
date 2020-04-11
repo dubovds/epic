@@ -360,9 +360,14 @@ body {
     margin: 0 10px;
   }
 }
+@media (max-width: 1269px) {
+  .navbar__item {
+    margin: 0 15px;
+  }
+}
 @media (max-width: 1099px) {
   .navbar__item {
-    margin: 0 6px;
+    margin: 0 10px;
   }
 }
 .navbar__item_btn {
@@ -397,23 +402,10 @@ body {
 .navbar__link:hover svg {
   fill: #fff;
 }
-.navbar__link_icon {
-  padding-left: 29px;
-}
-@media (max-width: 1269px) {
-  .navbar__link_icon {
-    padding: 22px;
-  }
-}
-@media (max-width: 1099px) {
-  .navbar__link_icon {
-    padding: 22px 17px;
-  }
-}
 .navbar__link svg {
   width: 19px;
-  position: absolute;
-  left: 0;
+  height: 19px;
+  margin-right: 10px;
   fill: #9699ab;
   -webkit-transition: all 700ms ease-in-out;
   -moz-transition: all 700ms ease-in-out;
@@ -423,7 +415,7 @@ body {
 }
 @media (max-width: 1269px) {
   .navbar__link svg {
-    left: 13px;
+    margin-right: 0;
   }
 }
 @media (max-width: 1099px) {
@@ -503,33 +495,18 @@ _:-ms-fullscreen, :root .navbar__link svg {
 .btn__create-form {
   background-color: #484c62;
   color: #b4bad9;
-  padding: 11px 15px 11px 42px;
+  padding: 11px 15px;
   border-bottom: none;
-}
-@media (max-width: 1269px) {
-  .btn__create-form {
-    padding: 11px 22px;
-  }
-}
-@media (max-width: 1099px) {
-  .btn__create-form {
-    padding: 11px 15px;
-  }
 }
 .btn__create-form svg {
   width: 18px;
-  position: absolute;
-  left: 14px;
+  height: 18px;
+  margin-right: 10px;
   fill: #b4bad9;
-  -webkit-transition: all 700ms ease-in-out;
-  -moz-transition: all 700ms ease-in-out;
-  -o-transition: all 700ms ease-in-out;
-  -ms-transition: all 700ms ease-in-out;
-  transition: all 700ms ease-in-out;
 }
-@media (max-width: 1099px) {
+@media (max-width: 1269px) {
   .btn__create-form svg {
-    left: 6px;
+    margin-right: 0;
   }
 }
 .btn__create-form:hover {

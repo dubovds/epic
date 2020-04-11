@@ -14,24 +14,17 @@
   &__create-form
     background-color: #484c62
     color: #b4bad9
-    padding: 11px 15px 11px 42px
+    padding: 11px 15px
     border-bottom: none
-
-    @include second-query
-      padding: 11px 22px
-
-    @include third-query
-      padding: 11px 15px
 
     svg
       width: 18px
-      position: absolute
-      left: 14px
+      height: 18px
+      margin-right: 10px
       fill: #b4bad9
-      @include transition
 
-      @include third-query
-        left: 6px
+      @include second-query
+        margin-right: 0
 
     &:hover
       color: #ffffff
