@@ -84,6 +84,10 @@ a {
   display: flex;
 }
 
+* {
+  pointer-events: fill;
+}
+
 body {
   font-family: "Roboto", sans-serif;
 }
@@ -167,7 +171,7 @@ body {
 .block__link {
   display: block;
   margin-top: 8px;
-  -webkit-transition: all 700ms ease-in-out;
+  -webkit-transition: all 0ms ease-in-out;
   -moz-transition: all 700ms ease-in-out;
   -o-transition: all 700ms ease-in-out;
   -ms-transition: all 700ms ease-in-out;
@@ -389,7 +393,7 @@ body {
   padding: 20px 0 19px;
   color: #9699ab;
   text-decoration: none;
-  -webkit-transition: all 700ms ease-in-out;
+  -webkit-transition: all 0ms ease-in-out;
   -moz-transition: all 700ms ease-in-out;
   -o-transition: all 700ms ease-in-out;
   -ms-transition: all 700ms ease-in-out;
@@ -406,15 +410,14 @@ body {
 .navbar__link:hover {
   color: #fff;
 }
-.navbar__link:hover svg {
+.navbar__link:hover path {
   fill: #fff;
 }
 .navbar__link svg {
   width: 19px;
   height: 19px;
   margin-right: 10px;
-  fill: #9699ab;
-  -webkit-transition: all 700ms ease-in-out;
+  -webkit-transition: all 0ms ease-in-out;
   -moz-transition: all 700ms ease-in-out;
   -o-transition: all 700ms ease-in-out;
   -ms-transition: all 700ms ease-in-out;
@@ -429,6 +432,14 @@ body {
   .navbar__link svg {
     left: 7px;
   }
+}
+.navbar__link svg path {
+  -webkit-transition: all 0ms ease-in-out;
+  -moz-transition: all 700ms ease-in-out;
+  -o-transition: all 700ms ease-in-out;
+  -ms-transition: all 700ms ease-in-out;
+  transition: all 700ms ease-in-out;
+  fill: #9699ab;
 }
 .navbar__link_editor {
   padding: 20px 20px 19px;
@@ -483,14 +494,14 @@ _:-ms-fullscreen, :root .navbar__link svg {
   position: relative;
   border-radius: 5px;
   cursor: pointer;
-  -webkit-transition: all 700ms ease-in-out;
+  -webkit-transition: all 0ms ease-in-out;
   -moz-transition: all 700ms ease-in-out;
   -o-transition: all 700ms ease-in-out;
   -ms-transition: all 700ms ease-in-out;
   transition: all 700ms ease-in-out;
 }
 .btn svg {
-  -webkit-transition: all 700ms ease-in-out;
+  -webkit-transition: all 0ms ease-in-out;
   -moz-transition: all 700ms ease-in-out;
   -o-transition: all 700ms ease-in-out;
   -ms-transition: all 700ms ease-in-out;
@@ -533,7 +544,7 @@ _:-ms-fullscreen, :root .navbar__link svg {
   height: 18px;
   margin-right: 0;
   fill: #b4bad9;
-  -webkit-transition: all 700ms ease-in-out;
+  -webkit-transition: all 0ms ease-in-out;
   -moz-transition: all 700ms ease-in-out;
   -o-transition: all 700ms ease-in-out;
   -ms-transition: all 700ms ease-in-out;
@@ -670,7 +681,7 @@ _:-ms-fullscreen, :root .navbar__link svg {
 }
 .btn__block-link svg {
   fill: #9699ab;
-  -webkit-transition: all 700ms ease-in-out;
+  -webkit-transition: all 0ms ease-in-out;
   -moz-transition: all 700ms ease-in-out;
   -o-transition: all 700ms ease-in-out;
   -ms-transition: all 700ms ease-in-out;
@@ -739,7 +750,7 @@ _:-ms-fullscreen, :root .navbar__link svg {
   border: none;
   color: #fff;
   padding: 14px 22px;
-  -webkit-transition: all 700ms ease-in-out;
+  -webkit-transition: all 0ms ease-in-out;
   -moz-transition: all 700ms ease-in-out;
   -o-transition: all 700ms ease-in-out;
   -ms-transition: all 700ms ease-in-out;
@@ -776,7 +787,7 @@ _:-ms-fullscreen, :root .navbar__link svg {
 .btn__close-panel {
   background-color: #3b3d50;
   padding: 10px 12px;
-  -webkit-transition: all 700ms ease-in-out;
+  -webkit-transition: all 0ms ease-in-out;
   -moz-transition: all 700ms ease-in-out;
   -o-transition: all 700ms ease-in-out;
   -ms-transition: all 700ms ease-in-out;
@@ -794,7 +805,7 @@ _:-ms-fullscreen, :root .navbar__link svg {
   height: 13px;
   top: 2px;
   fill: #9699ab;
-  -webkit-transition: all 700ms ease-in-out;
+  -webkit-transition: all 0ms ease-in-out;
   -moz-transition: all 700ms ease-in-out;
   -o-transition: all 700ms ease-in-out;
   -ms-transition: all 700ms ease-in-out;
@@ -884,7 +895,7 @@ _:-ms-fullscreen, :root .btn__create-form svg {
 .tab-content {
   max-height: 0;
   color: #2c3e50;
-  -webkit-transition: all 700ms ease-in-out;
+  -webkit-transition: all 0ms ease-in-out;
   -moz-transition: all 700ms ease-in-out;
   -o-transition: all 700ms ease-in-out;
   -ms-transition: all 700ms ease-in-out;
@@ -1078,7 +1089,7 @@ _:-ms-fullscreen, :root .submission__message {
 .navbar-footer__link {
   color: #9699ab;
   border-bottom: 1px solid #9699ab;
-  -webkit-transition: all 700ms ease-in-out;
+  -webkit-transition: all 0ms ease-in-out;
   -moz-transition: all 700ms ease-in-out;
   -o-transition: all 700ms ease-in-out;
   -ms-transition: all 700ms ease-in-out;
@@ -1222,7 +1233,7 @@ _:-ms-fullscreen, :root .submission__message {
   background-color: #393d56;
   padding: 40px;
   border-radius: 5px;
-  -webkit-transition: all 700ms ease-in-out;
+  -webkit-transition: all 0ms ease-in-out;
   -moz-transition: all 700ms ease-in-out;
   -o-transition: all 700ms ease-in-out;
   -ms-transition: all 700ms ease-in-out;
@@ -1272,7 +1283,7 @@ _:-ms-fullscreen, :root .submission__message {
 }
 .popup__close svg {
   fill: #4f546c;
-  -webkit-transition: all 700ms ease-in-out;
+  -webkit-transition: all 0ms ease-in-out;
   -moz-transition: all 700ms ease-in-out;
   -o-transition: all 700ms ease-in-out;
   -ms-transition: all 700ms ease-in-out;
@@ -1292,7 +1303,7 @@ _:-ms-fullscreen, :root .submission__message {
   left: 0;
   background-color: rgba(48, 50, 63, 0.7);
   z-index: 100;
-  -webkit-transition: all 700ms ease-in-out;
+  -webkit-transition: all 0ms ease-in-out;
   -moz-transition: all 700ms ease-in-out;
   -o-transition: all 700ms ease-in-out;
   -ms-transition: all 700ms ease-in-out;
@@ -1322,14 +1333,14 @@ _:-ms-fullscreen, :root .submission__message {
   font-family: "IBM Plex Sans", sans-serif;
   font-weight: 700;
   font-size: 14px;
-  -webkit-transition: all 700ms ease-in-out;
+  -webkit-transition: all 0ms ease-in-out;
   -moz-transition: all 700ms ease-in-out;
   -o-transition: all 700ms ease-in-out;
   -ms-transition: all 700ms ease-in-out;
   transition: all 700ms ease-in-out;
 }
 .top-panel__link svg {
-  -webkit-transition: all 700ms ease-in-out;
+  -webkit-transition: all 0ms ease-in-out;
   -moz-transition: all 700ms ease-in-out;
   -o-transition: all 700ms ease-in-out;
   -ms-transition: all 700ms ease-in-out;
@@ -1355,7 +1366,7 @@ _:-ms-fullscreen, :root .submission__message {
   height: 14px;
   fill: #8a8e9d;
   transform: rotate(90deg);
-  -webkit-transition: all 700ms ease-in-out;
+  -webkit-transition: all 0ms ease-in-out;
   -moz-transition: all 700ms ease-in-out;
   -o-transition: all 700ms ease-in-out;
   -ms-transition: all 700ms ease-in-out;
@@ -1403,7 +1414,7 @@ _:-ms-fullscreen, :root .submission__message {
   font-family: "IBM Plex Sans", sans-serif;
   font-weight: 700;
   font-size: 14px;
-  -webkit-transition: all 700ms ease-in-out;
+  -webkit-transition: all 0ms ease-in-out;
   -moz-transition: all 700ms ease-in-out;
   -o-transition: all 700ms ease-in-out;
   -ms-transition: all 700ms ease-in-out;
@@ -1417,7 +1428,7 @@ _:-ms-fullscreen, :root .submission__message {
   background-color: transparent;
   bottom: 0px;
   left: 0;
-  -webkit-transition: all 700ms ease-in-out;
+  -webkit-transition: all 0ms ease-in-out;
   -moz-transition: all 700ms ease-in-out;
   -o-transition: all 700ms ease-in-out;
   -ms-transition: all 700ms ease-in-out;
@@ -1429,7 +1440,7 @@ _:-ms-fullscreen, :root .submission__message {
   height: 20px;
   left: 10px;
   fill: #8a8e9d;
-  -webkit-transition: all 700ms ease-in-out;
+  -webkit-transition: all 0ms ease-in-out;
   -moz-transition: all 700ms ease-in-out;
   -o-transition: all 700ms ease-in-out;
   -ms-transition: all 700ms ease-in-out;
@@ -1762,7 +1773,7 @@ _:-ms-fullscreen, :root .submission__message {
   outline: none;
   border-radius: 5px;
   font-size: 14px;
-  -webkit-transition: all 700ms ease-in-out;
+  -webkit-transition: all 0ms ease-in-out;
   -moz-transition: all 700ms ease-in-out;
   -o-transition: all 700ms ease-in-out;
   -ms-transition: all 700ms ease-in-out;
@@ -2068,7 +2079,7 @@ _:-ms-fullscreen, :root .submission__message {
   position: absolute;
   right: 0;
   top: 0;
-  -webkit-transition: all 700ms ease-in-out;
+  -webkit-transition: all 0ms ease-in-out;
   -moz-transition: all 700ms ease-in-out;
   -o-transition: all 700ms ease-in-out;
   -ms-transition: all 700ms ease-in-out;
@@ -2196,7 +2207,7 @@ input:checked + .slider:before {
   font-size: 14px;
   border: 2px dashed #e0e1e3;
   cursor: pointer;
-  -webkit-transition: all 700ms ease-in-out;
+  -webkit-transition: all 0ms ease-in-out;
   -moz-transition: all 700ms ease-in-out;
   -o-transition: all 700ms ease-in-out;
   -ms-transition: all 700ms ease-in-out;
@@ -2353,7 +2364,7 @@ input:checked + .slider:before {
 
 .slide-part {
   width: 100%;
-  -webkit-transition: all 700ms ease-in-out;
+  -webkit-transition: all 0ms ease-in-out;
   -moz-transition: all 700ms ease-in-out;
   -o-transition: all 700ms ease-in-out;
   -ms-transition: all 700ms ease-in-out;
@@ -2375,7 +2386,7 @@ input:checked + .slider:before {
   right: -700px;
   visibility: hidden;
   opacity: 0;
-  -webkit-transition: all 700ms ease-in-out;
+  -webkit-transition: all 0ms ease-in-out;
   -moz-transition: all 700ms ease-in-out;
   -o-transition: all 700ms ease-in-out;
   -ms-transition: all 700ms ease-in-out;
@@ -2427,7 +2438,7 @@ input:checked + .slider:before {
   margin: 2px;
   cursor: pointer;
   text-align: center;
-  -webkit-transition: all 700ms ease-in-out;
+  -webkit-transition: all 0ms ease-in-out;
   -moz-transition: all 700ms ease-in-out;
   -o-transition: all 700ms ease-in-out;
   -ms-transition: all 700ms ease-in-out;
@@ -2500,7 +2511,7 @@ input:checked + .slider:before {
   padding: 20px;
   background: #353645;
   border-radius: 5px;
-  -webkit-transition: all 700ms ease-in-out;
+  -webkit-transition: all 0ms ease-in-out;
   -moz-transition: all 700ms ease-in-out;
   -o-transition: all 700ms ease-in-out;
   -ms-transition: all 700ms ease-in-out;
@@ -2517,7 +2528,7 @@ input:checked + .slider:before {
 }
 .component-settings__section-help {
   margin-bottom: 0px;
-  -webkit-transition: all 700ms ease-in-out;
+  -webkit-transition: all 0ms ease-in-out;
   -moz-transition: all 700ms ease-in-out;
   -o-transition: all 700ms ease-in-out;
   -ms-transition: all 700ms ease-in-out;
@@ -2628,7 +2639,7 @@ input:checked + .slider:before {
   color: #fff;
   background: #323341;
   border-radius: 5px;
-  -webkit-transition: all 700ms ease-in-out;
+  -webkit-transition: all 0ms ease-in-out;
   -moz-transition: all 700ms ease-in-out;
   -o-transition: all 700ms ease-in-out;
   -ms-transition: all 700ms ease-in-out;
