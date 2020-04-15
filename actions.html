@@ -698,10 +698,12 @@
     let settingsComponentActions = document.querySelector('.actions-click');
     settingsComponentActions.addEventListener('click', function(){
         document.querySelector('.wrapper').classList.add('component-settings-panel-actions-open')
+        document.querySelector('.actions-click').classList.add('active')
     });
     let closePanelComponentActionsSettings = document.querySelector('.btn__close-panel_actions');
     closePanelComponentActionsSettings.addEventListener('click', function(){
         document.querySelector('.wrapper').classList.remove('component-settings-panel-actions-open')
+        document.querySelector('.actions-click').classList.remove('active')
     });
 </script>
 </body>
