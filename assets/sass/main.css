@@ -410,13 +410,14 @@ body {
 .navbar__link:hover {
   color: #fff;
 }
-.navbar__link:hover path {
+.navbar__link:hover svg {
   fill: #fff;
 }
 .navbar__link svg {
   width: 19px;
   height: 19px;
   margin-right: 10px;
+  fill: #9699ab;
   -webkit-transition: all 0ms ease-in-out;
   -moz-transition: all 700ms ease-in-out;
   -o-transition: all 700ms ease-in-out;
@@ -432,14 +433,6 @@ body {
   .navbar__link svg {
     left: 7px;
   }
-}
-.navbar__link svg path {
-  -webkit-transition: all 0ms ease-in-out;
-  -moz-transition: all 700ms ease-in-out;
-  -o-transition: all 700ms ease-in-out;
-  -ms-transition: all 700ms ease-in-out;
-  transition: all 700ms ease-in-out;
-  fill: #9699ab;
 }
 .navbar__link_editor {
   padding: 20px 20px 19px;

@@ -44,17 +44,14 @@
     &:hover
       color: #fff
 
-      //svg
+      svg
         fill: $white
-
-      path
-        fill: #fff
 
     svg
       width: 19px
       height: 19px
       margin-right: 10px
-      //fill: $color-text-menu
+      fill: $color-text-menu
       @include transition
 
       @include second-query
@@ -62,10 +59,6 @@
 
       @include third-query
         left: 7px
-
-      path
-        @include transition
-        fill: $color-text-menu
 
     &_editor
       padding: 20px 20px 19px
