@@ -1949,51 +1949,61 @@
     let settingsComponent = document.querySelector('.checkbox-click');
     settingsComponent.addEventListener('click', function(){
         document.querySelector('.wrapper').classList.add('component-settings-panel-open')
+        document.querySelector('.checkbox-click').classList.add('active')
     });
 
     let closePanelComponentSettings = document.querySelector('.btn__close-panel_settings');
     closePanelComponentSettings.addEventListener('click', function(){
         document.querySelector('.wrapper').classList.remove('component-settings-panel-open')
+        document.querySelector('.checkbox-click').classList.remove('active')
     });
 
     // open and close settings panel for input
     let settingsComponentInput = document.querySelector('.input-click');
     settingsComponentInput.addEventListener('click', function(){
         document.querySelector('.wrapper').classList.add('component-settings-panel-input-open')
+        document.querySelector('.input-click').classList.add('active')
     });
     let closePanelComponentInputSettings = document.querySelector('.btn__close-panel_input');
     closePanelComponentInputSettings.addEventListener('click', function(){
         document.querySelector('.wrapper').classList.remove('component-settings-panel-input-open')
+        document.querySelector('.input-click').classList.remove('active')
     });
 
     // open and close settings panel for submit
     let settingsComponentSubmit = document.querySelector('.submit-click');
     settingsComponentSubmit.addEventListener('click', function(){
         document.querySelector('.wrapper').classList.add('component-settings-panel-submit-open')
+        document.querySelector('.submit-click').classList.add('active')
     });
     let closePanelComponentSubmitSettings = document.querySelector('.btn__close-panel_submit');
     closePanelComponentSubmitSettings.addEventListener('click', function(){
         document.querySelector('.wrapper').classList.remove('component-settings-panel-submit-open')
+        document.querySelector('.submit-click').classList.remove('active')
     });
 
     // open and close settings panel for country
     let settingsComponentCountry = document.querySelector('.country-click');
     settingsComponentCountry.addEventListener('click', function(){
-        document.querySelector('.wrapper').classList.add('component-settings-panel-country-open')
+        document.querySelector('.wrapper').classList.add('component-settings-panel-country-open');
+        document.querySelector('.country-click').classList.add('active')
     });
     let closePanelComponentCountrySettings = document.querySelector('.btn__close-panel_country');
     closePanelComponentCountrySettings.addEventListener('click', function(){
         document.querySelector('.wrapper').classList.remove('component-settings-panel-country-open')
+        document.querySelector('.country-click').classList.remove('active')
     });
 
     // open and close settings panel for states
     let settingsComponentStates = document.querySelector('.states-click');
     settingsComponentStates.addEventListener('click', function(){
-        document.querySelector('.wrapper').classList.add('component-settings-panel-states-open')
+        document.querySelector('.wrapper').classList.add('component-settings-panel-states-open');
+        document.querySelector('.states-click').classList.add('active')
     });
     let closePanelComponentStatesSettings = document.querySelector('.btn__close-panel_states');
     closePanelComponentStatesSettings.addEventListener('click', function(){
-        document.querySelector('.wrapper').classList.remove('component-settings-panel-states-open')
+        document.querySelector('.wrapper').classList.remove('component-settings-panel-states-open');
+        document.querySelector('.states-click').classList.remove('active')
     });
 
 

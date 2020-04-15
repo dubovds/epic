@@ -10,23 +10,14 @@
     padding: 15px 20px
     border: 2px solid transparent
     cursor: pointer
-
-    //&:after
-      content: ''
-      position: absolute
-      background-image: url("../images/more_component.svg")
-      background-repeat: no-repeat
-      background-position: 0 0
-      width: 18px
-      height: 4px
-      top: 15px
-      right: 15px
-      z-index: 10
+    border-radius: $border-radius
 
     &:hover
       border-color: #e9ebec
-      border-radius: $border-radius
       z-index: 20
+
+    &.active
+      border-color: #fe544b
 
   &__dots
     position: absolute
@@ -60,7 +51,6 @@
       border-radius: $border-radius
       border-bottom-left-radius: 0
       border-bottom-right-radius: 0
-
 
   &__dots-link
     background-repeat: no-repeat

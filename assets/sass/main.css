@@ -2115,11 +2115,14 @@ input:checked + .slider:before {
   padding: 15px 20px;
   border: 2px solid transparent;
   cursor: pointer;
+  border-radius: 5px;
 }
 .constructor__component:hover {
   border-color: #e9ebec;
-  border-radius: 5px;
   z-index: 20;
+}
+.constructor__component.active {
+  border-color: #fe544b;
 }
 .constructor__dots {
   position: absolute;
