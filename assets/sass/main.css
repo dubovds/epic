@@ -2051,6 +2051,11 @@ _:-ms-fullscreen, :root .submission__message {
   position: absolute;
   width: 97%;
   bottom: 0;
+  -webkit-transition: all 0ms ease-in-out;
+  -moz-transition: all 700ms ease-in-out;
+  -o-transition: all 700ms ease-in-out;
+  -ms-transition: all 700ms ease-in-out;
+  transition: all 700ms ease-in-out;
 }
 .switch__text {
   padding-left: 15px;
@@ -2116,13 +2121,24 @@ input:checked + .slider:before {
   border: 2px solid transparent;
   cursor: pointer;
   border-radius: 5px;
+  -webkit-transition: all 0ms ease-in-out;
+  -moz-transition: all 700ms ease-in-out;
+  -o-transition: all 700ms ease-in-out;
+  -ms-transition: all 700ms ease-in-out;
+  transition: all 700ms ease-in-out;
 }
 .constructor__component:hover {
   border-color: #e9ebec;
   z-index: 20;
 }
+.constructor__component:hover .switch__container_action:after {
+  border-bottom-color: transparent;
+}
 .constructor__component.active {
   border-color: #fe544b;
+}
+.constructor__component_actions {
+  margin-bottom: 0;
 }
 .constructor__dots {
   position: absolute;

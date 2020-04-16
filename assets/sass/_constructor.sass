@@ -11,13 +11,20 @@
     border: 2px solid transparent
     cursor: pointer
     border-radius: $border-radius
+    @include transition
 
     &:hover
       border-color: #e9ebec
       z-index: 20
 
+      .switch__container_action:after
+          border-bottom-color: transparent
+
     &.active
       border-color: #fe544b
+
+    &_actions
+      margin-bottom: 0
 
   &__dots
     position: absolute
