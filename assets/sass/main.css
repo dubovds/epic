@@ -2049,7 +2049,8 @@ _:-ms-fullscreen, :root .submission__message {
   content: "";
   border-bottom: 1px solid #f0f0f0;
   position: absolute;
-  width: 97%;
+  width: 100%;
+  left: 0;
   bottom: 0;
   -webkit-transition: all 0ms ease-in-out;
   -moz-transition: all 700ms ease-in-out;
