@@ -1168,6 +1168,10 @@ _:-ms-fullscreen, :root .submission__message {
   display: flex;
   justify-content: space-between;
   margin-bottom: 6px;
+  border: 2px solid transparent;
+}
+.forms-list:hover {
+  border-color: #e9ebec;
 }
 
 .form-list__item {
