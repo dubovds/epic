@@ -1267,7 +1267,11 @@ _:-ms-fullscreen, :root .submission__message {
   margin-bottom: 5%;
   top: 10%;
   transform: translate(-50%, -150%);
-  transition: opacity 700ms ease-in-out;
+  -webkit-transition: opacity 800ms ease-in-out;
+  -moz-transition: opacity 800ms ease-in-out;
+  -o-transition: opacity 800ms ease-in-out;
+  -ms-transition: opacity 800ms ease-in-out;
+  transition: opacity 800ms ease-in-out;
 }
 .popup__title {
   color: #fff;
