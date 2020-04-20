@@ -171,11 +171,11 @@ body {
 .block__link {
   display: block;
   margin-top: 8px;
-  -webkit-transition: all 700ms ease-in-out;
-  -moz-transition: all 700ms ease-in-out;
-  -o-transition: all 700ms ease-in-out;
-  -ms-transition: all 700ms ease-in-out;
-  transition: all 700ms ease-in-out;
+  -webkit-transition: all 300ms ease-in-out;
+  -moz-transition: all 300ms ease-in-out;
+  -o-transition: all 300ms ease-in-out;
+  -ms-transition: all 300ms ease-in-out;
+  transition: all 300ms ease-in-out;
 }
 .block__link:first-child {
   margin-top: 0;
@@ -393,11 +393,11 @@ body {
   padding: 20px 0 19px;
   color: #9699ab;
   text-decoration: none;
-  -webkit-transition: all 700ms ease-in-out;
-  -moz-transition: all 700ms ease-in-out;
-  -o-transition: all 700ms ease-in-out;
-  -ms-transition: all 700ms ease-in-out;
-  transition: all 700ms ease-in-out;
+  -webkit-transition: all 300ms ease-in-out;
+  -moz-transition: all 300ms ease-in-out;
+  -o-transition: all 300ms ease-in-out;
+  -ms-transition: all 300ms ease-in-out;
+  transition: all 300ms ease-in-out;
   border-bottom: 2px solid transparent;
 }
 .navbar__link.active {
@@ -418,11 +418,11 @@ body {
   height: 19px;
   margin-right: 10px;
   fill: #9699ab;
-  -webkit-transition: all 700ms ease-in-out;
-  -moz-transition: all 700ms ease-in-out;
-  -o-transition: all 700ms ease-in-out;
-  -ms-transition: all 700ms ease-in-out;
-  transition: all 700ms ease-in-out;
+  -webkit-transition: all 300ms ease-in-out;
+  -moz-transition: all 300ms ease-in-out;
+  -o-transition: all 300ms ease-in-out;
+  -ms-transition: all 300ms ease-in-out;
+  transition: all 300ms ease-in-out;
 }
 @media (max-width: 1269px) {
   .navbar__link svg {
@@ -487,18 +487,18 @@ _:-ms-fullscreen, :root .navbar__link svg {
   position: relative;
   border-radius: 5px;
   cursor: pointer;
-  -webkit-transition: all 700ms ease-in-out;
-  -moz-transition: all 700ms ease-in-out;
-  -o-transition: all 700ms ease-in-out;
-  -ms-transition: all 700ms ease-in-out;
-  transition: all 700ms ease-in-out;
+  -webkit-transition: all 300ms ease-in-out;
+  -moz-transition: all 300ms ease-in-out;
+  -o-transition: all 300ms ease-in-out;
+  -ms-transition: all 300ms ease-in-out;
+  transition: all 300ms ease-in-out;
 }
 .btn svg {
-  -webkit-transition: all 700ms ease-in-out;
-  -moz-transition: all 700ms ease-in-out;
-  -o-transition: all 700ms ease-in-out;
-  -ms-transition: all 700ms ease-in-out;
-  transition: all 700ms ease-in-out;
+  -webkit-transition: all 300ms ease-in-out;
+  -moz-transition: all 300ms ease-in-out;
+  -o-transition: all 300ms ease-in-out;
+  -ms-transition: all 300ms ease-in-out;
+  transition: all 300ms ease-in-out;
 }
 .btn_full-width {
   width: 100%;
@@ -537,11 +537,11 @@ _:-ms-fullscreen, :root .navbar__link svg {
   height: 18px;
   margin-right: 0;
   fill: #b4bad9;
-  -webkit-transition: all 700ms ease-in-out;
-  -moz-transition: all 700ms ease-in-out;
-  -o-transition: all 700ms ease-in-out;
-  -ms-transition: all 700ms ease-in-out;
-  transition: all 700ms ease-in-out;
+  -webkit-transition: all 300ms ease-in-out;
+  -moz-transition: all 300ms ease-in-out;
+  -o-transition: all 300ms ease-in-out;
+  -ms-transition: all 300ms ease-in-out;
+  transition: all 300ms ease-in-out;
 }
 @media (max-width: 1099px) {
   .btn__menu-editor svg {
@@ -674,11 +674,11 @@ _:-ms-fullscreen, :root .navbar__link svg {
 }
 .btn__block-link svg {
   fill: #9699ab;
-  -webkit-transition: all 700ms ease-in-out;
-  -moz-transition: all 700ms ease-in-out;
-  -o-transition: all 700ms ease-in-out;
-  -ms-transition: all 700ms ease-in-out;
-  transition: all 700ms ease-in-out;
+  -webkit-transition: all 300ms ease-in-out;
+  -moz-transition: all 300ms ease-in-out;
+  -o-transition: all 300ms ease-in-out;
+  -ms-transition: all 300ms ease-in-out;
+  transition: all 300ms ease-in-out;
 }
 .btn__block-link_forms-grid {
   margin: 5px 0 0 0;
@@ -743,11 +743,11 @@ _:-ms-fullscreen, :root .navbar__link svg {
   border: none;
   color: #fff;
   padding: 14px 22px;
-  -webkit-transition: all 700ms ease-in-out;
-  -moz-transition: all 700ms ease-in-out;
-  -o-transition: all 700ms ease-in-out;
-  -ms-transition: all 700ms ease-in-out;
-  transition: all 700ms ease-in-out;
+  -webkit-transition: all 300ms ease-in-out;
+  -moz-transition: all 300ms ease-in-out;
+  -o-transition: all 300ms ease-in-out;
+  -ms-transition: all 300ms ease-in-out;
+  transition: all 300ms ease-in-out;
 }
 .btn__submit:hover {
   background-color: #ff6d65;
@@ -780,11 +780,11 @@ _:-ms-fullscreen, :root .navbar__link svg {
 .btn__close-panel {
   background-color: #3b3d50;
   padding: 10px 12px;
-  -webkit-transition: all 700ms ease-in-out;
-  -moz-transition: all 700ms ease-in-out;
-  -o-transition: all 700ms ease-in-out;
-  -ms-transition: all 700ms ease-in-out;
-  transition: all 700ms ease-in-out;
+  -webkit-transition: all 300ms ease-in-out;
+  -moz-transition: all 300ms ease-in-out;
+  -o-transition: all 300ms ease-in-out;
+  -ms-transition: all 300ms ease-in-out;
+  transition: all 300ms ease-in-out;
   cursor: pointer;
 }
 @media (min-width: 1920px) {
@@ -798,11 +798,11 @@ _:-ms-fullscreen, :root .navbar__link svg {
   height: 13px;
   top: 2px;
   fill: #9699ab;
-  -webkit-transition: all 700ms ease-in-out;
-  -moz-transition: all 700ms ease-in-out;
-  -o-transition: all 700ms ease-in-out;
-  -ms-transition: all 700ms ease-in-out;
-  transition: all 700ms ease-in-out;
+  -webkit-transition: all 300ms ease-in-out;
+  -moz-transition: all 300ms ease-in-out;
+  -o-transition: all 300ms ease-in-out;
+  -ms-transition: all 300ms ease-in-out;
+  transition: all 300ms ease-in-out;
 }
 .btn__close-panel:hover {
   background-color: #3e4255;
@@ -901,11 +901,11 @@ _:-ms-fullscreen, :root .btn__create-form svg {
 .tab-content {
   max-height: 0;
   color: #2c3e50;
-  -webkit-transition: all 700ms ease-in-out;
-  -moz-transition: all 700ms ease-in-out;
-  -o-transition: all 700ms ease-in-out;
-  -ms-transition: all 700ms ease-in-out;
-  transition: all 700ms ease-in-out;
+  -webkit-transition: all 300ms ease-in-out;
+  -moz-transition: all 300ms ease-in-out;
+  -o-transition: all 300ms ease-in-out;
+  -ms-transition: all 300ms ease-in-out;
+  transition: all 300ms ease-in-out;
 }
 .tab-close {
   display: flex;
@@ -1095,11 +1095,11 @@ _:-ms-fullscreen, :root .submission__message {
 .navbar-footer__link {
   color: #9699ab;
   border-bottom: 1px solid #9699ab;
-  -webkit-transition: all 700ms ease-in-out;
-  -moz-transition: all 700ms ease-in-out;
-  -o-transition: all 700ms ease-in-out;
-  -ms-transition: all 700ms ease-in-out;
-  transition: all 700ms ease-in-out;
+  -webkit-transition: all 300ms ease-in-out;
+  -moz-transition: all 300ms ease-in-out;
+  -o-transition: all 300ms ease-in-out;
+  -ms-transition: all 300ms ease-in-out;
+  transition: all 300ms ease-in-out;
 }
 .navbar-footer__link:hover {
   border-bottom: 1px solid transparent;
@@ -1243,11 +1243,11 @@ _:-ms-fullscreen, :root .submission__message {
   background-color: #393d56;
   padding: 40px;
   border-radius: 5px;
-  -webkit-transition: all 700ms ease-in-out;
-  -moz-transition: all 700ms ease-in-out;
-  -o-transition: all 700ms ease-in-out;
-  -ms-transition: all 700ms ease-in-out;
-  transition: all 700ms ease-in-out;
+  -webkit-transition: all 300ms ease-in-out;
+  -moz-transition: all 300ms ease-in-out;
+  -o-transition: all 300ms ease-in-out;
+  -ms-transition: all 300ms ease-in-out;
+  transition: all 300ms ease-in-out;
   z-index: 101;
 }
 @media (max-width: 1374px) {
@@ -1312,11 +1312,11 @@ _:-ms-fullscreen, :root .submission__message {
 }
 .popup__close svg {
   fill: #4f546c;
-  -webkit-transition: all 700ms ease-in-out;
-  -moz-transition: all 700ms ease-in-out;
-  -o-transition: all 700ms ease-in-out;
-  -ms-transition: all 700ms ease-in-out;
-  transition: all 700ms ease-in-out;
+  -webkit-transition: all 300ms ease-in-out;
+  -moz-transition: all 300ms ease-in-out;
+  -o-transition: all 300ms ease-in-out;
+  -ms-transition: all 300ms ease-in-out;
+  transition: all 300ms ease-in-out;
 }
 .popup__close:hover svg {
   fill: #fff;
@@ -1329,11 +1329,11 @@ _:-ms-fullscreen, :root .submission__message {
 }
 .popup__link {
   color: #fe544b;
-  -webkit-transition: all 700ms ease-in-out;
-  -moz-transition: all 700ms ease-in-out;
-  -o-transition: all 700ms ease-in-out;
-  -ms-transition: all 700ms ease-in-out;
-  transition: all 700ms ease-in-out;
+  -webkit-transition: all 300ms ease-in-out;
+  -moz-transition: all 300ms ease-in-out;
+  -o-transition: all 300ms ease-in-out;
+  -ms-transition: all 300ms ease-in-out;
+  transition: all 300ms ease-in-out;
 }
 .popup__link:hover {
   color: #6e6f78;
@@ -1443,11 +1443,11 @@ _:-ms-fullscreen, :root .submission__message {
   overflow: auto;
   background-color: rgba(48, 50, 63, 0.7);
   z-index: 100;
-  -webkit-transition: all 700ms ease-in-out;
-  -moz-transition: all 700ms ease-in-out;
-  -o-transition: all 700ms ease-in-out;
-  -ms-transition: all 700ms ease-in-out;
-  transition: all 700ms ease-in-out;
+  -webkit-transition: all 300ms ease-in-out;
+  -moz-transition: all 300ms ease-in-out;
+  -o-transition: all 300ms ease-in-out;
+  -ms-transition: all 300ms ease-in-out;
+  transition: all 300ms ease-in-out;
 }
 
 .show-popup {
@@ -1477,18 +1477,18 @@ _:-ms-fullscreen, :root .submission__message {
   font-family: "IBM Plex Sans", sans-serif;
   font-weight: 700;
   font-size: 14px;
-  -webkit-transition: all 700ms ease-in-out;
-  -moz-transition: all 700ms ease-in-out;
-  -o-transition: all 700ms ease-in-out;
-  -ms-transition: all 700ms ease-in-out;
-  transition: all 700ms ease-in-out;
+  -webkit-transition: all 300ms ease-in-out;
+  -moz-transition: all 300ms ease-in-out;
+  -o-transition: all 300ms ease-in-out;
+  -ms-transition: all 300ms ease-in-out;
+  transition: all 300ms ease-in-out;
 }
 .top-panel__link svg {
-  -webkit-transition: all 700ms ease-in-out;
-  -moz-transition: all 700ms ease-in-out;
-  -o-transition: all 700ms ease-in-out;
-  -ms-transition: all 700ms ease-in-out;
-  transition: all 700ms ease-in-out;
+  -webkit-transition: all 300ms ease-in-out;
+  -moz-transition: all 300ms ease-in-out;
+  -o-transition: all 300ms ease-in-out;
+  -ms-transition: all 300ms ease-in-out;
+  transition: all 300ms ease-in-out;
 }
 .top-panel__link:hover {
   color: #393d56;
@@ -1510,11 +1510,11 @@ _:-ms-fullscreen, :root .submission__message {
   height: 14px;
   fill: #8a8e9d;
   transform: rotate(90deg);
-  -webkit-transition: all 700ms ease-in-out;
-  -moz-transition: all 700ms ease-in-out;
-  -o-transition: all 700ms ease-in-out;
-  -ms-transition: all 700ms ease-in-out;
-  transition: all 700ms ease-in-out;
+  -webkit-transition: all 300ms ease-in-out;
+  -moz-transition: all 300ms ease-in-out;
+  -o-transition: all 300ms ease-in-out;
+  -ms-transition: all 300ms ease-in-out;
+  transition: all 300ms ease-in-out;
 }
 .top-panel__top-panel-back_editor {
   background-color: #484c62;
@@ -1558,11 +1558,11 @@ _:-ms-fullscreen, :root .submission__message {
   font-family: "IBM Plex Sans", sans-serif;
   font-weight: 700;
   font-size: 14px;
-  -webkit-transition: all 700ms ease-in-out;
-  -moz-transition: all 700ms ease-in-out;
-  -o-transition: all 700ms ease-in-out;
-  -ms-transition: all 700ms ease-in-out;
-  transition: all 700ms ease-in-out;
+  -webkit-transition: all 300ms ease-in-out;
+  -moz-transition: all 300ms ease-in-out;
+  -o-transition: all 300ms ease-in-out;
+  -ms-transition: all 300ms ease-in-out;
+  transition: all 300ms ease-in-out;
 }
 .menu-small__link:after {
   content: "";
@@ -1572,11 +1572,11 @@ _:-ms-fullscreen, :root .submission__message {
   background-color: transparent;
   bottom: 0px;
   left: 0;
-  -webkit-transition: all 700ms ease-in-out;
-  -moz-transition: all 700ms ease-in-out;
-  -o-transition: all 700ms ease-in-out;
-  -ms-transition: all 700ms ease-in-out;
-  transition: all 700ms ease-in-out;
+  -webkit-transition: all 300ms ease-in-out;
+  -moz-transition: all 300ms ease-in-out;
+  -o-transition: all 300ms ease-in-out;
+  -ms-transition: all 300ms ease-in-out;
+  transition: all 300ms ease-in-out;
 }
 .menu-small__link svg {
   position: absolute;
@@ -1584,11 +1584,11 @@ _:-ms-fullscreen, :root .submission__message {
   height: 20px;
   left: 10px;
   fill: #8a8e9d;
-  -webkit-transition: all 700ms ease-in-out;
-  -moz-transition: all 700ms ease-in-out;
-  -o-transition: all 700ms ease-in-out;
-  -ms-transition: all 700ms ease-in-out;
-  transition: all 700ms ease-in-out;
+  -webkit-transition: all 300ms ease-in-out;
+  -moz-transition: all 300ms ease-in-out;
+  -o-transition: all 300ms ease-in-out;
+  -ms-transition: all 300ms ease-in-out;
+  transition: all 300ms ease-in-out;
 }
 .menu-small__link:hover {
   color: #393d56;
@@ -1917,11 +1917,11 @@ _:-ms-fullscreen, :root .submission__message {
   outline: none;
   border-radius: 5px;
   font-size: 14px;
-  -webkit-transition: all 700ms ease-in-out;
-  -moz-transition: all 700ms ease-in-out;
-  -o-transition: all 700ms ease-in-out;
-  -ms-transition: all 700ms ease-in-out;
-  transition: all 700ms ease-in-out;
+  -webkit-transition: all 300ms ease-in-out;
+  -moz-transition: all 300ms ease-in-out;
+  -o-transition: all 300ms ease-in-out;
+  -ms-transition: all 300ms ease-in-out;
+  transition: all 300ms ease-in-out;
 }
 .input-default_light {
   background-color: #f9faff;
@@ -2203,11 +2203,11 @@ _:-ms-fullscreen, :root .submission__message {
   width: 100%;
   left: 0;
   bottom: 0;
-  -webkit-transition: all 700ms ease-in-out;
-  -moz-transition: all 700ms ease-in-out;
-  -o-transition: all 700ms ease-in-out;
-  -ms-transition: all 700ms ease-in-out;
-  transition: all 700ms ease-in-out;
+  -webkit-transition: all 300ms ease-in-out;
+  -moz-transition: all 300ms ease-in-out;
+  -o-transition: all 300ms ease-in-out;
+  -ms-transition: all 300ms ease-in-out;
+  transition: all 300ms ease-in-out;
 }
 .switch__text {
   padding-left: 15px;
@@ -2229,11 +2229,11 @@ _:-ms-fullscreen, :root .submission__message {
   position: absolute;
   right: 0;
   top: 0;
-  -webkit-transition: all 700ms ease-in-out;
-  -moz-transition: all 700ms ease-in-out;
-  -o-transition: all 700ms ease-in-out;
-  -ms-transition: all 700ms ease-in-out;
-  transition: all 700ms ease-in-out;
+  -webkit-transition: all 300ms ease-in-out;
+  -moz-transition: all 300ms ease-in-out;
+  -o-transition: all 300ms ease-in-out;
+  -ms-transition: all 300ms ease-in-out;
+  transition: all 300ms ease-in-out;
 }
 .slider:before {
   background-color: #fff;
@@ -2273,11 +2273,11 @@ input:checked + .slider:before {
   border: 2px solid transparent;
   cursor: pointer;
   border-radius: 5px;
-  -webkit-transition: all 700ms ease-in-out;
-  -moz-transition: all 700ms ease-in-out;
-  -o-transition: all 700ms ease-in-out;
-  -ms-transition: all 700ms ease-in-out;
-  transition: all 700ms ease-in-out;
+  -webkit-transition: all 300ms ease-in-out;
+  -moz-transition: all 300ms ease-in-out;
+  -o-transition: all 300ms ease-in-out;
+  -ms-transition: all 300ms ease-in-out;
+  transition: all 300ms ease-in-out;
 }
 .constructor__component:hover {
   border-color: #e9ebec;
@@ -2371,11 +2371,11 @@ input:checked + .slider:before {
   font-size: 14px;
   border: 2px dashed #e0e1e3;
   cursor: pointer;
-  -webkit-transition: all 700ms ease-in-out;
-  -moz-transition: all 700ms ease-in-out;
-  -o-transition: all 700ms ease-in-out;
-  -ms-transition: all 700ms ease-in-out;
-  transition: all 700ms ease-in-out;
+  -webkit-transition: all 300ms ease-in-out;
+  -moz-transition: all 300ms ease-in-out;
+  -o-transition: all 300ms ease-in-out;
+  -ms-transition: all 300ms ease-in-out;
+  transition: all 300ms ease-in-out;
 }
 @media (min-width: 1920px) {
   .constructor__add-component {
@@ -2528,11 +2528,11 @@ input:checked + .slider:before {
 
 .slide-part {
   width: 100%;
-  -webkit-transition: all 700ms ease-in-out;
-  -moz-transition: all 700ms ease-in-out;
-  -o-transition: all 700ms ease-in-out;
-  -ms-transition: all 700ms ease-in-out;
-  transition: all 700ms ease-in-out;
+  -webkit-transition: all 300ms ease-in-out;
+  -moz-transition: all 300ms ease-in-out;
+  -o-transition: all 300ms ease-in-out;
+  -ms-transition: all 300ms ease-in-out;
+  transition: all 300ms ease-in-out;
 }
 @media (min-width: 1920px) {
   .slide-part {
@@ -2550,11 +2550,11 @@ input:checked + .slider:before {
   right: -700px;
   visibility: hidden;
   opacity: 0;
-  -webkit-transition: all 700ms ease-in-out;
-  -moz-transition: all 700ms ease-in-out;
-  -o-transition: all 700ms ease-in-out;
-  -ms-transition: all 700ms ease-in-out;
-  transition: all 700ms ease-in-out;
+  -webkit-transition: all 300ms ease-in-out;
+  -moz-transition: all 300ms ease-in-out;
+  -o-transition: all 300ms ease-in-out;
+  -ms-transition: all 300ms ease-in-out;
+  transition: all 300ms ease-in-out;
   padding: 0px 40px 20px;
   z-index: 50;
 }
@@ -2602,11 +2602,11 @@ input:checked + .slider:before {
   margin: 2px;
   cursor: pointer;
   text-align: center;
-  -webkit-transition: all 700ms ease-in-out;
-  -moz-transition: all 700ms ease-in-out;
-  -o-transition: all 700ms ease-in-out;
-  -ms-transition: all 700ms ease-in-out;
-  transition: all 700ms ease-in-out;
+  -webkit-transition: all 300ms ease-in-out;
+  -moz-transition: all 300ms ease-in-out;
+  -o-transition: all 300ms ease-in-out;
+  -ms-transition: all 300ms ease-in-out;
+  transition: all 300ms ease-in-out;
 }
 .components-panel__item:nth-child(4n+1) {
   margin-left: 0;
@@ -2675,11 +2675,11 @@ input:checked + .slider:before {
   padding: 20px;
   background: #353645;
   border-radius: 5px;
-  -webkit-transition: all 700ms ease-in-out;
-  -moz-transition: all 700ms ease-in-out;
-  -o-transition: all 700ms ease-in-out;
-  -ms-transition: all 700ms ease-in-out;
-  transition: all 700ms ease-in-out;
+  -webkit-transition: all 300ms ease-in-out;
+  -moz-transition: all 300ms ease-in-out;
+  -o-transition: all 300ms ease-in-out;
+  -ms-transition: all 300ms ease-in-out;
+  transition: all 300ms ease-in-out;
 }
 .component-settings__section_flex {
   flex: 1;
@@ -2692,11 +2692,11 @@ input:checked + .slider:before {
 }
 .component-settings__section-help {
   margin-bottom: 0px;
-  -webkit-transition: all 700ms ease-in-out;
-  -moz-transition: all 700ms ease-in-out;
-  -o-transition: all 700ms ease-in-out;
-  -ms-transition: all 700ms ease-in-out;
-  transition: all 700ms ease-in-out;
+  -webkit-transition: all 300ms ease-in-out;
+  -moz-transition: all 300ms ease-in-out;
+  -o-transition: all 300ms ease-in-out;
+  -ms-transition: all 300ms ease-in-out;
+  transition: all 300ms ease-in-out;
 }
 .component-settings__flex-row-default {
   display: flex;
@@ -2802,11 +2802,11 @@ input:checked + .slider:before {
   color: #fff;
   background: #323341;
   border-radius: 5px;
-  -webkit-transition: all 700ms ease-in-out;
-  -moz-transition: all 700ms ease-in-out;
-  -o-transition: all 700ms ease-in-out;
-  -ms-transition: all 700ms ease-in-out;
-  transition: all 700ms ease-in-out;
+  -webkit-transition: all 300ms ease-in-out;
+  -moz-transition: all 300ms ease-in-out;
+  -o-transition: all 300ms ease-in-out;
+  -ms-transition: all 300ms ease-in-out;
+  transition: all 300ms ease-in-out;
   visibility: hidden;
   opacity: 0;
 }
