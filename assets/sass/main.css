@@ -1843,6 +1843,9 @@ _:-ms-fullscreen, :root .submission__message {
 .charts__total {
   font-size: 13px;
 }
+.charts-section {
+  margin-top: 25px;
+}
 
 .chart-block {
   display: flex;
