@@ -260,3 +260,13 @@
       &:hover
         background-color: #373b51
         color: #fff
+
+
+@-webkit-keyframes autofill
+  to
+    color: inherit
+    background: #444962
+
+input:-webkit-autofill
+  -webkit-animation-name: autofill
+  -webkit-animation-fill-mode: both

@@ -2175,6 +2175,17 @@ _:-ms-fullscreen, :root .submission__message {
   color: #fff;
 }
 
+@-webkit-keyframes autofill {
+  to {
+    color: inherit;
+    background: #444962;
+  }
+}
+input:-webkit-autofill {
+  -webkit-animation-name: autofill;
+  -webkit-animation-fill-mode: both;
+}
+
 .top-panel-editor {
   display: flex;
   justify-content: space-between;
