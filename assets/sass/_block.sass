@@ -34,13 +34,16 @@
   &__link
     display: block
     margin-top: 8px
+    border: 2px solid transparent
+    border-radius: $border-radius
     @include transition
 
     &:first-child
       margin-top: 0
 
     &:hover
-      box-shadow: 0px 0px 13px -4px rgba(0,0,0,0.3)
+      border-color: #e9ebec
+      //box-shadow: 0px 0px 13px -4px rgba(0,0,0,0.3)
 
   &__title
     display: block
@@ -187,3 +190,12 @@
 
   &__item
     position: relative
+
+.block-border
+  margin-bottom: 6px
+  border: 2px solid transparent
+  border-radius: $border-radius
+  @include transition
+
+  &:hover
+    border-color: #e9ebec

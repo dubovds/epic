@@ -1,9 +1,6 @@
 let templatesBuilderButtons = document.getElementsByClassName('btn__templates-builder');
 let templatesBuilder = document.getElementById('popup_templates-builder');
 
-let closeButton = document.getElementsByClassName('popup__close');
-let overlay = document.getElementsByClassName('overlay');
-
 function openModal(overlay, openButton, modal) {
     for( i = 0; i < openButton.length; i++){
         openButton[i].onclick = function () {
@@ -33,5 +30,11 @@ function closeModal(overlay, modal, closeButton) {
     }
 };
 
-openModal(overlay, templatesBuilderButtons, templatesBuilder);
-closeModal(overlay, templatesBuilder, closeButton);
+function showModal(templatesBuilderButtons, templatesBuilder) {
+    let closeButton = document.getElementsByClassName('popup__close');
+    let overlay = document.getElementsByClassName('overlay');
+
+    openModal(overlay, templatesBuilderButtons, templatesBuilder);
+    closeModal(overlay, templatesBuilder, closeButton);
+}
+
