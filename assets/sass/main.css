@@ -3040,4 +3040,52 @@ td:last-child {
   text-transform: uppercase;
 }
 
+.short-statistics {
+  margin-top: 40px;
+}
+.short-statistics__row, .short-statistics__info {
+  display: flex;
+  justify-content: space-between;
+}
+.short-statistics__info {
+  align-items: center;
+  margin-top: 11px;
+}
+.short-statistics__item {
+  width: 32.6%;
+}
+.short-statistics__title {
+  font-family: "IBM Plex Sans", sans-serif;
+  font-weight: 700;
+  font-size: 12px;
+  text-transform: uppercase;
+  color: #72747c;
+}
+.short-statistics__chart {
+  width: 99px;
+  height: 42px;
+  background-color: red;
+  margin-right: 20px;
+}
+.short-statistics__number {
+  position: relative;
+  color: #393d56;
+  line-height: 1;
+  font-size: 54px;
+  font-weight: bold;
+}
+@media (max-width: 1269px) {
+  .short-statistics__number {
+    font-size: 23px;
+  }
+}
+.short-statistics__number span {
+  bottom: 10px;
+  font-size: 15px;
+  margin-left: -12px;
+}
+.short-statistics__number_red {
+  color: #fe544b;
+}
+
 /*# sourceMappingURL=main.css.map */
