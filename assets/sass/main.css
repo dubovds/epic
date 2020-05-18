@@ -3001,10 +3001,10 @@ input:checked + .slider:before {
   display: block;
 }
 
+/* table styles */
 table {
   width: 100%;
   margin: 20px auto;
-  table-layout: fixed;
   border-color: #dcdde3;
 }
 
@@ -3024,6 +3024,13 @@ td {
 
 th {
   color: #3a3d50;
+}
+
+th:first-child,
+th:last-child,
+td:first-child,
+td:last-child {
+  width: 10%;
 }
 
 .table__title {
