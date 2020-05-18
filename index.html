@@ -43,13 +43,13 @@
             </a>
           </li>
           <li class="navbar__item">
-            <a href="index.html" class="navbar__link">Dashboard</a>
+            <a href="index.html" class="navbar__link active">Dashboard</a>
           </li>
           <li class="navbar__item">
             <a href="#" class="navbar__link">Templates</a>
           </li>
           <li class="navbar__item">
-            <a href="form.html" class="navbar__link active">Form & Responses</a>
+            <a href="form.html" class="navbar__link">Form & Responses</a>
           </li>
           <!--          <li class="navbar__item">-->
           <!--            <a href="statistics.html" class="navbar__link">Statistics</a>-->
@@ -461,7 +461,7 @@
       <div class="footer__item">
         <ul class="navbar-footer">
           <li class="navbar-footer__item">
-            <a href="#" class="navbar-footer__link">
+            <a href="#" class="navbar-footer__link" id="big-popup" >
               Privacy policy
             </a>
           </li>
@@ -519,6 +519,90 @@
     <textarea class="textarea" name="" id="" cols="30" rows="10" placeholder="Describtion..."></textarea>
 
     <input type="submit" class="btn btn__submit btn_full-width" value="Create Form">
+  </div>
+</div>
+
+<div class="overlay">
+  <!--Popup  Email Tamplates Builder-->
+  <div class="popup popup_templates-builder" id="popup_templates-builder">
+    <div class="popup__close">
+      <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+           viewBox="0 0 18 18" style="enable-background:new 0 0 18 18;" xml:space="preserve">
+            <g>
+                <defs>
+                    <path id="SVGID_1close_" d="M17.5,2.9L11.4,9l6.1,6.1c0.7,0.7,0.7,1.8,0,2.4c-0.7,0.7-1.8,0.7-2.4,0L9,11.4l-6.1,6.1
+                        c-0.7,0.7-1.8,0.7-2.4,0s-0.7-1.8,0-2.4L6.6,9L0.5,2.9c-0.7-0.7-0.7-1.8,0-2.4c0.7-0.7,1.8-0.7,2.4,0L9,6.6l6.1-6.1
+                        c0.7-0.7,1.8-0.7,2.4,0C18.2,1.2,18.2,2.3,17.5,2.9z"/>
+                </defs>
+              <use xlink:href="#SVGID_1close_"  style="overflow:visible;"/>
+              <clipPath id="SVGID_2close_">
+                    <use xlink:href="#SVGID_1close_"  style="overflow:visible;"/>
+                </clipPath>
+            </g>
+            </svg>
+    </div>
+    <div class="popup__title">
+      How to use Email Tamplates Builder?
+    </div>
+
+    <div class="popup__content">
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis.
+      </p>
+      <div class="popup__frame">
+
+      </div>
+      <ul class="popup__list" >
+        <li class="popup__list-item">Lorem ipsum dolor sit amet, consectetur adipiscing elit</li>
+        <li class="popup__list-item">Quis ipsum suspendisse ultrices gravida. Risus commodo </li>
+        <li class="popup__list-item">Mmodo viverra maecenas accumsan lacus vel facilisis. </li>
+      </ul>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. <a href="#" class="popup__link">Risus commodo viverra maecenas</a> accumsan lacus vel facilisis.
+      </p>
+      <div class="popup__line"></div>
+      <div class="popup__title popup__title_small">
+        Online Games How To Play To Win
+      </div>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis.
+      </p>
+
+      <div class="popup__color-block popup__color-block_green">
+        <div class="popup__color-title popup__color-title_green">
+          Pictures In The Sky
+        </div>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+      </div>
+      <div class="popup__color-block popup__color-block_orange">
+        <div class="popup__color-title popup__color-title_orange">
+          Pictures In The Sky
+        </div>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+      </div>
+      <div class="popup__color-block popup__color-block_blue">
+        <div class="popup__color-title popup__color-title_blue">
+          Pictures In The Sky
+        </div>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+      </div>
+      <div class="popup__color-block popup__color-block_pink">
+        <div class="popup__color-title popup__color-title_pink">
+          Pictures In The Sky
+        </div>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+      </div>
+
+      <div class="popup__btn-block">
+        <div class="btn btn__popup">
+          Submit Button
+        </div>
+        <div class="btn btn__popup btn__popup_red">
+          Submit Button
+        </div>
+      </div>
+
+    </div>
   </div>
 </div>
 
@@ -581,6 +665,17 @@
 <script src="assets/js/scipts.js"></script>
 <script>
   //popup
+  let bigPopupButton = document.getElementById('big-popup');
+  let templatesBuilder = document.getElementById('popup_templates-builder');
+  bigPopupButton.onclick = function (e) {
+    e.preventDefault();
+    var scrollBarWidth = window.innerWidth - document.body.offsetWidth;
+    document.body.style.margin = '0px ' + scrollBarWidth + 'px 0px 0px';
+    document.body.style.overflow = 'hidden';
+    templatesBuilder.classList.add('show-popup');
+    overlay[0].classList.add('show-popup')
+  }
+
   let createFormButtons = document.getElementsByClassName('btn__create-form');
   let createFormPopup = document.getElementById('popup_create_form');
   for( i = 0; i < createFormButtons.length; i++){
