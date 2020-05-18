@@ -676,6 +676,7 @@
     overlay[0].classList.add('show-popup')
   }
 
+
   let createFormButtons = document.getElementsByClassName('btn__create-form');
   let createFormPopup = document.getElementById('popup_create_form');
   for( i = 0; i < createFormButtons.length; i++){
@@ -705,7 +706,9 @@
       for( i = 0; i < popups.length; i++){
         popups[i].onclick = function () {
           this.classList.remove('show-popup');
-          overlay[0].classList.remove('show-popup')
+          overlay[0].classList.remove('show-popup');
+          document.body.style.margin = '';
+          document.body.style.overflow = '';
         }
       }
     }
