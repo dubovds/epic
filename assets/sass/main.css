@@ -3008,10 +3008,6 @@ table {
   border-color: #dcdde3;
 }
 
-.fixed {
-  table-layout: fixed;
-}
-
 table,
 td,
 th {
@@ -3028,6 +3024,13 @@ td {
 
 th {
   color: #3a3d50;
+}
+
+.table__title {
+  color: #72747c;
+  font-family: "IBM Plex Sans", sans-serif;
+  font-weight: 700;
+  text-transform: uppercase;
 }
 
 /*# sourceMappingURL=main.css.map */
