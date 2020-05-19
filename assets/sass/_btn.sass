@@ -299,6 +299,52 @@
     &_red
       background-color: #fe544b
 
+  &__exported
+    position: relative
+    background-color: #fe544b
+    font-size: 14px
+    margin-left: 20px
+    padding: 9px 15px 9px 40px
+    line-height: 1.3
+    color: #fff
+
+    &:before
+      content: ''
+      position: absolute
+      background-image: url(../images/export-white.svg)
+      background-repeat: no-repeat
+      background-position: 50% 50%
+      background-size: contain
+      width: 17px
+      height: 18px
+      left: 10px
+      top: 50%
+      transform: translateY(-50%)
+
+  &__exported-small
+    display: inline-block
+    position: relative
+    background-color: #edeff5
+    @include font-title-500
+      font-size: 14px
+    margin-left: 20px
+    padding: 9px 15px 9px 40px
+    line-height: 1.3
+    color: #8a8e9d
+
+    &:before
+      content: ''
+      position: absolute
+      background-image: url(../images/download.svg)
+      background-repeat: no-repeat
+      background-position: 50% 50%
+      background-size: contain
+      width: 16px
+      height: 16px
+      left: 10px
+      top: 50%
+      transform: translateY(-50%)
+
 
 _:-ms-fullscreen, :root .btn__create-form svg
    top: 0

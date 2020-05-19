@@ -839,6 +839,53 @@ _:-ms-fullscreen, :root .navbar__link svg {
 .btn__popup_red {
   background-color: #fe544b;
 }
+.btn__exported {
+  position: relative;
+  background-color: #fe544b;
+  font-size: 14px;
+  margin-left: 20px;
+  padding: 9px 15px 9px 40px;
+  line-height: 1.3;
+  color: #fff;
+}
+.btn__exported:before {
+  content: "";
+  position: absolute;
+  background-image: url(../images/export-white.svg);
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  background-size: contain;
+  width: 17px;
+  height: 18px;
+  left: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.btn__exported-small {
+  display: inline-block;
+  position: relative;
+  background-color: #edeff5;
+  font-family: "IBM Plex Sans", sans-serif;
+  font-weight: 500;
+  font-size: 14px;
+  margin-left: 20px;
+  padding: 9px 15px 9px 40px;
+  line-height: 1.3;
+  color: #8a8e9d;
+}
+.btn__exported-small:before {
+  content: "";
+  position: absolute;
+  background-image: url(../images/download.svg);
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  background-size: contain;
+  width: 16px;
+  height: 16px;
+  left: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+}
 
 _:-ms-fullscreen, :root .btn__create-form svg {
   top: 0;
@@ -3086,6 +3133,151 @@ td:last-child {
 }
 .short-statistics__number_red {
   color: #fe544b;
+}
+
+.exported {
+  margin-top: 10px;
+}
+.exported__title-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+.exported__item_flex {
+  display: flex;
+  align-items: center;
+}
+.exported__item-block {
+  width: 33%;
+  margin: 0 5px;
+}
+.exported__item-block_right {
+  text-align: right;
+}
+.exported__item-block:first-child {
+  margin-left: 0;
+}
+.exported__item-block:last-child {
+  margin-right: 0;
+}
+.exported__title {
+  font-family: "IBM Plex Sans", sans-serif;
+  font-weight: 700;
+  font-size: 24px;
+  color: #363844;
+}
+.exported__block {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 6px 0;
+}
+.exported__block:first-child {
+  margin-top: 0;
+}
+.exported__text-dark {
+  font-family: "IBM Plex Sans", sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  color: #3a3d50;
+}
+.exported__text-grey {
+  margin-top: 5px;
+  font-family: "IBM Plex Sans", sans-serif;
+  font-weight: 500;
+  font-size: 14px;
+  color: #8a8c94;
+}
+.exported__text-grey span {
+  padding-right: 10px;
+}
+.exported__loader {
+  display: inline-block;
+  position: relative;
+  background-color: #f3f4f8;
+  padding: 10px 15px;
+  border-radius: 5px;
+}
+.exported__loader-text {
+  margin-left: 36px;
+  font-family: "IBM Plex Sans", sans-serif;
+  font-weight: 500;
+  font-size: 14px;
+  color: #c2c4cc;
+}
+
+.lds-spinner {
+  color: #c2c4cc;
+  display: inline-block;
+  position: absolute;
+  top: 50%;
+  left: 16px;
+  transform: translateY(-25%);
+  width: 20px;
+  height: 20px;
+}
+
+.lds-spinner div {
+  transform-origin: 4px 4px;
+  animation: lds-spinner 0.7s linear infinite;
+}
+
+.lds-spinner div:after {
+  content: " ";
+  display: block;
+  position: absolute;
+  top: 3px;
+  left: 7px;
+  width: 6px;
+  height: 2px;
+  border-radius: 20%;
+  background: #c2c4cc;
+  transform: rotate(0deg);
+  animation-delay: -0.7s;
+}
+.lds-spinner div:nth-child(2) {
+  transform: rotate(45deg);
+  animation-delay: -0.6s;
+}
+
+.lds-spinner div:nth-child(3) {
+  transform: rotate(90deg);
+  animation-delay: -0.5s;
+}
+
+.lds-spinner div:nth-child(4) {
+  transform: rotate(135deg);
+  animation-delay: -0.4s;
+}
+
+.lds-spinner div:nth-child(5) {
+  transform: rotate(180deg);
+  animation-delay: -0.3s;
+}
+
+.lds-spinner div:nth-child(6) {
+  transform: rotate(225deg);
+  animation-delay: -0.2s;
+}
+
+.lds-spinner div:nth-child(7) {
+  transform: rotate(270deg);
+  animation-delay: -0.1s;
+}
+
+.lds-spinner div:nth-child(8) {
+  transform: rotate(315deg);
+  animation-delay: 0s;
+}
+
+@keyframes lds-spinner {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
 }
 
 /*# sourceMappingURL=main.css.map */
