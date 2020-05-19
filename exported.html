@@ -108,11 +108,12 @@
             </div>
         </header>
         <!--        Allerts -->
-        <div class="exported__alert exported__alert_done">
+        <!--        to display a message you should add .show to .exported__alert -->
+        <div class="exported__alert exported__alert_done show">
             Done
             <div class="exported__alert-close"></div>
         </div>
-        <div class="exported__alert exported__alert_error">
+        <div class="exported__alert exported__alert_error show">
             Error
             <div class="exported__alert-close"></div>
         </div>
@@ -205,6 +206,7 @@
         </div>
 
         <div class="wrapper-content">
+            <!--            add class "exported_empty" for the empty state of page-->
             <section class="exported">
                 <div class="exported__title-row">
                     <div class="exported__item">
@@ -218,10 +220,14 @@
                         </div>
                         <div class="btn btn__exported">
                             Export From Responses
+                            <div class="exported__overlay-btn"></div>
                         </div>
                     </div>
                 </div>
 
+                <div class="exported__content-empty">
+                    No items are currently available.
+                </div>
                 <div class="exported__content">
                     <div class="block exported__block">
                         <div class="exported__item-block">

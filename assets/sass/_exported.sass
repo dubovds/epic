@@ -75,11 +75,16 @@
     padding: 16px 0
     line-height: 1.3
 
+    display: none
+
     &_done
       background-color: #48c45a
 
     &_error
       background-color: #e84e4e
+
+    .show
+      display: block
 
   &__alert-close
     position: absolute
@@ -93,7 +98,58 @@
     right: 25px
     transform: translateY(-50%)
     cursor: pointer
-      
+
+  &__overlay-btn
+    display: none
+    position: absolute
+    top: 0
+    left: 0
+    width: 100%
+    height: 100%
+    z-index: 1
+    background: rgba(255, 255, 255, 0.6)
+
+  &__content-empty
+    display: none
+    position: absolute
+    top: 65%
+    left: 50%
+    transform: translate(-50%, -50%)
+    color: #9d9ea6
+    font-size: 14px
+
+    &:before
+      content: ''
+      position: absolute
+      top: -60px
+      left: 50%
+      transform: translateX(-50%)
+      width: 50px
+      height: 33px
+      background-image: url("../images/empty.png")
+      background-repeat: no-repeat
+      background-position: 50% 50%
+      background-size: contain
+
+.exported_empty
+  .btn__exported:hover
+    background-color: #fe544b
+  .exported
+
+    &__title-row
+      padding-bottom: 20px
+      border-bottom: 1px solid #dcdde3
+
+    &__overlay-btn
+      display: block
+
+    &__content
+      display: none
+
+    &__content-empty
+      display: block
+
+
 // animation 
 .lds-spinner 
   color: #c2c4cc
