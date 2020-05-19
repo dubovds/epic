@@ -848,6 +848,9 @@ _:-ms-fullscreen, :root .navbar__link svg {
   line-height: 1.3;
   color: #fff;
 }
+.btn__exported:hover {
+  background-color: #ff6d65;
+}
 .btn__exported:before {
   content: "";
   position: absolute;
@@ -872,6 +875,9 @@ _:-ms-fullscreen, :root .navbar__link svg {
   padding: 9px 15px 9px 40px;
   line-height: 1.3;
   color: #8a8e9d;
+}
+.btn__exported-small:hover {
+  background-color: #bcbfce;
 }
 .btn__exported-small:before {
   content: "";
