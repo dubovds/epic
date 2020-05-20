@@ -16,6 +16,16 @@
 
     </div>
     <div class="wrapper">
+        <!--        banner for features. To display it use .show-->
+        <div class="banner-feature show">
+            <div class="banner-feature__content">
+                Some message about new features
+                <a href="#" class="banner-feature__link">Link</a>
+                <span class="banner-feature__text-underline">Some message about new features</span>
+            </div>
+            <div class="banner-feature__close" id="banner-feature__close"></div>
+        </div>
+        <!--        end banner for features-->
         <header class="header">
             <div class="header__item">
                 <div class="header__logo"></div>
@@ -562,6 +572,12 @@
 </div>
 <div class="overlay"></div>
 <script>
+    //banner features
+    let banner = document.getElementsByClassName('banner-feature');
+    let bannerClose = document.getElementById('banner-feature__close');
+    bannerClose.onclick = function() {
+        banner[0].classList.remove('show');
+    }
 
     //popup
     let qrButtons = document.getElementsByClassName('btn__block-link_qr');
