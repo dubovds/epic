@@ -2640,7 +2640,7 @@ input:checked + .slider:before {
 }
 
 .components-panel {
-  position: absolute;
+  position: fixed;
   width: 572px;
   min-height: 100%;
   height: auto;
@@ -2854,6 +2854,7 @@ input:checked + .slider:before {
   }
 }
 .components-panel-open .components-panel {
+  position: absolute;
   right: 0;
   visibility: visible;
   opacity: 1;
