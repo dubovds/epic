@@ -12,7 +12,8 @@
 .components-panel
     position: fixed
     width: 572px
-    min-height: 100%
+    //min-height: 100%
+    min-height: calc(100% - 60px)
     height: auto
     background-color: #323341
     top: 60px
@@ -22,11 +23,6 @@
     @include transition
     padding: 0px 40px 20px
     z-index: 50
-
-    //@include large-screen
-        visibility: visible
-        opacity: 1
-        right: 0
 
     &__title
         margin-left: 15px
@@ -204,9 +200,10 @@
 
 .components-panel-open
     .slide-part
-        width: 800px
+        width: calc(100% - 572px)
+        min-width: 850px
 
-        @include large-screen
+        //@include large-screen
             width: calc(100% - 572px)
 
     .components-panel
@@ -311,10 +308,11 @@
 
 .component-settings-panel-open
     .slide-part
-        width: 800px
+        width: calc(100% - 572px)
+        min-width: 850px
 
-        @include large-screen
-            width: calc(100% - 572px)
+        //@include large-screen
+
             //position: relative
             //left: 50%
             //transform: translateX(-86%)
@@ -330,13 +328,14 @@
 
 .component-settings-panel-input-open
     .slide-part
-        width: 800px
+        width: calc(100% - 572px)
+        min-width: 850px
 
-        @include large-screen
+        //@include large-screen
             width: calc(100% - 572px)
-            //position: relative
-            //left: 50%
-            //transform: translateX(-86%)
+            position: relative
+            left: 50%
+            transform: translateX(-86%)
 
     .components-panel
         position: absolute
@@ -349,13 +348,14 @@
 
 .component-settings-panel-submit-open
     .slide-part
-        width: 800px
+        width: calc(100% - 572px)
+        min-width: 850px
 
-        @include large-screen
+        //@include large-screen
             width: calc(100% - 572px)
-            //position: relative
-            //left: 50%
-            //transform: translateX(-86%)
+            position: relative
+            left: 50%
+            transform: translateX(-86%)
 
     .components-panel
         position: absolute
@@ -368,9 +368,10 @@
 
 .component-settings-panel-country-open
     .slide-part
-        width: 800px
+        width: calc(100% - 572px)
+        min-width: 850px
 
-        @include large-screen
+        //@include large-screen
             width: calc(100% - 572px)
             //position: relative
             //left: 50%
@@ -388,9 +389,10 @@
 
 .component-settings-panel-states-open
     .slide-part
-        width: 800px
+        width: calc(100% - 572px)
+        min-width: 850px
 
-        @include large-screen
+        //@include large-screen
             width: calc(100% - 572px)
             //position: relative
             //left: 50%
@@ -408,9 +410,10 @@
 
 .component-settings-panel-actions-open
     .slide-part
-        width: 800px
+        width: calc(100% - 572px)
+        min-width: 850px
 
-        @include large-screen
+        //@include large-screen
             width: calc(100% - 572px)
             //position: relative
             //left: 50%

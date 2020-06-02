@@ -1,0 +1,2107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Editor</title>
+    <link href="https://cdn.quilljs.com/1.3.6/quill.snow.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Sans:300,400,500,600,700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&display=swap" rel="stylesheet">
+    <link href="assets/sass/main.css" rel="stylesheet">
+</head>
+<body>
+<div class="wrapper wrapper_white wrapper_editor">
+    <header class="header header_editor">
+        <div class="header__item">
+            <div class="header__logo"></div>
+            <div class="top-panel__back-to-list top-panel__back-to-list_editor">
+                <a href="#" class="top-panel__link">
+                        <span class="btn top-panel__top-panel-back top-panel__top-panel-back_editor">
+                            <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                                 viewBox="0 0 95.3 96" style="enable-background:new 0 0 95.3 96;" xml:space="preserve">
+<g>
+	<defs>
+		<path id="SVGID_1arrow-left_" d="M41.2,73.6L2.6,34.9c-3.4-3.4-3.4-9,0-12.4s9-3.4,12.4,0l32.5,32.4L80,22.4c3.4-3.4,9-3.4,12.4,0
+			c1.7,1.7,2.6,4,2.6,6.2c0,2.3-0.9,4.5-2.6,6.2L53.7,73.5C50.3,77,44.7,77,41.2,73.6z"/>
+	</defs>
+    <use xlink:href="#SVGID_1arrow-left_"  style="overflow:visible;"/>
+    <clipPath id="SVGID_2arrow-left_">
+		<use xlink:href="#SVGID_1arrow-left_"  style="overflow:visible;"/>
+	</clipPath>
+</g>
+</svg>
+                        </span>
+                    My First Form
+                </a>
+            </div>
+        </div>
+        <div class="header__item">
+            <ul class="navbar__list">
+
+                <li class="navbar__item">
+                    <a href="#" class="navbar__link navbar__link_icon navbar__link_editor active">
+                        <svg version="1.1" id="Layer_1_form-field" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                             viewBox="0 0 64 64" style="enable-background:new 0 0 64 64;" xml:space="preserve">
+<g>
+	<defs>
+		<path id="SVGID_1_form-field" d="M59,0c2.8,0,5,2.2,5,5v6c0,2.8-2.2,5-5,5H5c-2.8,0-5-2.2-5-5V5c0-2.8,2.2-5,5-5H59z M24,22c2.8,0,5,2.2,5,5
+			v4c0,2.8-2.2,5-5,5H5c-2.8,0-5-2.2-5-5v-4c0-2.8,2.2-5,5-5H24z M59,22c2.8,0,5,2.2,5,5v32c0,2.8-2.2,5-5,5H40c-2.8,0-5-2.2-5-5V27
+			c0-2.8,2.2-5,5-5H59z M24,42c2.8,0,5,2.2,5,5v12c0,2.8-2.2,5-5,5H5c-2.8,0-5-2.2-5-5V47c0-2.8,2.2-5,5-5H24z"/>
+	</defs>
+    <use xlink:href="#SVGID_1_form-field"  style="overflow:visible;fill-rule:evenodd;clip-rule:evenodd;"/>
+    <clipPath id="SVGID_2_form-field">
+		<use xlink:href="#SVGID_1_form-field"  style="overflow:visible;"/>
+	</clipPath>
+</g>
+</svg>
+                        <span>Form Fields</span></a>
+                </li>
+                <li class="navbar__item">
+                    <a href="actions.html" class="navbar__link navbar__link_icon navbar__link_editor">
+                        <svg version="1.1" id="Layer_1_actions" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                             viewBox="0 0 255 315" style="enable-background:new 0 0 255 315;" xml:space="preserve">
+<g>
+	<defs>
+		<path id="SVGID_1_actions" d="M242,109h-83l52-90c5-9-1-19-11-19h-85c-4,0-8,2-11,6L2,187c-5,8,1,19,10,19h89l-22,94c-3,12,13,20,21,10
+			l151-180C258,122,252,109,242,109z"/>
+	</defs>
+    <use xlink:href="#SVGID_1_actions"  style="overflow:visible;fill-rule:evenodd;clip-rule:evenodd;"/>
+    <clipPath id="SVGID_2_actions">
+		<use xlink:href="#SVGID_1_actions"  style="overflow:visible;"/>
+	</clipPath>
+</g>
+</svg>
+                        <span>Actions</span></a>
+                </li>
+            </ul>
+        </div>
+
+        <div class="header__item">
+            <ul class="navbar__list">
+
+                <li class="navbar__item">
+                    <a href="#" class="navbar__link btn btn__menu-editor">
+                        <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                             viewBox="0 0 98 98" style="enable-background:new 0 0 98 98;" xml:space="preserve">
+<g>
+	<defs>
+		<path id="support-icon_" d="M96.6,9.2L62,93.4c-2.1,5.1-9.4,4.9-11.2-0.3L41,64.3l30.9-36.4c0.9-1.1-0.6-2.6-1.7-1.7L33.7,57.1
+			L4.9,47.2c-5.2-1.8-5.4-9.1-0.3-11.2L88.8,1.4C93.7-0.7,98.7,4.3,96.6,9.2z"/>
+	</defs>
+    <use xlink:href="#support-icon_"  style="overflow:visible;"/>
+    <clipPath id="support-icon-2">
+		<use xlink:href="#support-icon_"  style="overflow:visible;"/>
+	</clipPath>
+</g>
+</svg>
+                    </a>
+                </li>
+                <li class="navbar__item">
+                    <a href="settings.html" class="navbar__link btn btn__menu-editor">
+                        <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                             viewBox="0 0 100 100" style="enable-background:new 0 0 100 100;" xml:space="preserve">
+<g>
+	<defs>
+		<path id="SVGID_11_" d="M50,71.8C38,71.8,28.2,62,28.2,50c0-12,9.8-21.8,21.8-21.8c12,0,21.8,9.8,21.8,21.8
+			C71.8,62,62,71.8,50,71.8z M98.4,43.7c-0.8-0.5-7.1-4.3-9.6-5.4l-3.1-7.5c0.9-2.5,2.7-9.4,3-10.6c0.3-1.1-0.1-2.3-0.9-3.1
+			l-4.9-4.9c-0.8-0.8-2-1.2-3.1-0.9c-0.9,0.2-8,2-10.6,3l-7.5-3.1c-1.1-2.4-4.8-8.5-5.4-9.6c-0.6-1-1.7-1.6-2.8-1.6h-6.9
+			c-1.1,0-2.2,0.6-2.8,1.6c-0.5,0.8-4.3,7.1-5.4,9.6l-7.5,3.1c-2.5-0.9-9.4-2.7-10.6-3c-1.1-0.3-2.3,0.1-3.1,0.9l-4.9,4.9
+			c-0.8,0.8-1.2,2-0.9,3.1c0.2,0.9,2,8,3,10.6l-3.1,7.5c-2.4,1.1-8.5,4.8-9.6,5.4c-1,0.6-1.6,1.7-1.6,2.8v6.9c0,1.1,0.6,2.2,1.6,2.8
+			c0.8,0.5,7.1,4.3,9.6,5.4l3.1,7.5c-0.9,2.5-2.7,9.4-3,10.6c-0.3,1.1,0.1,2.3,0.9,3.1l4.9,4.9c0.8,0.8,2,1.2,3.1,0.9
+			c0.9-0.2,8-2,10.6-3l7.5,3.1c1.1,2.4,4.8,8.5,5.4,9.6c0.6,1,1.7,1.6,2.9,1.6h6.9c1.1,0,2.2-0.6,2.8-1.6c0.5-0.8,4.3-7.1,5.4-9.6
+			l7.5-3.1c2.5,0.9,9.4,2.7,10.6,3c1.1,0.3,2.3-0.1,3.1-0.9l4.9-4.9c0.8-0.8,1.2-2,0.9-3.1c-0.2-0.9-2-8-3-10.6l3.1-7.5
+			c2.4-1.1,8.5-4.8,9.6-5.4c1-0.6,1.6-1.7,1.6-2.9v-6.9C100,45.4,99.4,44.3,98.4,43.7z"/>
+	</defs>
+    <use xlink:href="#SVGID_11_"  style="overflow:visible;"/>
+    <clipPath id="SVGID_21_">
+		<use xlink:href="#SVGID_11_"  style="overflow:visible;"/>
+	</clipPath>
+</g>
+</svg>
+                    </a>
+                </li>
+                <li class="navbar__item">
+                    <a href="#" class="btn btn__publish-form">Publish Form</a>
+                </li>
+            </ul>
+        </div>
+    </header>
+
+    <div class="slide-part">
+
+        <div class="top-panel-editor">
+            <div class="top-panel-editor__item top-panel-editor__item_flex">
+                <div class="switch__container">
+                    <label class="switch" for="checkbox-title">
+                        <input type="checkbox" id="checkbox-title" checked/>
+                        <div class="slider round"></div>
+                    </label>
+                    <span class="switch__text">Show Title</span>
+                </div>
+                <div class="switch__container">
+                    <label class="switch" for="checkbox-description">
+                        <input type="checkbox" id="checkbox-description" checked/>
+                        <div class="slider round"></div>
+                    </label>
+                    <span class="switch__text">Show Description</span>
+                </div>
+            </div>
+            <div class="top-panel-editor__item">
+                <div class="block-view__container">
+                    <div class="block-view__item choose">
+                        <div class="block-view__view-one"></div>
+                    </div>
+                    <div class="block-view__item">
+                        <div class="block-view__column"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="top-panel-editor__item">
+                <div class="top-panel__links-block">
+                    <a href="#" class="btn btn__block-link btn__block-link_duplicate">
+                        <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                             viewBox="0 0 18 18" style="enable-background:new 0 0 18 18;" xml:space="preserve">
+<g>
+	<defs>
+		<path id="SVGID_1duplicate_"   d="M3.2,16.1H9c0.7,0,1.3-0.6,1.3-1.3h1.9c0,1.8-1.4,3.2-3.2,3.2H3.2C1.4,18,0,16.6,0,14.8V9
+			c0-1.8,1.4-3.2,3.2-3.2v2C2.5,7.7,1.9,8.3,1.9,9v5.8C1.9,15.5,2.5,16.1,3.2,16.1z M14.1,7.7h-1.9v1.9c0,0.4-0.3,0.6-0.6,0.6h-0.6
+			c-0.4,0-0.6-0.3-0.6-0.6V7.7H8.3C8,7.7,7.7,7.4,7.7,7.1V6.4c0-0.4,0.3-0.6,0.6-0.6h1.9V3.9c0-0.4,0.3-0.6,0.6-0.6h0.6
+			c0.4,0,0.6,0.3,0.6,0.6v1.9h1.9c0.4,0,0.6,0.3,0.6,0.6v0.7C14.8,7.4,14.5,7.7,14.1,7.7z M16.1,3.2c0-0.7-0.6-1.3-1.3-1.3H7.7
+			C7,1.9,6.4,2.5,6.4,3.2v7.1c0,0.7,0.6,1.3,1.3,1.3h7.1c0.7,0,1.3-0.6,1.3-1.3V3.2z M14.8,13.5H7.7c-1.8,0-3.2-1.4-3.2-3.2V3.2
+			C4.5,1.4,5.9,0,7.7,0h7.1C16.6,0,18,1.4,18,3.2v7.1C18,12.1,16.6,13.5,14.8,13.5z"/>
+	</defs>
+    <use xlink:href="#SVGID_1duplicate_"  style="overflow:visible;"/>
+    <clipPath id="SVGID_2duplicate_">
+		<use xlink:href="#SVGID_1duplicate_"  style="overflow:visible;"/>
+	</clipPath>
+</g>
+</svg>
+                    </a>
+                    <a href="#" class="btn btn__block-link btn__block-link_edit">
+                        <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                             viewBox="0 0 18 18" style="enable-background:new 0 0 18 18;" xml:space="preserve">
+<g>
+	<path  d="M14.5,14.4L14.5,14.4c0,0.9-0.7,1.7-1.7,1.7H3.6c-0.9,0-1.7-0.8-1.7-1.7V5.2c0-0.9,0.8-1.7,1.7-1.7h5.3l1.8-1.8H3.6
+		c-1.9,0-3.5,1.6-3.5,3.5v9.2c0,1.9,1.6,3.5,3.5,3.5h9.2c1.9,0,3.5-1.6,3.5-3.5V7.3l-1.8,1.8V14.4z"/>
+    <path  d="M17.5,1.6l-1.1-1.1C15.9,0,15,0,14.5,0.5L7.9,7l3,3l6.5-6.5C18,3,18,2.1,17.5,1.6z"/>
+    <path  d="M5.8,12.9l2.5-0.8c0.5-0.2,1-0.5,1.4-0.8l-3-3C6.3,8.8,6.1,9.2,5.9,9.7l-0.8,2.5C4.9,12.6,5.3,13.1,5.8,12.9z"/>
+</g>
+</svg>
+                    </a>
+                    <a href="#" class="btn btn__block-link btn__block-link_trash">
+                        <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                             width="408.483px" height="408.483px" viewBox="0 0 408.483 408.483" style="enable-background:new 0 0 408.483 408.483;"
+                             xml:space="preserve">
+<g>
+	<g>
+		<path  d="M87.748,388.784c0.461,11.01,9.521,19.699,20.539,19.699h191.911c11.018,0,20.078-8.689,20.539-19.699l13.705-289.316
+			H74.043L87.748,388.784z M247.655,171.329c0-4.61,3.738-8.349,8.35-8.349h13.355c4.609,0,8.35,3.738,8.35,8.349v165.293
+			c0,4.611-3.738,8.349-8.35,8.349h-13.355c-4.61,0-8.35-3.736-8.35-8.349V171.329z M189.216,171.329
+			c0-4.61,3.738-8.349,8.349-8.349h13.355c4.609,0,8.349,3.738,8.349,8.349v165.293c0,4.611-3.737,8.349-8.349,8.349h-13.355
+			c-4.61,0-8.349-3.736-8.349-8.349V171.329L189.216,171.329z M130.775,171.329c0-4.61,3.738-8.349,8.349-8.349h13.356
+			c4.61,0,8.349,3.738,8.349,8.349v165.293c0,4.611-3.738,8.349-8.349,8.349h-13.356c-4.61,0-8.349-3.736-8.349-8.349V171.329z"/>
+        <path  d="M343.567,21.043h-88.535V4.305c0-2.377-1.927-4.305-4.305-4.305h-92.971c-2.377,0-4.304,1.928-4.304,4.305v16.737H64.916
+			c-7.125,0-12.9,5.776-12.9,12.901V74.47h304.451V33.944C356.467,26.819,350.692,21.043,343.567,21.043z"/>
+	</g>
+</g>
+</svg>
+                    </a>
+                    <a href="#" class="btn btn__open-editor">Open Wix Editor</a>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="editor-wrapper">
+            <section class="constructor">
+
+<!--                <div class="constructor__component">-->
+<!--                    <div class="constructor__dots">-->
+<!--                        <div class="btn btn__more">-->
+<!--                            <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"-->
+<!--                                 viewBox="0 0 16 4" style="enable-background:new 0 0 16 4;" xml:space="preserve">-->
+<!--                                        <style type="text/css">-->
+<!--                                            .st0{fill-rule:evenodd;clip-rule:evenodd;}-->
+<!--                                        </style>-->
+<!--                                <path id="Ellipse_4_copy_2" style="" class="st0" d="M2,0c1.1,0,2,0.9,2,2S3.1,4,2,4S0,3.1,0,2S0.9,0,2,0z M8,0c1.1,0,2,0.9,2,2S9.1,4,8,4-->
+<!--                                            S6,3.1,6,2S6.9,0,8,0z M14,0c1.1,0,2,0.9,2,2s-0.9,2-2,2s-2-0.9-2-2S12.9,0,14,0z"/>-->
+<!--                                        </svg>-->
+<!--                        </div>-->
+<!--                        <div class="constructor__dots-content">-->
+<!--                            <a href="#" class="constructor__dots-link constructor__dots-link_del">Delete</a>-->
+<!--                            <a href="#" class="constructor__dots-link constructor__dots-link_duplicate">Duplicate</a>-->
+<!--                        </div>-->
+<!--                    </div>-->
+<!--                    <div class="top-title">-->
+<!--                        Put the form title here-->
+<!--                    </div>-->
+<!--                    <div class="top-title__subtitle">-->
+<!--                        Here is the place of the form description-->
+<!--                    </div>-->
+<!--                </div>-->
+<!--                <div class="constructor__component input-click">-->
+<!--                    <div class="constructor__dots">-->
+<!--                        <div class="btn btn__more">-->
+<!--                            <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"-->
+<!--                                 viewBox="0 0 16 4" style="enable-background:new 0 0 16 4;" xml:space="preserve">-->
+<!--                                        <style type="text/css">-->
+<!--                                            .st0{fill-rule:evenodd;clip-rule:evenodd;}-->
+<!--                                        </style>-->
+<!--                                <path id="Ellipse_4_copy_2" style="" class="st0" d="M2,0c1.1,0,2,0.9,2,2S3.1,4,2,4S0,3.1,0,2S0.9,0,2,0z M8,0c1.1,0,2,0.9,2,2S9.1,4,8,4-->
+<!--                                            S6,3.1,6,2S6.9,0,8,0z M14,0c1.1,0,2,0.9,2,2s-0.9,2-2,2s-2-0.9-2-2S12.9,0,14,0z"/>-->
+<!--                                        </svg>-->
+<!--                        </div>-->
+<!--                        <div class="constructor__dots-content">-->
+<!--                            <a href="#" class="constructor__dots-link constructor__dots-link_del">Delete</a>-->
+<!--                            <a href="#" class="constructor__dots-link constructor__dots-link_duplicate">Duplicate</a>-->
+<!--                        </div>-->
+<!--                    </div>-->
+<!--                    <div class="constructor__component-title">-->
+<!--                        name title-->
+<!--                    </div>-->
+<!--                    <input type="text" class="input-default input-default_light" placeholder="Your Name">-->
+<!--                    <div class="constructor__component-description">-->
+<!--                        Input description-->
+<!--                    </div>-->
+<!--                </div>-->
+<!--                <div class="constructor__component">-->
+<!--                    <div class="constructor__dots">-->
+<!--                        <div class="btn btn__more">-->
+<!--                            <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"-->
+<!--                                 viewBox="0 0 16 4" style="enable-background:new 0 0 16 4;" xml:space="preserve">-->
+<!--                                        <style type="text/css">-->
+<!--                                            .st0{fill-rule:evenodd;clip-rule:evenodd;}-->
+<!--                                        </style>-->
+<!--                                <path id="Ellipse_4_copy_2" style="" class="st0" d="M2,0c1.1,0,2,0.9,2,2S3.1,4,2,4S0,3.1,0,2S0.9,0,2,0z M8,0c1.1,0,2,0.9,2,2S9.1,4,8,4-->
+<!--                                            S6,3.1,6,2S6.9,0,8,0z M14,0c1.1,0,2,0.9,2,2s-0.9,2-2,2s-2-0.9-2-2S12.9,0,14,0z"/>-->
+<!--                                        </svg>-->
+<!--                        </div>-->
+<!--                        <div class="constructor__dots-content">-->
+<!--                            <a href="#" class="constructor__dots-link constructor__dots-link_del">Delete</a>-->
+<!--                            <a href="#" class="constructor__dots-link constructor__dots-link_duplicate">Duplicate</a>-->
+<!--                        </div>-->
+<!--                    </div>-->
+<!--                    <div class="constructor__component-title">-->
+<!--                        email title-->
+<!--                    </div>-->
+<!--                    <input type="text" class="input-default input-default_light" placeholder="Your Email">-->
+<!--                    <div class="constructor__component-description">-->
+<!--                        Input description-->
+<!--                    </div>-->
+<!--                </div>-->
+                <div class="constructor__row">
+                    <div class="constructor__component checkbox-click">
+                        <div class="constructor__dots">
+                            <div class="btn btn__more">
+                                <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                                     viewBox="0 0 16 4" style="enable-background:new 0 0 16 4;" xml:space="preserve">
+                                        <style type="text/css">
+                                            .st0{fill-rule:evenodd;clip-rule:evenodd;}
+                                        </style>
+                                    <path id="Ellipse_4_copy_2" style="" class="st0" d="M2,0c1.1,0,2,0.9,2,2S3.1,4,2,4S0,3.1,0,2S0.9,0,2,0z M8,0c1.1,0,2,0.9,2,2S9.1,4,8,4
+                                            S6,3.1,6,2S6.9,0,8,0z M14,0c1.1,0,2,0.9,2,2s-0.9,2-2,2s-2-0.9-2-2S12.9,0,14,0z"/>
+                                        </svg>
+                            </div>
+                            <div class="constructor__dots-content">
+                                <a href="#" class="constructor__dots-link constructor__dots-link_del">Delete</a>
+                                <a href="#" class="constructor__dots-link constructor__dots-link_duplicate">Duplicate</a>
+                            </div>
+                        </div>
+                        <div class="constructor__component-title">
+                            checkbox title
+                        </div>
+                        <div class="constructor__checkbox-container">
+                            <input class="custom-checkbox" id="styled-checkbox-1" type="checkbox" value="value1">
+                            <label for="styled-checkbox-1">Default Label A</label>
+                        </div>
+                        <div class="constructor__checkbox-container">
+                            <input class="custom-checkbox" id="styled-checkbox-2" type="checkbox" value="value1">
+                            <label for="styled-checkbox-2">Default Label B</label>
+                        </div>
+                        <div class="constructor__checkbox-container">
+                            <input class="custom-checkbox" id="styled-checkbox-3" type="checkbox" value="value1">
+                            <label for="styled-checkbox-3">Default Label C</label>
+                        </div>
+                        <div class="constructor__component-description">
+                            Checkbox list description
+                        </div>
+                    </div>
+                    <div class="constructor__component">
+                        <div class="constructor__dots">
+                            <div class="btn btn__more">
+                                <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                                     viewBox="0 0 16 4" style="enable-background:new 0 0 16 4;" xml:space="preserve">
+                                        <style type="text/css">
+                                            .st0{fill-rule:evenodd;clip-rule:evenodd;}
+                                        </style>
+                                    <path id="Ellipse_4_copy_2" style="" class="st0" d="M2,0c1.1,0,2,0.9,2,2S3.1,4,2,4S0,3.1,0,2S0.9,0,2,0z M8,0c1.1,0,2,0.9,2,2S9.1,4,8,4
+                                            S6,3.1,6,2S6.9,0,8,0z M14,0c1.1,0,2,0.9,2,2s-0.9,2-2,2s-2-0.9-2-2S12.9,0,14,0z"/>
+                                        </svg>
+                            </div>
+                            <div class="constructor__dots-content">
+                                <a href="#" class="constructor__dots-link constructor__dots-link_del">Delete</a>
+                                <a href="#" class="constructor__dots-link constructor__dots-link_duplicate">Duplicate</a>
+                            </div>
+                        </div>
+                        <div class="constructor__component-title">
+                            checkbox title
+                        </div>
+                        <div class="constructor__checkbox-container">
+                            <input class="custom-checkbox" id="styled-checkbox-4" type="checkbox" value="value4">
+                            <label for="styled-checkbox-4">Default Label A</label>
+                        </div>
+                        <div class="constructor__checkbox-container">
+                            <input class="custom-checkbox" id="styled-checkbox-5" type="checkbox" value="value5">
+                            <label for="styled-checkbox-5">Default Label B</label>
+                        </div>
+                        <div class="constructor__checkbox-container">
+                            <input class="custom-checkbox" id="styled-checkbox-6" type="checkbox" value="value6">
+                            <label for="styled-checkbox-6">Default Label C</label>
+                        </div>
+                        <div class="constructor__component-description">
+                            Checkbox list description
+                        </div>
+                    </div>
+                </div>
+<!--                <div class="constructor__component">-->
+<!--                    <div class="constructor__dots">-->
+<!--                        <div class="btn btn__more">-->
+<!--                            <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"-->
+<!--                                 viewBox="0 0 16 4" style="enable-background:new 0 0 16 4;" xml:space="preserve">-->
+<!--                                        <style type="text/css">-->
+<!--                                            .st0{fill-rule:evenodd;clip-rule:evenodd;}-->
+<!--                                        </style>-->
+<!--                                <path id="Ellipse_4_copy_2" style="" class="st0" d="M2,0c1.1,0,2,0.9,2,2S3.1,4,2,4S0,3.1,0,2S0.9,0,2,0z M8,0c1.1,0,2,0.9,2,2S9.1,4,8,4-->
+<!--                                            S6,3.1,6,2S6.9,0,8,0z M14,0c1.1,0,2,0.9,2,2s-0.9,2-2,2s-2-0.9-2-2S12.9,0,14,0z"/>-->
+<!--                                        </svg>-->
+<!--                        </div>-->
+<!--                        <div class="constructor__dots-content">-->
+<!--                            <a href="#" class="constructor__dots-link constructor__dots-link_del">Delete</a>-->
+<!--                            <a href="#" class="constructor__dots-link constructor__dots-link_duplicate">Duplicate</a>-->
+<!--                        </div>-->
+<!--                    </div>-->
+<!--                    <div id="editor">-->
+<!--                        <p>Hello World!</p>-->
+<!--                        <p>Some initial <strong>bold</strong> text</p>-->
+<!--                        <p><br></p>-->
+<!--                    </div>-->
+<!--                </div>-->
+<!--                <div class="constructor__row">-->
+<!--                    <div class="constructor__component">-->
+<!--                        <div class="constructor__dots">-->
+<!--                            <div class="btn btn__more">-->
+<!--                                <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"-->
+<!--                                     viewBox="0 0 16 4" style="enable-background:new 0 0 16 4;" xml:space="preserve">-->
+<!--                                        <style type="text/css">-->
+<!--                                            .st0{fill-rule:evenodd;clip-rule:evenodd;}-->
+<!--                                        </style>-->
+<!--                                    <path id="Ellipse_4_copy_2" style="" class="st0" d="M2,0c1.1,0,2,0.9,2,2S3.1,4,2,4S0,3.1,0,2S0.9,0,2,0z M8,0c1.1,0,2,0.9,2,2S9.1,4,8,4-->
+<!--                                            S6,3.1,6,2S6.9,0,8,0z M14,0c1.1,0,2,0.9,2,2s-0.9,2-2,2s-2-0.9-2-2S12.9,0,14,0z"/>-->
+<!--                                        </svg>-->
+<!--                            </div>-->
+<!--                            <div class="constructor__dots-content">-->
+<!--                                <a href="#" class="constructor__dots-link constructor__dots-link_del">Delete</a>-->
+<!--                                <a href="#" class="constructor__dots-link constructor__dots-link_duplicate">Duplicate</a>-->
+<!--                            </div>-->
+<!--                        </div>-->
+<!--                        <div class="constructor__component-title">-->
+<!--                            address 1 title-->
+<!--                        </div>-->
+<!--                        <input type="text" class="input-default input-default_light" placeholder="Address 1">-->
+<!--                        <div class="constructor__component-description">-->
+<!--                            Input description-->
+<!--                        </div>-->
+<!--                    </div>-->
+<!--                    <div class="constructor__component">-->
+<!--                        <div class="constructor__dots">-->
+<!--                            <div class="btn btn__more">-->
+<!--                                <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"-->
+<!--                                     viewBox="0 0 16 4" style="enable-background:new 0 0 16 4;" xml:space="preserve">-->
+<!--                                        <style type="text/css">-->
+<!--                                            .st0{fill-rule:evenodd;clip-rule:evenodd;}-->
+<!--                                        </style>-->
+<!--                                    <path id="Ellipse_4_copy_2" style="" class="st0" d="M2,0c1.1,0,2,0.9,2,2S3.1,4,2,4S0,3.1,0,2S0.9,0,2,0z M8,0c1.1,0,2,0.9,2,2S9.1,4,8,4-->
+<!--                                            S6,3.1,6,2S6.9,0,8,0z M14,0c1.1,0,2,0.9,2,2s-0.9,2-2,2s-2-0.9-2-2S12.9,0,14,0z"/>-->
+<!--                                        </svg>-->
+<!--                            </div>-->
+<!--                            <div class="constructor__dots-content">-->
+<!--                                <a href="#" class="constructor__dots-link constructor__dots-link_del">Delete</a>-->
+<!--                                <a href="#" class="constructor__dots-link constructor__dots-link_duplicate">Duplicate</a>-->
+<!--                            </div>-->
+<!--                        </div>-->
+<!--                        <div class="constructor__component-title">-->
+<!--                            address 2 title-->
+<!--                        </div>-->
+<!--                        <input type="text" class="input-default input-default_light" placeholder="Address 2">-->
+<!--                        <div class="constructor__component-description">-->
+<!--                            Input description-->
+<!--                        </div>-->
+<!--                    </div>-->
+<!--                </div>-->
+<!--                <div class="constructor__row">-->
+<!--                    <div class="constructor__component country-click">-->
+<!--                        <div class="constructor__dots">-->
+<!--                            <div class="btn btn__more">-->
+<!--                                <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"-->
+<!--                                     viewBox="0 0 16 4" style="enable-background:new 0 0 16 4;" xml:space="preserve">-->
+<!--                                        <style type="text/css">-->
+<!--                                            .st0{fill-rule:evenodd;clip-rule:evenodd;}-->
+<!--                                        </style>-->
+<!--                                    <path id="Ellipse_4_copy_2" style="" class="st0" d="M2,0c1.1,0,2,0.9,2,2S3.1,4,2,4S0,3.1,0,2S0.9,0,2,0z M8,0c1.1,0,2,0.9,2,2S9.1,4,8,4-->
+<!--                                            S6,3.1,6,2S6.9,0,8,0z M14,0c1.1,0,2,0.9,2,2s-0.9,2-2,2s-2-0.9-2-2S12.9,0,14,0z"/>-->
+<!--                                        </svg>-->
+<!--                            </div>-->
+<!--                            <div class="constructor__dots-content">-->
+<!--                                <a href="#" class="constructor__dots-link constructor__dots-link_del">Delete</a>-->
+<!--                                <a href="#" class="constructor__dots-link constructor__dots-link_duplicate">Duplicate</a>-->
+<!--                            </div>-->
+<!--                        </div>-->
+<!--                        <div class="constructor__component-title">-->
+<!--                            country title-->
+<!--                        </div>-->
+<!--                        <input type="text" class="input-default input-default_light" placeholder="Country">-->
+<!--                        <div class="constructor__component-description">-->
+<!--                            Input description-->
+<!--                        </div>-->
+<!--                    </div>-->
+<!--                    <div class="constructor__component states-click">-->
+<!--                        <div class="constructor__dots">-->
+<!--                            <div class="btn btn__more">-->
+<!--                                <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"-->
+<!--                                     viewBox="0 0 16 4" style="enable-background:new 0 0 16 4;" xml:space="preserve">-->
+<!--                                        <style type="text/css">-->
+<!--                                            .st0{fill-rule:evenodd;clip-rule:evenodd;}-->
+<!--                                        </style>-->
+<!--                                    <path id="Ellipse_4_copy_2" style="" class="st0" d="M2,0c1.1,0,2,0.9,2,2S3.1,4,2,4S0,3.1,0,2S0.9,0,2,0z M8,0c1.1,0,2,0.9,2,2S9.1,4,8,4-->
+<!--                                            S6,3.1,6,2S6.9,0,8,0z M14,0c1.1,0,2,0.9,2,2s-0.9,2-2,2s-2-0.9-2-2S12.9,0,14,0z"/>-->
+<!--                                        </svg>-->
+<!--                            </div>-->
+<!--                            <div class="constructor__dots-content">-->
+<!--                                <a href="#" class="constructor__dots-link constructor__dots-link_del">Delete</a>-->
+<!--                                <a href="#" class="constructor__dots-link constructor__dots-link_duplicate">Duplicate</a>-->
+<!--                            </div>-->
+<!--                        </div>-->
+<!--                        <div class="constructor__component-title">-->
+<!--                            state/region title-->
+<!--                        </div>-->
+<!--                        <div class="custom__select">-->
+<!--                            <select>-->
+<!--                                <option timeZoneId="1" gmtAdjustment="GMT-12:00" useDaylightTime="0" value="-12">(GMT-12:00) International Date Line West</option>-->
+<!--                                <option timeZoneId="2" gmtAdjustment="GMT-11:00" useDaylightTime="0" value="-11">(GMT-11:00) Midway Island, Samoa</option>-->
+<!--                                <option timeZoneId="3" gmtAdjustment="GMT-10:00" useDaylightTime="0" value="-10">(GMT-10:00) Hawaii</option>-->
+<!--                                <option timeZoneId="4" gmtAdjustment="GMT-09:00" useDaylightTime="1" value="-9">(GMT-09:00) Alaska</option>-->
+<!--                                <option timeZoneId="5" gmtAdjustment="GMT-08:00" useDaylightTime="1" value="-8">(GMT-08:00) Pacific Time (US & Canada)</option>-->
+<!--                                <option timeZoneId="6" gmtAdjustment="GMT-08:00" useDaylightTime="1" value="-8">(GMT-08:00) Tijuana, Baja California</option>-->
+<!--                                <option timeZoneId="7" gmtAdjustment="GMT-07:00" useDaylightTime="0" value="-7">(GMT-07:00) Arizona</option>-->
+<!--                                <option timeZoneId="8" gmtAdjustment="GMT-07:00" useDaylightTime="1" value="-7">(GMT-07:00) Chihuahua, La Paz, Mazatlan</option>-->
+<!--                                <option timeZoneId="9" gmtAdjustment="GMT-07:00" useDaylightTime="1" value="-7">(GMT-07:00) Mountain Time (US & Canada)</option>-->
+
+<!--                            </select>-->
+<!--                        </div>-->
+<!--                        <div class="constructor__component-description">-->
+<!--                            Input description-->
+<!--                        </div>-->
+<!--                    </div>-->
+<!--                </div>-->
+<!--                <div class="constructor__component">-->
+<!--                    <div class="constructor__dots">-->
+<!--                        <div class="btn btn__more">-->
+<!--                            <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"-->
+<!--                                 viewBox="0 0 16 4" style="enable-background:new 0 0 16 4;" xml:space="preserve">-->
+<!--                                        <style type="text/css">-->
+<!--                                            .st0{fill-rule:evenodd;clip-rule:evenodd;}-->
+<!--                                        </style>-->
+<!--                                <path id="Ellipse_4_copy_2" style="" class="st0" d="M2,0c1.1,0,2,0.9,2,2S3.1,4,2,4S0,3.1,0,2S0.9,0,2,0z M8,0c1.1,0,2,0.9,2,2S9.1,4,8,4-->
+<!--                                            S6,3.1,6,2S6.9,0,8,0z M14,0c1.1,0,2,0.9,2,2s-0.9,2-2,2s-2-0.9-2-2S12.9,0,14,0z"/>-->
+<!--                                        </svg>-->
+<!--                        </div>-->
+<!--                        <div class="constructor__dots-content">-->
+<!--                            <a href="#" class="constructor__dots-link constructor__dots-link_del">Delete</a>-->
+<!--                            <a href="#" class="constructor__dots-link constructor__dots-link_duplicate">Duplicate</a>-->
+<!--                        </div>-->
+<!--                    </div>-->
+<!--                    <div class="constructor__component-title">-->
+<!--                        dropbox title-->
+<!--                    </div>-->
+<!--                    <div class="custom__select">-->
+<!--                        <select>-->
+<!--                            <option timeZoneId="1" gmtAdjustment="GMT-12:00" useDaylightTime="0" value="-12">(GMT-12:00) International Date Line West</option>-->
+<!--                            <option timeZoneId="2" gmtAdjustment="GMT-11:00" useDaylightTime="0" value="-11">(GMT-11:00) Midway Island, Samoa</option>-->
+<!--                            <option timeZoneId="3" gmtAdjustment="GMT-10:00" useDaylightTime="0" value="-10">(GMT-10:00) Hawaii</option>-->
+<!--                            <option timeZoneId="4" gmtAdjustment="GMT-09:00" useDaylightTime="1" value="-9">(GMT-09:00) Alaska</option>-->
+<!--                            <option timeZoneId="5" gmtAdjustment="GMT-08:00" useDaylightTime="1" value="-8">(GMT-08:00) Pacific Time (US & Canada)</option>-->
+<!--                            <option timeZoneId="6" gmtAdjustment="GMT-08:00" useDaylightTime="1" value="-8">(GMT-08:00) Tijuana, Baja California</option>-->
+<!--                            <option timeZoneId="7" gmtAdjustment="GMT-07:00" useDaylightTime="0" value="-7">(GMT-07:00) Arizona</option>-->
+<!--                            <option timeZoneId="8" gmtAdjustment="GMT-07:00" useDaylightTime="1" value="-7">(GMT-07:00) Chihuahua, La Paz, Mazatlan</option>-->
+<!--                            <option timeZoneId="9" gmtAdjustment="GMT-07:00" useDaylightTime="1" value="-7">(GMT-07:00) Mountain Time (US & Canada)</option>-->
+<!--                            <option timeZoneId="10" gmtAdjustment="GMT-06:00" useDaylightTime="0" value="-6">(GMT-06:00) Central America</option>-->
+<!--                            <option timeZoneId="11" gmtAdjustment="GMT-06:00" useDaylightTime="1" value="-6">(GMT-06:00) Central Time (US & Canada)</option>-->
+<!--                            <option timeZoneId="12" gmtAdjustment="GMT-06:00" useDaylightTime="1" value="-6">(GMT-06:00) Guadalajara, Mexico City, Monterrey</option>-->
+<!--                            <option timeZoneId="13" gmtAdjustment="GMT-06:00" useDaylightTime="0" value="-6">(GMT-06:00) Saskatchewan</option>-->
+<!--                            <option timeZoneId="14" gmtAdjustment="GMT-05:00" useDaylightTime="0" value="-5">(GMT-05:00) Bogota, Lima, Quito, Rio Branco</option>-->
+<!--                            <option timeZoneId="15" gmtAdjustment="GMT-05:00" useDaylightTime="1" value="-5">(GMT-05:00) Eastern Time (US & Canada)</option>-->
+<!--                            <option timeZoneId="16" gmtAdjustment="GMT-05:00" useDaylightTime="1" value="-5">(GMT-05:00) Indiana (East)</option>-->
+<!--                            <option timeZoneId="17" gmtAdjustment="GMT-04:00" useDaylightTime="1" value="-4">(GMT-04:00) Atlantic Time (Canada)</option>-->
+<!--                            <option timeZoneId="18" gmtAdjustment="GMT-04:00" useDaylightTime="0" value="-4">(GMT-04:00) Caracas, La Paz</option>-->
+<!--                            <option timeZoneId="19" gmtAdjustment="GMT-04:00" useDaylightTime="0" value="-4">(GMT-04:00) Manaus</option>-->
+<!--                        </select>-->
+<!--                    </div>-->
+<!--                    <div class="constructor__component-description">-->
+<!--                        Dropdown List description-->
+<!--                    </div>-->
+<!--                </div>-->
+                <div class="constructor__component submit-click">
+                    <div class="constructor__dots">
+                        <div class="btn btn__more">
+                            <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                                 viewBox="0 0 16 4" style="enable-background:new 0 0 16 4;" xml:space="preserve">
+                                        <style type="text/css">
+                                            .st0{fill-rule:evenodd;clip-rule:evenodd;}
+                                        </style>
+                                <path id="Ellipse_4_copy_2" style="" class="st0" d="M2,0c1.1,0,2,0.9,2,2S3.1,4,2,4S0,3.1,0,2S0.9,0,2,0z M8,0c1.1,0,2,0.9,2,2S9.1,4,8,4
+                                            S6,3.1,6,2S6.9,0,8,0z M14,0c1.1,0,2,0.9,2,2s-0.9,2-2,2s-2-0.9-2-2S12.9,0,14,0z"/>
+                                        </svg>
+                        </div>
+                        <div class="constructor__dots-content">
+                            <a href="#" class="constructor__dots-link constructor__dots-link_del">Delete</a>
+                            <a href="#" class="constructor__dots-link constructor__dots-link_duplicate">Duplicate</a>
+                        </div>
+                    </div>
+                    <input type="submit" class="btn btn__constructor" value="Submit Button">
+                </div>
+                <div class="constructor__add-component">
+                    <span>Add Component</span>
+                </div>
+            </section>
+
+
+        </div>
+        <footer class="footer">
+            <div class="footer__item">
+                <div class="footer__text">
+                    Proudly delivered to you by Epic Form Builder
+                </div>
+            </div>
+            <div class="footer__item">
+                <ul class="navbar-footer">
+                    <li class="navbar-footer__item">
+                        <a href="#" class="navbar-footer__link">
+                            Privacy policy
+                        </a>
+                    </li>
+                    <li class="navbar-footer__item">
+                        <a href="#" class="navbar-footer__link">
+                            Cookie Statement
+                        </a>
+                    </li>
+                    <li class="navbar-footer__item">
+                        <a href="#" class="navbar-footer__link">
+                            Terms Of Use
+                        </a>
+                    </li>
+                    <li class="navbar-footer__item">
+                        <a href="#" class="navbar-footer__link">
+                            Acceptable Use Policy
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </footer>
+    </div>
+
+
+    <div class="components-panel">
+        <!--            components panel -->
+        <div class="components-panel-content">
+            <div class="components-panel__section components-panel__section_flex">
+                <div class="flex">
+                    <span class="btn btn__close-panel">
+                        <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                             viewBox="0 0 18 18" style="enable-background:new 0 0 18 18;" xml:space="preserve">
+<g>
+	<defs>
+		<path id="SVGID_1_" d="M17.5,2.9L11.4,9l6.1,6.1c0.7,0.7,0.7,1.8,0,2.4c-0.7,0.7-1.8,0.7-2.4,0L9,11.4l-6.1,6.1
+			c-0.7,0.7-1.8,0.7-2.4,0s-0.7-1.8,0-2.4L6.6,9L0.5,2.9c-0.7-0.7-0.7-1.8,0-2.4c0.7-0.7,1.8-0.7,2.4,0L9,6.6l6.1-6.1
+			c0.7-0.7,1.8-0.7,2.4,0C18.2,1.2,18.2,2.3,17.5,2.9z"/>
+	</defs>
+    <use xlink:href="#SVGID_1_"  style="overflow:visible;"/>
+    <clipPath id="SVGID_2_">
+		<use xlink:href="#SVGID_1_"  style="overflow:visible;"/>
+	</clipPath>
+</g>
+</svg>
+                    </span>
+                    <div class="components-panel__title">
+                        Components
+                    </div>
+                </div>
+                <div class="components-panel__btn">
+                    <a href="#" class="btn btn__upgrade">Upgrade</a>
+                </div>
+            </div>
+            <div class="components-panel__section">
+                <div class="components-panel__section-title">
+                    layout
+                </div>
+                <div class="components-panel__item-box">
+                    <div class="components-panel__item">
+                        <div class="components-panel__item-icon">
+                            <img src="./assets/images/commponents/title.svg" alt="">
+                        </div>
+                        <div class="components-panel__item-text">
+                            Title
+                        </div>
+                    </div>
+                    <div class="components-panel__item">
+                        <div class="components-panel__item-icon">
+                            <img src="./assets/images/commponents/subtitle.svg" alt="">
+                        </div>
+                        <div class="components-panel__item-text">
+                            Subtitle
+                        </div>
+                    </div>
+                    <div class="components-panel__item">
+                        <div class="components-panel__item-icon">
+                            <img src="./assets/images/commponents/blank.svg" alt="">
+                        </div>
+                        <div class="components-panel__item-text">
+                            Blank
+                        </div>
+                    </div>
+                    <div class="components-panel__item components-panel__item_upgrade">
+                        <div class="components-panel__item-icon">
+                            <img src="./assets/images/commponents/imageGallery.svg" alt="">
+                        </div>
+                        <div class="components-panel__item-text">
+                            Image Gallery
+                        </div>
+                    </div>
+                    <div class="components-panel__item">
+                        <div class="components-panel__item-icon">
+                            <img src="./assets/images/commponents/downloadLink.svg" alt="">
+                        </div>
+                        <div class="components-panel__item-text">
+                            Download Link
+                        </div>
+                    </div>
+                    <div class="components-panel__item">
+                        <div class="components-panel__item-icon">
+                            <img src="./assets/images/commponents/freeText.svg" alt="">
+                        </div>
+                        <div class="components-panel__item-text">
+                            Free Text
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="components-panel__section">
+                <div class="components-panel__section-title">
+                    input
+                </div>
+                <div class="components-panel__item-box">
+                    <div class="components-panel__item">
+                        <div class="components-panel__item-icon">
+                            <img src="./assets/images/commponents/text.svg" alt="">
+                        </div>
+                        <div class="components-panel__item-text">
+                            Text
+                        </div>
+                    </div>
+                    <div class="components-panel__item">
+                        <div class="components-panel__item-icon">
+                            <img src="./assets/images/commponents/email.svg" alt="">
+                        </div>
+                        <div class="components-panel__item-text">
+                            Email
+                        </div>
+                    </div>
+                    <div class="components-panel__item">
+                        <div class="components-panel__item-icon">
+                            <img src="./assets/images/commponents/phone.svg" alt="">
+                        </div>
+                        <div class="components-panel__item-text">
+                            Phone
+                        </div>
+                    </div>
+                    <div class="components-panel__item">
+                        <div class="components-panel__item-icon">
+                            <img src="./assets/images/commponents/paragraph.svg" alt="">
+                        </div>
+                        <div class="components-panel__item-text">
+                            Paragraph
+                        </div>
+                    </div>
+                    <div class="components-panel__item components-panel__item_upgrade">
+                        <div class="components-panel__item-icon">
+                            <img src="./assets/images/commponents/fileUpload.svg" alt="">
+                        </div>
+                        <div class="components-panel__item-text">
+                            File Upload
+                        </div>
+                    </div>
+                    <div class="components-panel__item components-panel__item_upgrade">
+                        <div class="components-panel__item-icon">
+                            <img src="./assets/images/commponents/signaturePad.svg" alt="">
+                        </div>
+                        <div class="components-panel__item-text">
+                            SignaturePad
+                        </div>
+                    </div>
+                    <div class="components-panel__item">
+                        <div class="components-panel__item-icon">
+                            <img src="./assets/images/commponents/chackbox.svg" alt="">
+                        </div>
+                        <div class="components-panel__item-text">
+                            Checkbox
+                        </div>
+                    </div>
+                    <div class="components-panel__item">
+                        <div class="components-panel__item-icon">
+                            <img src="./assets/images/commponents/radio.svg" alt="">
+                        </div>
+                        <div class="components-panel__item-text">
+                            Radio
+                        </div>
+                    </div>
+                    <div class="components-panel__item">
+                        <div class="components-panel__item-icon">
+                            <img src="./assets/images/commponents/selector.svg" alt="">
+                        </div>
+                        <div class="components-panel__item-text">
+                            Select
+                        </div>
+                    </div>
+                    <div class="components-panel__item">
+                        <div class="components-panel__item-icon">
+                            <img src="./assets/images/commponents/confirmation.svg" alt="">
+                        </div>
+                        <div class="components-panel__item-text">
+                            Confirmation
+                        </div>
+                    </div>
+                    <div class="components-panel__item components-panel__item_unactive">
+                        <div class="components-panel__item-icon">
+                            <img src="./assets/images/commponents/submitButton.svg" alt="">
+                        </div>
+                        <div class="components-panel__item-text">
+                            Submit Button
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="components-panel__section">
+                <div class="components-panel__section-title">
+                    address
+                </div>
+                <div class="components-panel__item-box">
+                    <div class="components-panel__item">
+                        <div class="components-panel__item-icon">
+                            <img src="./assets/images/commponents/firstName.svg" alt="">
+                        </div>
+                        <div class="components-panel__item-text">
+                            First Name
+                        </div>
+                    </div>
+                    <div class="components-panel__item">
+                        <div class="components-panel__item-icon">
+                            <img src="./assets/images/commponents/lastName.svg" alt="">
+                        </div>
+                        <div class="components-panel__item-text">
+                            Last Name
+                        </div>
+                    </div>
+                    <div class="components-panel__item">
+                        <div class="components-panel__item-icon">
+                            <img src="./assets/images/commponents/address1.svg" alt="">
+                        </div>
+                        <div class="components-panel__item-text">
+                            Address 1
+                        </div>
+                    </div>
+                    <div class="components-panel__item">
+                        <div class="components-panel__item-icon">
+                            <img src="./assets/images/commponents/address2.svg" alt="">
+                        </div>
+                        <div class="components-panel__item-text">
+                            Address 2
+                        </div>
+                    </div>
+                    <div class="components-panel__item">
+                        <div class="components-panel__item-icon">
+                            <img src="./assets/images/commponents/country.svg" alt="">
+                        </div>
+                        <div class="components-panel__item-text">
+                            Country
+                        </div>
+                    </div>
+                    <div class="components-panel__item">
+                        <div class="components-panel__item-icon">
+                            <img src="./assets/images/commponents/state.svg" alt="">
+                        </div>
+                        <div class="components-panel__item-text">
+                            State/Region
+                        </div>
+                    </div>
+                    <div class="components-panel__item">
+                        <div class="components-panel__item-icon">
+                            <img src="./assets/images/commponents/city.svg" alt="">
+                        </div>
+                        <div class="components-panel__item-text">
+                            City
+                        </div>
+                    </div>
+                    <div class="components-panel__item">
+                        <div class="components-panel__item-icon">
+                            <img src="./assets/images/commponents/zip.svg" alt="">
+                        </div>
+                        <div class="components-panel__item-text">
+                            Zip/Post Code
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="components-panel__section">
+                <div class="components-panel__section-title">
+                    E-commerce product cards
+                </div>
+                <div class="components-panel__item-box">
+                    <div class="components-panel__item components-panel__item_upgrade">
+                        <!--                        <div class="components-panel__item-upgrade"></div>-->
+                        <div class="components-panel__item-icon">
+                            <img src="./assets/images/commponents/product.svg" alt="">
+                        </div>
+                        <div class="components-panel__item-text">
+                            Product
+                        </div>
+                    </div>
+                    <div class="components-panel__item components-panel__item_upgrade">
+                        <div class="components-panel__item-icon">
+                            <img src="./assets/images/commponents/pricing.svg" alt="">
+                        </div>
+                        <div class="components-panel__item-text">
+                            Pricing
+                        </div>
+                    </div>
+                    <div class="components-panel__item components-panel__item_upgrade">
+                        <div class="components-panel__item-icon">
+                            <img src="./assets/images/commponents/registration.svg" alt="">
+                        </div>
+                        <div class="components-panel__item-text">
+                            Registration
+                        </div>
+                    </div>
+                    <div class="components-panel__item components-panel__item_unactive">
+                        <div class="components-panel__item-icon">
+                            <img src="./assets/images/commponents/donation.svg" alt="">
+                        </div>
+                        <div class="components-panel__item-text">
+                            Donation
+                        </div>
+                    </div>
+                    <div class="components-panel__item">
+                        <div class="components-panel__item-icon">
+                            <img src="./assets/images/commponents/subscribtion.svg" alt="">
+                        </div>
+                        <div class="components-panel__item-text">
+                            Subscription
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="components-panel__section">
+                <div class="components-panel__section-title">
+                    advanced
+                </div>
+                <div class="components-panel__item-box">
+                    <div class="components-panel__item components-panel__item_half components-panel__item_unactive">
+                        <div class="components-panel__item-icon">
+                            <img src="./assets/images/commponents/multistep.png" alt="">
+                        </div>
+                        <div class="components-panel__item-text">
+                            Multistep Form
+                        </div>
+                    </div>
+                    <div class="components-panel__item components-panel__item_half components-panel__item_unactive">
+                        <div class="components-panel__item-icon">
+                            <img src="./assets/images/commponents/paper.png" alt="">
+                        </div>
+                        <div class="components-panel__item-text">
+                            Paper Form Download
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--            checkbox setting panel -->
+        <div class="components-panel-settings">
+            <div class="components-panel__section components-panel__section_flex">
+                <div class="flex">
+                    <span class="btn btn__close-panel btn__close-panel_settings">
+                        <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                             viewBox="0 0 18 18" style="enable-background:new 0 0 18 18;" xml:space="preserve">
+<g>
+	<defs>
+		<path id="SVGID_1_" d="M17.5,2.9L11.4,9l6.1,6.1c0.7,0.7,0.7,1.8,0,2.4c-0.7,0.7-1.8,0.7-2.4,0L9,11.4l-6.1,6.1
+			c-0.7,0.7-1.8,0.7-2.4,0s-0.7-1.8,0-2.4L6.6,9L0.5,2.9c-0.7-0.7-0.7-1.8,0-2.4c0.7-0.7,1.8-0.7,2.4,0L9,6.6l6.1-6.1
+			c0.7-0.7,1.8-0.7,2.4,0C18.2,1.2,18.2,2.3,17.5,2.9z"/>
+	</defs>
+    <use xlink:href="#SVGID_1_"  style="overflow:visible;"/>
+    <clipPath id="SVGID_2_">
+		<use xlink:href="#SVGID_1_"  style="overflow:visible;"/>
+	</clipPath>
+</g>
+</svg>
+                    </span>
+                    <div class="components-panel__title">
+                        Radio settings
+                    </div>
+                </div>
+                <div class="components-panel__btn">
+                    <a href="#" class="btn btn__upgrade">Upgrade</a>
+                </div>
+            </div>
+
+            <div class="tabs">
+                <div class="components-panel__section">
+                    <div class="tab">
+                        <input type="checkbox" id="chck1">
+                        <label class="tab-label" for="chck1">general</label>
+                        <div class="tab-content">
+                            <div class="component-settings__section">
+                                <div class="component-settings__row-flex">
+                                    <div class="component-settings__title">
+                                        <img src="assets/images/settings/lable.svg" alt="">
+                                        Show Label
+                                    </div>
+                                    <div class="switch__container">
+                                        <label class="switch" for="checkbox-set-3">
+                                            <input type="checkbox" id="checkbox-set-3" checked/>
+                                            <div class="slider round"></div>
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="component-settings__row">
+                                    <input type="text" class="input-default input-default_dark" value="Error text">
+                                    <div class="component-settings__description">
+                                        Field label is a explanatory title for the content you expect your users to enter.
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="component-settings__section">
+                                <div class="component-settings__row-flex">
+                                    <div class="component-settings__title">
+                                        <img src="assets/images/settings/options.svg" alt="">
+                                        Options
+                                    </div>
+                                    <div class="switch__container">
+                                        <label class="switch" for="checkbox-set-4">
+                                            <input type="checkbox" id="checkbox-set-4" checked/>
+                                            <div class="slider round"></div>
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="component-settings__row-flex">
+                                    <div class="component-settings__description component-settings__description_14">
+                                        Display list items inline
+                                    </div>
+                                    <div class="switch__container">
+                                        <label class="switch" for="checkbox-set-3">
+                                            <input type="checkbox" id="checkbox-set-3"/>
+                                            <div class="slider round"></div>
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="component-settings__section">
+                                <div class="component-settings__row-flex">
+                                    <div class="component-settings__title">
+                                        <img src="assets/images/settings/hint.svg" alt="">
+                                        Show Hint
+                                    </div>
+                                    <div class="switch__container">
+                                        <label class="switch" for="checkbox-set-5">
+                                            <input type="checkbox" id="checkbox-set-5" checked/>
+                                            <div class="slider round"></div>
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="component-settings__row">
+                                    <input type="text" class="input-default input-default_dark" value="Error text">
+                                    <div class="component-settings__description">
+                                        Enter hint text belou the input.
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="components-panel__section">
+                    <div class="tab">
+                        <input type="checkbox" id="chck2">
+                        <label class="tab-label" for="chck2">Validation and error messages</label>
+                        <div class="tab-content">
+                            <div class="component-settings__section">
+                                <div class="component-settings__row-flex">
+                                    <div class="component-settings__title">
+                                        <img src="assets/images/settings/required.svg" alt="">
+                                        Input required
+                                    </div>
+                                    <div class="switch__container">
+                                        <label class="switch" for="checkbox-set-2">
+                                            <input type="checkbox" id="checkbox-set-2" checked/>
+                                            <div class="slider round"></div>
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="component-settings__row">
+                                    <input type="text" class="input-default input-default_dark" value="Error text">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="components-panel__section">
+                    <div class="tab">
+                        <input type="checkbox" id="chck3">
+                        <label class="tab-label" for="chck3">advanced</label>
+                        <div class="tab-content">
+                            <div class="component-settings__section">
+                                <div class="component-settings__row-flex">
+                                    <div class="component-settings__title">
+                                        <img src="assets/images/settings/tag.svg" alt="">
+                                        Data tag
+                                    </div>
+                                </div>
+                                <div class="component-settings__row">
+                                    <input type="text" class="input-default input-default_dark" value="Data tag 4563">
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="components-panel__section">
+                    <div class="tab">
+                        <input type="checkbox" id="chck4">
+                        <label class="tab-label" for="chck4">help center</label>
+                        <div class="tab-content">
+                            <div class="component-settings__section-help">
+                                <div class="">
+                                    <a href="javascript:void(0)" class="components-panel__link btn__templates-builder">
+                                        How to use Data Tags?
+                                    </a>
+                                </div>
+                                <div class="">
+                                    <a href="#" class="components-panel__link">
+                                        What are predefined Data Tags ?
+                                    </a>
+                                </div>
+                                <div class="">
+                                    <a href="#" class="components-panel__link">
+                                        How to export data into Wix Contacts?
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--            input setting panel -->
+        <div class="components-panel-settings-input">
+            <div class="components-panel__section components-panel__section_flex">
+                <div class="flex">
+                    <span class="btn btn__close-panel btn__close-panel_input">
+                        <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                             viewBox="0 0 18 18" style="enable-background:new 0 0 18 18;" xml:space="preserve">
+<g>
+	<defs>
+		<path id="SVGID_1_" d="M17.5,2.9L11.4,9l6.1,6.1c0.7,0.7,0.7,1.8,0,2.4c-0.7,0.7-1.8,0.7-2.4,0L9,11.4l-6.1,6.1
+			c-0.7,0.7-1.8,0.7-2.4,0s-0.7-1.8,0-2.4L6.6,9L0.5,2.9c-0.7-0.7-0.7-1.8,0-2.4c0.7-0.7,1.8-0.7,2.4,0L9,6.6l6.1-6.1
+			c0.7-0.7,1.8-0.7,2.4,0C18.2,1.2,18.2,2.3,17.5,2.9z"/>
+	</defs>
+    <use xlink:href="#SVGID_1_"  style="overflow:visible;"/>
+    <clipPath id="SVGID_2_">
+		<use xlink:href="#SVGID_1_"  style="overflow:visible;"/>
+	</clipPath>
+</g>
+</svg>
+                    </span>
+                    <div class="components-panel__title">
+                        Input settings
+                    </div>
+                </div>
+                <div class="components-panel__btn">
+                    <a href="#" class="btn btn__upgrade">Upgrade</a>
+                </div>
+            </div>
+
+            <div class="tabs">
+                <div class="components-panel__section">
+                    <div class="tab">
+                        <input type="checkbox" id="inputSettingsPanel-1">
+                        <label class="tab-label" for="inputSettingsPanel-1">general</label>
+                        <div class="tab-content">
+                            <div class="component-settings__section">
+                                <div class="component-settings__row-flex">
+                                    <div class="component-settings__title">
+                                        <img src="assets/images/settings/lable.svg" alt="">
+                                        Show Label
+                                    </div>
+                                    <div class="switch__container">
+                                        <label class="switch" for="checkbox-set-3">
+                                            <input type="checkbox" id="checkbox-set-3" checked/>
+                                            <div class="slider round"></div>
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="component-settings__row">
+                                    <input type="text" class="input-default input-default_dark" value="Radio title">
+                                    <div class="component-settings__description">
+                                        Field label is a explanatory title for the content you expect your users to enter.
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="component-settings__section">
+                                <div class="component-settings__row-flex">
+                                    <div class="component-settings__title">
+                                        <img src="assets/images/settings/placeholder.svg" alt="">
+                                        Placeholder
+                                    </div>
+                                </div>
+                                <div class="component-settings__row">
+                                    <input type="text" class="input-default input-default_dark" value="Radio title">
+                                    <div class="component-settings__description">
+                                        Usually a placeholder is a simple of what input you expedt. Lorem ipsum dolor sit
+                                        amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean
+                                        massa. Cum sociis natoque
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="component-settings__section">
+                                <div class="component-settings__row-flex">
+                                    <div class="component-settings__title">
+                                        <img src="assets/images/settings/hint.svg" alt="">
+                                        Show Hint
+                                    </div>
+                                    <div class="switch__container">
+                                        <label class="switch" for="checkbox-set-5">
+                                            <input type="checkbox" id="checkbox-set-5" checked/>
+                                            <div class="slider round"></div>
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="component-settings__row">
+                                    <input type="text" class="input-default input-default_dark" value="Error text">
+                                    <div class="component-settings__description">
+                                        Enter hint text belou the input.
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="components-panel__section">
+                    <div class="tab">
+                        <input type="checkbox" id="inputSettingsPanel-2">
+                        <label class="tab-label" for="inputSettingsPanel-2">Validation and error messages</label>
+                        <div class="tab-content">
+                            <div class="component-settings__section">
+                                <div class="component-settings__row-flex">
+                                    <div class="component-settings__title">
+                                        <img src="assets/images/settings/required.svg" alt="">
+                                        Input required
+                                    </div>
+                                    <div class="switch__container">
+                                        <label class="switch" for="checkbox-set-2">
+                                            <input type="checkbox" id="checkbox-set-2" checked/>
+                                            <div class="slider round"></div>
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="component-settings__row">
+                                    <div class="component-settings__title-small">
+                                        Error message for: “Filed can not be empty”
+                                    </div>
+                                    <input type="text" class="input-default input-default_dark" value="Error text">
+                                    <div class="component-settings__description">
+                                        Enter error message text in case filed was left untoched.
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="component-settings__section">
+                                <div class="component-settings__row">
+                                    <div class="component-settings__title-small">
+                                        Error message for: “Email you provided is of a wrong format.”
+                                    </div>
+                                    <input type="text" class="input-default input-default_dark" value="Entered text does not look like a proper email address.">
+                                    <div class="component-settings__description">
+                                        Enter error message text in case filed was left untoched.
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="components-panel__section">
+                    <div class="tab">
+                        <input type="checkbox" id="inputSettingsPanel-3">
+                        <label class="tab-label" for="inputSettingsPanel-3">advanced</label>
+                        <div class="tab-content">
+                            <div class="component-settings__section">
+                                <div class="component-settings__row-flex">
+                                    <div class="component-settings__title">
+                                        <img src="assets/images/settings/tag.svg" alt="">
+                                        Data tag
+                                    </div>
+                                </div>
+                                <div class="component-settings__row">
+                                    <input type="text" class="input-default input-default_dark" value="Data tag 4563">
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="components-panel__section">
+                    <div class="tab">
+                        <input type="checkbox" id="inputSettingsPanel-4">
+                        <label class="tab-label" for="inputSettingsPanel-4">help center</label>
+                        <div class="tab-content">
+                            <div class="component-settings__section-help">
+                                <div class="">
+                                    <a href="javascript:void(0)" class="components-panel__link btn__templates-builder">
+                                        How to use Data Tags?
+                                    </a>
+                                </div>
+                                <div class="">
+                                    <a href="#" class="components-panel__link">
+                                        What are predefined Data Tags ?
+                                    </a>
+                                </div>
+                                <div class="">
+                                    <a href="#" class="components-panel__link">
+                                        How to export data into Wix Contacts?
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--            submit setting panel -->
+        <div class="components-panel-settings-submit">
+            <div class="components-panel__section components-panel__section_padding components-panel__section_flex">
+                <div class="flex">
+                    <span class="btn btn__close-panel btn__close-panel_submit">
+                        <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                             viewBox="0 0 18 18" style="enable-background:new 0 0 18 18;" xml:space="preserve">
+<g>
+	<defs>
+		<path id="SVGID_1_" d="M17.5,2.9L11.4,9l6.1,6.1c0.7,0.7,0.7,1.8,0,2.4c-0.7,0.7-1.8,0.7-2.4,0L9,11.4l-6.1,6.1
+			c-0.7,0.7-1.8,0.7-2.4,0s-0.7-1.8,0-2.4L6.6,9L0.5,2.9c-0.7-0.7-0.7-1.8,0-2.4c0.7-0.7,1.8-0.7,2.4,0L9,6.6l6.1-6.1
+			c0.7-0.7,1.8-0.7,2.4,0C18.2,1.2,18.2,2.3,17.5,2.9z"/>
+	</defs>
+    <use xlink:href="#SVGID_1_"  style="overflow:visible;"/>
+    <clipPath id="SVGID_2_">
+		<use xlink:href="#SVGID_1_"  style="overflow:visible;"/>
+	</clipPath>
+</g>
+</svg>
+                    </span>
+                    <div class="components-panel__title">
+                        Submit settings
+                    </div>
+                </div>
+                <div class="components-panel__btn">
+                    <a href="#" class="btn btn__upgrade">Upgrade</a>
+                </div>
+            </div>
+
+            <div class="tabs">
+                <div class="components-panel__section">
+                    <div class="tab">
+                        <input type="checkbox" id="submitSettingsPanel-1">
+                        <label class="tab-label" for="submitSettingsPanel-1">general</label>
+                        <div class="tab-content">
+                            <div class="component-settings__section">
+                                <div class="component-settings__row-flex">
+                                    <div class="component-settings__title">
+                                        <img src="assets/images/settings/lable.svg" alt="">
+                                        Show Label
+                                    </div>
+                                    <div class="switch__container">
+                                        <label class="switch" for="switch-submit-1">
+                                            <input type="checkbox" id="switch-submit-1" checked/>
+                                            <div class="slider round"></div>
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="component-settings__row">
+                                    <input type="text" class="input-default input-default_dark" value="Radio title">
+                                    <div class="component-settings__description">
+                                        Field label is a explanatory title for the content you expect your users to enter.
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="components-panel__section">
+                    <div class="tab">
+                        <input type="checkbox" id="submitSettingsPanel-2">
+                        <label class="tab-label" for="submitSettingsPanel-2">help center</label>
+                        <div class="tab-content">
+                            <div class="">
+                                <a href="javascript:void(0)" class="components-panel__link btn__templates-builder">
+                                    How to use Data Tags?
+                                </a>
+                            </div>
+                            <div class="">
+                                <a href="#" class="components-panel__link">
+                                    What are predefined Data Tags ?
+                                </a>
+                            </div>
+                            <div class="">
+                                <a href="#" class="components-panel__link">
+                                    How to export data into Wix Contacts?
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--            country setting panel -->
+        <div class="components-panel-settings-country">
+            <div class="components-panel__section components-panel__section_flex">
+                <div class="flex">
+                    <span class="btn btn__close-panel btn__close-panel_country">
+                        <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                             viewBox="0 0 18 18" style="enable-background:new 0 0 18 18;" xml:space="preserve">
+<g>
+	<defs>
+		<path id="SVGID_1_" d="M17.5,2.9L11.4,9l6.1,6.1c0.7,0.7,0.7,1.8,0,2.4c-0.7,0.7-1.8,0.7-2.4,0L9,11.4l-6.1,6.1
+			c-0.7,0.7-1.8,0.7-2.4,0s-0.7-1.8,0-2.4L6.6,9L0.5,2.9c-0.7-0.7-0.7-1.8,0-2.4c0.7-0.7,1.8-0.7,2.4,0L9,6.6l6.1-6.1
+			c0.7-0.7,1.8-0.7,2.4,0C18.2,1.2,18.2,2.3,17.5,2.9z"/>
+	</defs>
+    <use xlink:href="#SVGID_1_"  style="overflow:visible;"/>
+    <clipPath id="SVGID_2_">
+		<use xlink:href="#SVGID_1_"  style="overflow:visible;"/>
+	</clipPath>
+</g>
+</svg>
+                    </span>
+                    <div class="components-panel__title">
+                        Country settings
+                    </div>
+                </div>
+                <div class="components-panel__btn">
+                    <a href="#" class="btn btn__upgrade">Upgrade</a>
+                </div>
+            </div>
+
+            <div class="tabs">
+                <div class="components-panel__section">
+                    <div class="tab">
+                        <input type="checkbox" id="countrySettingsPanel-1">
+                        <label class="tab-label" for="countrySettingsPanel-1">general</label>
+                        <div class="tab-content">
+                            <div class="component-settings__section">
+                                <div class="component-settings__row-flex">
+                                    <div class="component-settings__title">
+                                        <img src="assets/images/settings/lable.svg" alt="">
+                                        Show Label
+                                    </div>
+                                    <div class="switch__container">
+                                        <label class="switch" for="checkbox-set-3">
+                                            <input type="checkbox" id="checkbox-set-3" checked/>
+                                            <div class="slider round"></div>
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="component-settings__row">
+                                    <input type="text" class="input-default input-default_dark" value="Error text">
+                                    <div class="component-settings__description">
+                                        Field label is a explanatory title for the content you expect your users to enter.
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="component-settings__section">
+                                <div class="component-settings__row-flex">
+                                    <div class="component-settings__title">
+                                        <img src="assets/images/settings/countries.svg" alt="">
+                                        Countries
+                                    </div>
+                                    <div class="reset-btn">
+                                        Reset to default
+                                    </div>
+                                </div>
+                                <div class="component-settings__row">
+                                    <input type="text" class="input-default input-default_dark" value="Radio list describtion">
+                                    <div class="component-settings__description">
+                                        Enter hint text belou the input.
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="component-settings__section">
+                                <div class="component-settings__row-flex">
+                                    <div class="component-settings__title">
+                                        <img src="assets/images/settings/hint.svg" alt="">
+                                        Show Hint
+                                    </div>
+                                    <div class="switch__container">
+                                        <label class="switch" for="checkbox-set-5">
+                                            <input type="checkbox" id="checkbox-set-5" checked/>
+                                            <div class="slider round"></div>
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="component-settings__row">
+                                    <input type="text" class="input-default input-default_dark" value="Radio list describtion">
+                                    <div class="component-settings__description">
+                                        Enter hint text belou the input.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="component-settings__section">
+                                <div class="component-settings__row-flex">
+                                    <div class="component-settings__title">
+                                        <img src="assets/images/settings/tag.svg" alt="">
+                                        Data tag
+                                    </div>
+                                </div>
+                                <div class="component-settings__row">
+                                    <input type="text" class="input-default input-default_dark" value="Data tag 4563">
+                                    <div class="component-settings__description">
+                                        A unique identifier/tag to use when data export and for conditional logic as well.
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="components-panel__section">
+                    <div class="tab">
+                        <input type="checkbox" id="countrySettingsPanel-2">
+                        <label class="tab-label" for="countrySettingsPanel-2">Validation and error messages</label>
+                        <div class="tab-content">
+                            <div class="component-settings__section">
+                                <div class="component-settings__row-flex">
+                                    <div class="component-settings__title">
+                                        <img src="assets/images/settings/required.svg" alt="">
+                                        Input required
+                                    </div>
+                                    <div class="switch__container">
+                                        <label class="switch" for="checkbox-set-2">
+                                            <input type="checkbox" id="checkbox-set-2" checked/>
+                                            <div class="slider round"></div>
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="component-settings__row">
+                                    <div class="component-settings__title-small">
+                                        Error message for: “Filed can not be empty”
+                                    </div>
+                                    <input type="text" class="input-default input-default_dark" value="Error text">
+                                    <div class="component-settings__description">
+                                        Enter error message text in case filed was left untoched.
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="components-panel__section">
+                    <div class="tab">
+                        <input type="checkbox" id="countrySettingsPanel-3">
+                        <label class="tab-label" for="countrySettingsPanel-3">help center</label>
+                        <div class="tab-content">
+                            <div class="component-settings__section-help">
+                                <div class="">
+                                    <a href="javascript:void(0)" class="components-panel__link btn__templates-builder">
+                                        How to use Data Tags?
+                                    </a>
+                                </div>
+                                <div class="">
+                                    <a href="#" class="components-panel__link">
+                                        What are predefined Data Tags ?
+                                    </a>
+                                </div>
+                                <div class="">
+                                    <a href="#" class="components-panel__link">
+                                        How to export data into Wix Contacts?
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--            States/Regions setting panel -->
+        <div class="components-panel-settings-states">
+            <div class="components-panel__section components-panel__section_flex">
+                <div class="flex">
+                    <span class="btn btn__close-panel btn__close-panel_states">
+                        <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                             viewBox="0 0 18 18" style="enable-background:new 0 0 18 18;" xml:space="preserve">
+<g>
+	<defs>
+		<path id="SVGID_1_" d="M17.5,2.9L11.4,9l6.1,6.1c0.7,0.7,0.7,1.8,0,2.4c-0.7,0.7-1.8,0.7-2.4,0L9,11.4l-6.1,6.1
+			c-0.7,0.7-1.8,0.7-2.4,0s-0.7-1.8,0-2.4L6.6,9L0.5,2.9c-0.7-0.7-0.7-1.8,0-2.4c0.7-0.7,1.8-0.7,2.4,0L9,6.6l6.1-6.1
+			c0.7-0.7,1.8-0.7,2.4,0C18.2,1.2,18.2,2.3,17.5,2.9z"/>
+	</defs>
+    <use xlink:href="#SVGID_1_"  style="overflow:visible;"/>
+    <clipPath id="SVGID_2_">
+		<use xlink:href="#SVGID_1_"  style="overflow:visible;"/>
+	</clipPath>
+</g>
+</svg>
+                    </span>
+                    <div class="components-panel__title">
+                        Country settings (States)
+                    </div>
+                </div>
+                <div class="components-panel__btn">
+                    <a href="#" class="btn btn__upgrade">Upgrade</a>
+                </div>
+            </div>
+
+            <div class="tabs">
+                <div class="components-panel__section">
+                    <div class="tab">
+                        <input type="checkbox" id="statesSettingsPanel-1">
+                        <label class="tab-label" for="statesSettingsPanel-1">general</label>
+                        <div class="tab-content">
+                            <div class="component-settings__section">
+                                <div class="component-settings__row-flex">
+                                    <div class="component-settings__title">
+                                        <img src="assets/images/settings/lable.svg" alt="">
+                                        Show Label
+                                    </div>
+                                    <div class="switch__container">
+                                        <label class="switch" for="statesSettingsPanel-2">
+                                            <input type="checkbox" id="statesSettingsPanel-2" checked/>
+                                            <div class="slider round"></div>
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="component-settings__row">
+                                    <input type="text" class="input-default input-default_dark" value="Error text">
+                                    <div class="component-settings__description">
+                                        Field label is a explanatory title for the content you expect your users to enter.
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="component-settings__section">
+                                <div class="component-settings__row-flex">
+                                    <div class="component-settings__title">
+                                        <img src="assets/images/settings/countries.svg" alt="">
+                                        Countries
+                                    </div>
+                                    <div class="reset-btn">
+                                        Reset to default
+                                    </div>
+                                </div>
+                                <div class="component-settings__row">
+                                    <input type="text" class="input-default input-default_dark" value="Radio list describtion">
+                                    <div class="component-settings__description">
+                                        Enter hint text belou the input.
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="component-settings__section">
+                                <div class="component-settings__row-flex">
+                                    <div class="component-settings__title">
+                                        <img src="assets/images/settings/hint.svg" alt="">
+                                        Show Hint
+                                    </div>
+                                    <div class="switch__container">
+                                        <label class="switch" for="statesSettingsPanel-3">
+                                            <input type="checkbox" id="statesSettingsPanel-3" checked/>
+                                            <div class="slider round"></div>
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="component-settings__row">
+                                    <input type="text" class="input-default input-default_dark" value="Radio list describtion">
+                                    <div class="component-settings__description">
+                                        Enter hint text belou the input.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="component-settings__section">
+                                <div class="component-settings__row-flex">
+                                    <div class="component-settings__title">
+                                        <img src="assets/images/settings/tag.svg" alt="">
+                                        Data tag
+                                    </div>
+                                </div>
+                                <div class="component-settings__row">
+                                    <input type="text" class="input-default input-default_dark" value="Data tag 4563">
+                                    <div class="component-settings__description">
+                                        A unique identifier/tag to use when data export and for conditional logic as well.
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="components-panel__section">
+                    <div class="tab">
+                        <input type="checkbox" id="statesSettingsPanel-4">
+                        <label class="tab-label" for="statesSettingsPanel-4">Validation and error messages</label>
+                        <div class="tab-content">
+                            <div class="component-settings__section">
+                                <div class="component-settings__row-flex">
+                                    <div class="component-settings__title">
+                                        <img src="assets/images/settings/required.svg" alt="">
+                                        Input required
+                                    </div>
+                                    <div class="switch__container">
+                                        <label class="switch" for="statesSettingsPanel-5">
+                                            <input type="checkbox" id="statesSettingsPanel-5" checked/>
+                                            <div class="slider round"></div>
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="component-settings__row">
+                                    <div class="component-settings__title-small">
+                                        Error message for: “Filed can not be empty”
+                                    </div>
+                                    <input type="text" class="input-default input-default_dark" value="Error text">
+                                    <div class="component-settings__description">
+                                        Enter error message text in case filed was left untoched.
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="components-panel__section">
+                    <div class="tab">
+                        <input type="checkbox" id="statesSettingsPanel-6">
+                        <label class="tab-label" for="statesSettingsPanel-6">Field specific conditioonal logic</label>
+                        <div class="tab-content">
+                            <div class="component-settings__section">
+                                <div class="component-settings__row">
+                                    <div class="component-settings__description">
+                                        Enter error message text in case filed was left untoched. Lorem ipsum dolor
+                                        sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.
+                                        Aenean massa. Cum sociis natoque penatibus et magnis dis parturient
+                                        montes, nascetur ridiculus mus.                                         </div>
+                                    <div class="component-settings__title-small">
+                                        Address: Country Field
+                                    </div>
+                                    <input type="text" class="input-default input-default_dark" value="Error text">
+                                    <div class="component-settings__description">
+                                        Enter error message text in case filed was left untoched.
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="components-panel__section">
+                    <div class="tab">
+                        <input type="checkbox" id="statesSettingsPanel-7">
+                        <label class="tab-label" for="statesSettingsPanel-7">help center</label>
+                        <div class="tab-content">
+                            <div class="component-settings__section-help">
+                                <div class="">
+                                    <a href="javascript:void(0)" class="components-panel__link btn__templates-builder">
+                                        How to use Data Tags?
+                                    </a>
+                                </div>
+                                <div class="">
+                                    <a href="#" class="components-panel__link">
+                                        What are predefined Data Tags ?
+                                    </a>
+                                </div>
+                                <div class="">
+                                    <a href="#" class="components-panel__link">
+                                        How to export data into Wix Contacts?
+                                    </a>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+</div>
+
+<!--popup create form-->
+<div class="popup popup_create-form " id="popup_create_form">
+    <div class="popup__close">
+        <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+             viewBox="0 0 18 18" style="enable-background:new 0 0 18 18;" xml:space="preserve">
+            <g>
+                <defs>
+                    <path id="SVGID_1close_" d="M17.5,2.9L11.4,9l6.1,6.1c0.7,0.7,0.7,1.8,0,2.4c-0.7,0.7-1.8,0.7-2.4,0L9,11.4l-6.1,6.1
+                        c-0.7,0.7-1.8,0.7-2.4,0s-0.7-1.8,0-2.4L6.6,9L0.5,2.9c-0.7-0.7-0.7-1.8,0-2.4c0.7-0.7,1.8-0.7,2.4,0L9,6.6l6.1-6.1
+                        c0.7-0.7,1.8-0.7,2.4,0C18.2,1.2,18.2,2.3,17.5,2.9z"/>
+                </defs>
+                <use xlink:href="#SVGID_1close_"  style="overflow:visible;"/>
+                <clipPath id="SVGID_2close_">
+                    <use xlink:href="#SVGID_1close_"  style="overflow:visible;"/>
+                </clipPath>
+            </g>
+            </svg>
+    </div>
+    <div class="popup__title">
+        Create Form
+    </div>
+    <div class="popup__subtitle">
+        Enter a form name and description. This name and
+        description is for your reference only, and can be used
+        to identify differnt forms in the future.
+    </div>
+    <div class="popup__content">
+        <div class="required">
+            <input class="input" type="text" placeholder="Form Name" required>
+        </div>
+        <textarea class="textarea" name="" id="" cols="30" rows="10" placeholder="Describtion..."></textarea>
+
+        <input type="submit" class="btn btn__submit btn_full-width" value="Create Form">
+    </div>
+</div>
+
+<!--popup support-->
+<div class="popup popup_support" id="popup_support">
+    <div class="popup__close">
+        <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+             viewBox="0 0 18 18" style="enable-background:new 0 0 18 18;" xml:space="preserve">
+            <g>
+                <defs>
+                    <path id="SVGID_1close_" d="M17.5,2.9L11.4,9l6.1,6.1c0.7,0.7,0.7,1.8,0,2.4c-0.7,0.7-1.8,0.7-2.4,0L9,11.4l-6.1,6.1
+                        c-0.7,0.7-1.8,0.7-2.4,0s-0.7-1.8,0-2.4L6.6,9L0.5,2.9c-0.7-0.7-0.7-1.8,0-2.4c0.7-0.7,1.8-0.7,2.4,0L9,6.6l6.1-6.1
+                        c0.7-0.7,1.8-0.7,2.4,0C18.2,1.2,18.2,2.3,17.5,2.9z"/>
+                </defs>
+                <use xlink:href="#SVGID_1close_"  style="overflow:visible;"/>
+                <clipPath id="SVGID_2close_">
+                    <use xlink:href="#SVGID_1close_"  style="overflow:visible;"/>
+                </clipPath>
+            </g>
+            </svg>
+    </div>
+    <div class="popup__title">
+        Write in Support
+    </div>
+    <div class="popup__subtitle">
+        Lorem ipsum dolor sit amet, consectetuer adipiscing elit.<br>
+        Aenean commodo ligula eget dolor. Aenean massa
+    </div>
+    <div class="popup__content">
+        <form action="">
+      <span class="required">
+        <input class="input" type="text" placeholder="Your name" required>
+      </span>
+            <span class="required">
+        <input class="input" type="email" placeholder="Email" required>
+      </span>
+            <div class="custom__select support__select">
+                <select>
+                    <option value="">Choose a problem</option>
+                    <option value="">Choose a problem</option>
+                    <option value="">Choose a problem</option>
+                    <option value="">Choose a problem</option>
+                    <option value="">Choose a problem</option>
+                    <option value="">Choose a problem</option>
+                    <option value="">Choose a problem</option>
+                    <option value="">Choose a problem</option>
+                    <option value="">Choose a problem</option>
+                    <option value="">Choose a problem</option>
+                    <option value="">Choose a problem</option>
+                    <option value="">Choose a problem</option>
+                </select>
+            </div>
+            <textarea class="textarea" name="" id="" cols="30" rows="10" placeholder="Message..."></textarea>
+
+            <input type="submit" value="Send Message" class="btn btn__submit">
+        </form>
+    </div>
+</div>
+<!--Popup Edit-Form-->
+<div class="popup popup_edit-form" id="popup_edit-form">
+    <div class="popup__close">
+        <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+             viewBox="0 0 18 18" style="enable-background:new 0 0 18 18;" xml:space="preserve">
+            <g>
+                <defs>
+                    <path id="SVGID_1close_" d="M17.5,2.9L11.4,9l6.1,6.1c0.7,0.7,0.7,1.8,0,2.4c-0.7,0.7-1.8,0.7-2.4,0L9,11.4l-6.1,6.1
+                        c-0.7,0.7-1.8,0.7-2.4,0s-0.7-1.8,0-2.4L6.6,9L0.5,2.9c-0.7-0.7-0.7-1.8,0-2.4c0.7-0.7,1.8-0.7,2.4,0L9,6.6l6.1-6.1
+                        c0.7-0.7,1.8-0.7,2.4,0C18.2,1.2,18.2,2.3,17.5,2.9z"/>
+                </defs>
+                <use xlink:href="#SVGID_1close_"  style="overflow:visible;"/>
+                <clipPath id="SVGID_2close_">
+                    <use xlink:href="#SVGID_1close_"  style="overflow:visible;"/>
+                </clipPath>
+            </g>
+            </svg>
+    </div>
+    <div class="popup__title">
+        Edit Form
+    </div>
+    <div class="popup__subtitle">
+        Lorem ipsum dolor sit amet, consectetuer adipiscing elit.<br>
+        Aenean commodo ligula eget dolor. Aenean massa
+    </div>
+    <div class="popup__content">
+        <form action="">
+            <div class="required">
+                <input class="input" type="text" placeholder="My first form" required>
+            </div>
+
+            <textarea class="textarea" name="" id="" cols="30" rows="10" placeholder="Some description"></textarea>
+
+            <input type="submit" value="Save Changes" class="btn btn__submit btn__submit_green">
+            <input type="submit" value="Edit Form Components" class="btn btn__submit">
+        </form>
+    </div>
+</div>
+
+
+
+<div class="overlay">
+    <!--Popup  Email Tamplates Builder-->
+    <div class="popup popup_templates-builder" id="popup_templates-builder">
+        <div class="popup__close">
+            <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                 viewBox="0 0 18 18" style="enable-background:new 0 0 18 18;" xml:space="preserve">
+            <g>
+                <defs>
+                    <path id="SVGID_1close_" d="M17.5,2.9L11.4,9l6.1,6.1c0.7,0.7,0.7,1.8,0,2.4c-0.7,0.7-1.8,0.7-2.4,0L9,11.4l-6.1,6.1
+                        c-0.7,0.7-1.8,0.7-2.4,0s-0.7-1.8,0-2.4L6.6,9L0.5,2.9c-0.7-0.7-0.7-1.8,0-2.4c0.7-0.7,1.8-0.7,2.4,0L9,6.6l6.1-6.1
+                        c0.7-0.7,1.8-0.7,2.4,0C18.2,1.2,18.2,2.3,17.5,2.9z"/>
+                </defs>
+                <use xlink:href="#SVGID_1close_"  style="overflow:visible;"/>
+                <clipPath id="SVGID_2close_">
+                    <use xlink:href="#SVGID_1close_"  style="overflow:visible;"/>
+                </clipPath>
+            </g>
+            </svg>
+        </div>
+        <div class="popup__title">
+            How to use Email Tamplates Builder?
+        </div>
+
+        <div class="popup__content">
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis.
+            </p>
+            <div class="popup__frame">
+
+            </div>
+            <ul class="popup__list" >
+                <li class="popup__list-item">Lorem ipsum dolor sit amet, consectetur adipiscing elit</li>
+                <li class="popup__list-item">Quis ipsum suspendisse ultrices gravida. Risus commodo </li>
+                <li class="popup__list-item">Mmodo viverra maecenas accumsan lacus vel facilisis. </li>
+            </ul>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. <a href="#" class="popup__link">Risus commodo viverra maecenas</a> accumsan lacus vel facilisis.
+            </p>
+            <div class="popup__line"></div>
+            <div class="popup__title popup__title_small">
+                Online Games How To Play To Win
+            </div>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis.
+            </p>
+
+            <div class="popup__color-block popup__color-block_green">
+                <div class="popup__color-title popup__color-title_green">
+                    Pictures In The Sky
+                </div>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+            </div>
+            <div class="popup__color-block popup__color-block_orange">
+                <div class="popup__color-title popup__color-title_orange">
+                    Pictures In The Sky
+                </div>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+            </div>
+            <div class="popup__color-block popup__color-block_blue">
+                <div class="popup__color-title popup__color-title_blue">
+                    Pictures In The Sky
+                </div>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+            </div>
+            <div class="popup__color-block popup__color-block_pink">
+                <div class="popup__color-title popup__color-title_pink">
+                    Pictures In The Sky
+                </div>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+            </div>
+
+            <div class="popup__btn-block">
+                <div class="btn btn__popup">
+                    Submit Button
+                </div>
+                <div class="btn btn__popup btn__popup_red">
+                    Submit Button
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+<script src="https://cdn.quilljs.com/1.3.6/quill.js"></script>
+<script src="assets/js/scipts.js"></script>
+<script>
+    var quill = new Quill('#editor', {
+
+        theme: 'snow'
+    });
+    //popup
+    let templatesBuilderButtons = document.getElementsByClassName('btn__templates-builder');
+    let templatesBuilder = document.getElementById('popup_templates-builder');
+    for( i = 0; i < templatesBuilderButtons.length; i++){
+        templatesBuilderButtons[i].onclick = function () {
+            var scrollBarWidth = window.innerWidth - document.body.offsetWidth;
+            document.body.style.margin = '0px ' + scrollBarWidth + 'px 0px 0px';
+            document.body.style.overflow = 'hidden';
+            templatesBuilder.classList.add('show-popup');
+            overlay[0].classList.add('show-popup')
+        }
+    }
+
+    let createFormButtons = document.getElementsByClassName('btn__create-form');
+    let createFormPopup = document.getElementById('popup_create_form');
+    for( i = 0; i < createFormButtons.length; i++){
+        createFormButtons[i].onclick = function () {
+            createFormPopup.classList.add('show-popup');
+            overlay[0].classList.add('show-popup')
+        }
+    }
+
+    let supportButtons = document.getElementsByClassName('navbar__link_support');
+    let supprotPopup = document.getElementById('popup_support');
+
+    let editFormButtons = document.getElementsByClassName('btn__block-link_edit');
+    let editFormPopup = document.getElementById('popup_edit-form');
+    editFormButtons[i].onclick = function () {
+        editFormPopup.classList.add('show-popup');
+        overlay[0].classList.add('show-popup')
+    };
+
+    let popups = document.getElementsByClassName('popup');
+    let overlay = document.getElementsByClassName('overlay');
+    let closeButton = document.getElementsByClassName('popup__close');
+
+    for( i = 0; i < supportButtons.length; i++){
+        supportButtons[i].onclick = function () {
+            supprotPopup.classList.add('show-popup');
+            overlay[0].classList.add('show-popup')
+        }
+    }
+
+    for(cb = 0; cb < closeButton.length; cb++) {
+        closeButton[cb].onclick = function () {
+            for( i = 0; i < popups.length; i++){
+                popups[i].onclick = function () {
+                    this.classList.remove('show-popup');
+                    overlay[0].classList.remove('show-popup');
+                    document.body.style.margin = '';
+                    document.body.style.overflow = '';
+                }
+            }
+        }
+    }
+
+    // open and close panel of components
+    let addComponent = document.querySelector('.constructor__add-component');
+    addComponent.addEventListener('click', function(){
+        document.querySelector('.wrapper').classList.add('components-panel-open')
+    });
+
+    let closePanelComponent = document.querySelector('.btn__close-panel');
+    closePanelComponent.addEventListener('click', function(){
+        document.querySelector('.wrapper').classList.remove('components-panel-open');
+    });
+
+    // open and close settings panel for checkbox
+    let settingsComponent = document.querySelector('.checkbox-click');
+    settingsComponent.addEventListener('click', function(){
+        document.querySelector('.wrapper').classList.add('component-settings-panel-open')
+        document.querySelector('.checkbox-click').classList.add('active')
+    });
+
+    let closePanelComponentSettings = document.querySelector('.btn__close-panel_settings');
+    closePanelComponentSettings.addEventListener('click', function(){
+        document.querySelector('.wrapper').classList.remove('component-settings-panel-open')
+        document.querySelector('.checkbox-click').classList.remove('active')
+    });
+
+    // open and close settings panel for input
+    let settingsComponentInput = document.querySelector('.input-click');
+    settingsComponentInput.addEventListener('click', function(){
+        document.querySelector('.wrapper').classList.add('component-settings-panel-input-open')
+        document.querySelector('.input-click').classList.add('active')
+    });
+    let closePanelComponentInputSettings = document.querySelector('.btn__close-panel_input');
+    closePanelComponentInputSettings.addEventListener('click', function(){
+        document.querySelector('.wrapper').classList.remove('component-settings-panel-input-open')
+        document.querySelector('.input-click').classList.remove('active')
+    });
+
+    // open and close settings panel for submit
+    let settingsComponentSubmit = document.querySelector('.submit-click');
+    settingsComponentSubmit.addEventListener('click', function(){
+        document.querySelector('.wrapper').classList.add('component-settings-panel-submit-open')
+        document.querySelector('.submit-click').classList.add('active')
+    });
+    let closePanelComponentSubmitSettings = document.querySelector('.btn__close-panel_submit');
+    closePanelComponentSubmitSettings.addEventListener('click', function(){
+        document.querySelector('.wrapper').classList.remove('component-settings-panel-submit-open')
+        document.querySelector('.submit-click').classList.remove('active')
+    });
+
+    // open and close settings panel for country
+    let settingsComponentCountry = document.querySelector('.country-click');
+    settingsComponentCountry.addEventListener('click', function(){
+        document.querySelector('.wrapper').classList.add('component-settings-panel-country-open');
+        document.querySelector('.country-click').classList.add('active')
+    });
+    let closePanelComponentCountrySettings = document.querySelector('.btn__close-panel_country');
+    closePanelComponentCountrySettings.addEventListener('click', function(){
+        document.querySelector('.wrapper').classList.remove('component-settings-panel-country-open')
+        document.querySelector('.country-click').classList.remove('active')
+    });
+
+    // open and close settings panel for states
+    let settingsComponentStates = document.querySelector('.states-click');
+    settingsComponentStates.addEventListener('click', function(){
+        document.querySelector('.wrapper').classList.add('component-settings-panel-states-open');
+        document.querySelector('.states-click').classList.add('active')
+    });
+    let closePanelComponentStatesSettings = document.querySelector('.btn__close-panel_states');
+    closePanelComponentStatesSettings.addEventListener('click', function(){
+        document.querySelector('.wrapper').classList.remove('component-settings-panel-states-open');
+        document.querySelector('.states-click').classList.remove('active')
+    });
+
+
+</script>
+</body>
+</html>
