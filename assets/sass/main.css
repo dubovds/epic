@@ -2412,6 +2412,9 @@ input:checked + .slider:before {
   z-index: 10;
   cursor: pointer;
 }
+.constructor__dots:hover {
+  z-index: 11;
+}
 .constructor__dots-content {
   visibility: hidden;
   opacity: 0;
