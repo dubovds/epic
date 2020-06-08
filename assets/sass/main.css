@@ -2169,6 +2169,44 @@ _:-ms-fullscreen, :root .submission__message {
   height: 4px;
 }
 
+.custom-radio {
+  position: absolute;
+  opacity: 0;
+}
+.custom-radio + label {
+  position: relative;
+  cursor: pointer;
+  padding-left: 31px;
+  color: #50525e;
+}
+.custom-radio + label:before {
+  content: "";
+  position: absolute;
+  top: 1px;
+  left: 0px;
+  width: 16px;
+  height: 16px;
+  background: #f9faff;
+  border: 2px solid #dedfeb;
+  border-radius: 50%;
+}
+.custom-radio:checked + label {
+  color: #fe544b;
+}
+.custom-radio:checked + label:before {
+  border-color: #fe544b;
+}
+.custom-radio:checked + label:after {
+  content: "";
+  position: absolute;
+  left: 6px;
+  top: 7px;
+  background: #fe544b;
+  width: 4px;
+  height: 4px;
+  border-radius: 50%;
+}
+
 .input,
 .textarea {
   position: relative;
@@ -2513,6 +2551,10 @@ input:checked + .slider:before {
 }
 .constructor__checkbox-container {
   margin-bottom: 10px;
+}
+.constructor__radio-container {
+  margin-bottom: 10px;
+  margin-right: 40px;
 }
 .constructor .custom-checkbox + label {
   font-weight: 500;
