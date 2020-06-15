@@ -2418,6 +2418,10 @@ input:checked + .slider:before {
   border-radius: 50%;
 }
 
+.constructor .flex {
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
 .constructor__row {
   display: flex;
 }
