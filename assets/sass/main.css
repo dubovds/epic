@@ -750,10 +750,16 @@ _:-ms-fullscreen, :root .navbar__link svg {
   font-weight: bold;
   text-align: center;
 }
+.btn__delete:hover {
+  background-color: #4a4c61;
+}
 .btn__delete:last-child {
   margin-right: 0;
   margin-left: 8px;
   background-color: #fe544b;
+}
+.btn__delete:last-child:hover {
+  background-color: #ff6d65;
 }
 @media (max-width: 1374px) {
   .btn__delete {
