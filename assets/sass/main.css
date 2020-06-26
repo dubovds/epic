@@ -2729,7 +2729,7 @@ input:checked + .slider:before {
   font-family: "IBM Plex Sans", sans-serif;
   font-weight: 700;
   font-size: 12px;
-  padding: 20px 0;
+  padding: 13px 0;
   border-bottom: 1px solid rgba(205, 207, 222, 0.1);
 }
 .components-panel__section_flex {
@@ -2825,7 +2825,7 @@ input:checked + .slider:before {
 
 .component-settings__section {
   margin-bottom: 0px;
-  padding: 20px;
+  padding: 12px 20px;
   background: #353645;
   border-radius: 5px;
   -webkit-transition: all 300ms ease-in-out;
@@ -2857,13 +2857,14 @@ input:checked + .slider:before {
 .component-settings__row-flex {
   display: flex;
   justify-content: space-between;
-  margin-bottom: 20px;
+  margin-bottom: 8px;
 }
 .component-settings__row {
-  margin-bottom: 20px;
+  margin-bottom: 6px;
 }
 .component-settings__row input {
   position: relative;
+  padding: 9px 15px;
   z-index: 1;
   opacity: 1;
   font-family: "Roboto", sans-serif;
@@ -2938,7 +2939,7 @@ input:checked + .slider:before {
 .components-panel .tab-label {
   display: flex;
   justify-content: space-between;
-  padding: 20px 0;
+  padding: 18px 0;
   font-weight: bold;
   color: #9699ab;
   cursor: pointer;
