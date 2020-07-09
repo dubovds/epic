@@ -151,8 +151,19 @@
         justify-content: space-between
         margin-bottom: 8px
 
+        &_option
+          margin-bottom: 18px
+
+        &_option-last
+          align-items: center
+          margin-top: 15px
+
     &__row
         margin-bottom: 6px
+
+        &_option
+          display: flex
+          margin-bottom: 2px
 
         input
             position: relative
@@ -169,8 +180,9 @@
         margin-top: 10px
         color: #9699ab
 
-        &_14
+        &_option
             font-size: 14px
+            margin-top: 0
 
     &__title
         display: flex
@@ -196,6 +208,91 @@
         height: 2px
         background-color: #323341
         margin: 0 -20px 20px
+
+    &__move-row
+      flex: none
+      position: relative
+      width: 34px
+      height: 41px
+      border-top-left-radius: $border-radius
+      border-bottom-left-radius: $border-radius
+      background-color: #3d3e4f
+
+      &:before
+        position: absolute
+        content: ''
+        width: 34px
+        height: 41px
+        background-image: url("../images/more_component.svg")
+        background-repeat: no-repeat
+        background-position: 50% 50%
+        background-size: 13px
+        transform: rotate(90deg)
+
+    &__del-input
+      flex: none
+      width: 41px
+      height: 41px
+      background-color: #414252
+      border-top-right-radius: $border-radius
+      border-bottom-right-radius: $border-radius
+      background-image: url("../images/close-grey.svg")
+      background-repeat: no-repeat
+      background-position: 50% 50%
+      background-size: 9px
+      cursor: pointer
+      @include transition
+
+      &:hover
+        background-color: #484a5b
+
+    &__add-input
+      width: 41px
+      height: 41px
+      background-color: #3d3e4f
+      border-top-right-radius: $border-radius
+      border-bottom-right-radius: $border-radius
+      background-image: url("../images/plus.svg")
+      background-repeat: no-repeat
+      background-position: 50% 50%
+      background-size: 12px
+      cursor: pointer
+      @include transition
+
+      &:hover
+        background-color: #484a5b
+
+    &__input
+      margin-top: 0
+      border-radius: 0
+
+      &_add
+        color: #fe544b
+        border-top-left-radius: $border-radius
+        border-bottom-left-radius: $border-radius
+        margin-bottom: 8px
+        padding-left: 49px !important
+
+    &__checkbox-container,
+    &__radio-container
+      position: relative
+      flex: none
+      width: 41px
+      height: 41px
+      background-color: #3d3e4f
+      margin: 0
+
+      .custom-checkbox,
+      .custom-radio
+        top: 10px
+        left: 9px
+        cursor: pointer
+
+      .custom-checkbox + label,
+      .custom-radio + label
+        top: 10px
+        left: 10px
+        padding-left: 0
 
 .reset-btn
 
