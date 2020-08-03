@@ -2613,6 +2613,9 @@ input:checked + .slider:before {
 .price_row .constructor__price-container .custom-radio + label:before {
   top: -31px;
 }
+.price_row .constructor__price-container .custom-radio:checked + label:after {
+  top: -25px;
+}
 .price_row .constructor__price-container .constructor__component-description {
   padding-left: 0;
   margin-top: 6px;
