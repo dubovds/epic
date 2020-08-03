@@ -2589,6 +2589,65 @@ input:checked + .slider:before {
   opacity: 1;
 }
 
+.price_row {
+  display: flex;
+  flex-wrap: wrap;
+}
+.price_row .constructor__price-container {
+  width: 31.4%;
+  margin-right: 20px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.price_row .constructor__price-container:first-child {
+  margin-top: 10px;
+}
+.price_row .constructor__price-container:nth-child(3n+3) {
+  margin-right: 0;
+}
+.price_row .constructor__price-container .custom-radio + label {
+  display: block;
+  margin-top: 33px;
+  padding-left: 0;
+}
+.price_row .constructor__price-container .custom-radio + label:before {
+  top: -31px;
+}
+.price_row .constructor__price-container .constructor__component-description {
+  padding-left: 0;
+  margin-top: 6px;
+}
+.price_row .constructor__price-container .price__price-block {
+  margin-top: 13px;
+}
+
+.constructor__price-container {
+  margin-top: 6px;
+  padding: 16px 17px;
+  border: 2px solid #e9ebec;
+  border-radius: 5px;
+}
+.constructor__price-container:first-child {
+  margin-top: 20px;
+}
+.constructor__price-container .constructor__radio-container {
+  margin-bottom: 0;
+}
+.constructor__price-container .custom-radio + label {
+  font-weight: 500;
+  font-size: 14px;
+  padding-left: 36px;
+}
+.constructor__price-container .constructor__component-description {
+  padding-left: 36px;
+  margin-top: 3px;
+}
+.constructor__price-container .price__price-block {
+  color: #fe544b;
+  font-size: 14px;
+  font-weight: bold;
+}
+
 .editor-wrapper {
   flex: 1 0 auto;
   width: 785px;
@@ -3107,7 +3166,8 @@ input:checked + .slider:before {
 .components-panel-settings-submit,
 .components-panel-settings-country,
 .components-panel-settings-states,
-.components-panel-settings-actions {
+.components-panel-settings-actions,
+.components-panel-settings-price {
   display: none;
 }
 
@@ -3191,6 +3251,20 @@ input:checked + .slider:before {
   opacity: 1;
 }
 .component-settings-panel-actions-open .components-panel-settings-actions {
+  display: block;
+}
+
+.component-settings-panel-price-open .slide-part {
+  width: calc(100% - 572px);
+  min-width: 850px;
+}
+.component-settings-panel-price-open .components-panel {
+  position: absolute;
+  right: 0;
+  visibility: visible;
+  opacity: 1;
+}
+.component-settings-panel-price-open .components-panel-settings-price {
   display: block;
 }
 

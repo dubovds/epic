@@ -401,7 +401,8 @@
 .components-panel-settings-submit,
 .components-panel-settings-country,
 .components-panel-settings-states,
-.components-panel-settings-actions
+.components-panel-settings-actions,
+.components-panel-settings-price
     display: none
 
 .component-settings-panel-open
@@ -511,13 +512,6 @@
         width: calc(100% - 572px)
         min-width: 850px
 
-        //@include large-screen
-            width: calc(100% - 572px)
-            //position: relative
-            //left: 50%
-            //transform: translateX(-86%)
-
-
     .components-panel
         right: 0
         visibility: visible
@@ -526,4 +520,16 @@
     .components-panel-settings-actions
         display: block
 
+.component-settings-panel-price-open
+  .slide-part
+    width: calc(100% - 572px)
+    min-width: 850px
 
+  .components-panel
+    position: absolute
+    right: 0
+    visibility: visible
+    opacity: 1
+
+  .components-panel-settings-price
+    display: block
