@@ -2032,10 +2032,6 @@
                       </label>
                     </div>
                   </div>
-                  <div class="component-settings__row">
-                    <input type="text" class="input-default input-default_dark" value="Error text">
-
-                  </div>
                 </div>
               </div>
             </div>
@@ -2045,27 +2041,52 @@
               <input type="checkbox" id="priceSettingsPanel-4">
               <label class="tab-label" for="priceSettingsPanel-4">Options</label>
               <div class="tab-content">
-                <div class="component-settings__section">
-                  <div class="component-settings__row-flex">
-                    <div class="component-settings__title">
-                      <img src="assets/images/settings/required.svg" alt="">
-                      Input required
+                <div class="component-settings__section component-settings__section_sp">
+                  <div class="constructor__price-container">
+                    <div class="price__item">
+                      <div class="constructor__checkbox-container">
+                        <input class="custom-checkbox" id="styled-checkbox-price-2" type="checkbox" value="value1">
+                        <label for="styled-checkbox-price-2">Option title</label>
+                      </div>
+                      <div class="constructor__component-description">
+                        Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo
+                        ligula eget dolor.
+                      </div>
                     </div>
-                    <div class="switch__container">
-                      <label class="switch" for="statesSettingsPanel-5">
-                        <input type="checkbox" id="statesSettingsPanel-5" checked/>
-                        <div class="slider round"></div>
-                      </label>
+                    <div class="price__price-block">
+                      <span>Prise: </span>124.99$
+                    </div>
+                  </div>
+                </div>
+                <div class="component-settings__section component-settings__section_sp">
+                  <div class="constructor__price-container">
+                    <div class="price__item">
+                      <div class="constructor__checkbox-container">
+                        <input class="custom-checkbox" id="styled-checkbox-price-1" type="checkbox" value="value1">
+                        <label for="styled-checkbox-price-1">Option title</label>
+                      </div>
+                      <div class="constructor__component-description">
+                        Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo
+                        ligula eget dolor.
+                      </div>
+                    </div>
+                    <div class="price__price-block">
+                      <span>Prise: </span>124.99$
+                    </div>
+                  </div>
+                </div>
+                <div class="component-settings__section">
+                  <div class="component-settings__row">
+                    <div class="component-settings__title">
+                      New Option
+                    </div>
+                    <div class="component-settings__description component-settings__description_price-option ">
+                      Lorem ipsum dolor sit amet, consectetuer
                     </div>
                   </div>
                   <div class="component-settings__row">
-                    <div class="component-settings__title-small">
-                      Error message for: “Filed can not be empty”
-                    </div>
-                    <input type="text" class="input-default input-default_dark" value="Error text">
-                    <div class="component-settings__description">
-                      Enter error message text in case filed was left untoched.
-                    </div>
+                    <input type="text" class="input-default input-default_dark" value="Option Title">
+                    <textarea class="textarea textarea_dark" placeholder="Description"></textarea>
                   </div>
                 </div>
               </div>

@@ -2230,6 +2230,11 @@ _:-ms-fullscreen, :root .submission__message {
   width: 100%;
   resize: none;
 }
+.textarea_dark {
+  background-color: #3d3e4f;
+  border-color: #3d3e4f;
+  color: #fff;
+}
 
 .required {
   position: relative;
@@ -2943,12 +2948,20 @@ input:checked + .slider:before {
   font-family: "Roboto", sans-serif;
   font-weight: normal;
 }
+.component-settings__row textarea {
+  margin-top: 5px;
+  font-family: "Roboto", sans-serif;
+  font-weight: normal;
+}
 .component-settings__description {
   font-family: "Roboto", sans-serif;
   font-weight: normal;
   font-size: 12px;
   margin-top: 10px;
   color: #9699ab;
+}
+.component-settings__description_price-option {
+  margin-top: 0;
 }
 .component-settings__description_option {
   font-size: 14px;
@@ -3161,6 +3174,54 @@ input:checked + .slider:before {
 .components-panel input:checked ~ .tab-content .component-settings__section,
 .components-panel input:checked ~ .tab-content .component-settings__section-help {
   margin-bottom: 10px;
+}
+.components-panel input:checked ~ .tab-content .component-settings__section_sp {
+  margin-bottom: 5px;
+}
+.components-panel input:checked ~ .tab-content .component-settings__section_sp:last-child {
+  margin-bottom: 10px;
+}
+
+.component-settings__section .constructor__price-container {
+  position: relative;
+  margin-top: 0 !important;
+  border-top-right-radius: 0;
+  border-top-left-radius: 0;
+  background-color: #353645;
+  border: none;
+  padding: 0;
+}
+.component-settings__section .constructor__price-container .constructor__checkbox-container {
+  margin-bottom: 8px;
+}
+.component-settings__section .constructor__price-container .custom-checkbox + label {
+  color: #9699ab;
+  font-weight: bold;
+  padding-left: 30px;
+}
+.component-settings__section .constructor__price-container .custom-checkbox + label:before {
+  top: -1px;
+}
+.component-settings__section .constructor__price-container .custom-checkbox:checked + label:after {
+  top: 5px;
+}
+.component-settings__section .constructor__component-description {
+  font-size: 12px;
+  color: #9699ab;
+  font-weight: normal;
+  padding-left: 30px;
+}
+.component-settings__section .price__price-block {
+  position: absolute;
+  top: 0;
+  right: 0;
+  font-size: 13px;
+  color: #ffffff;
+}
+.component-settings__section .price__price-block span {
+  color: #5f6070;
+  font-weight: normal;
+  padding-right: 5px;
 }
 
 .components-panel-content,
