@@ -161,6 +161,21 @@
     &__row
         margin-bottom: 6px
 
+        &_buttons
+          display: flex
+          justify-content: space-between
+          margin-top: 30px
+
+          button
+            border: none
+            width: auto
+            padding: 16px 21px
+
+        &_option-set
+          display: flex
+          justify-content: space-between
+          margin-bottom: 10px
+
         &_option
           display: flex
           margin-bottom: 2px
@@ -401,12 +416,6 @@
             .component-settings__section-help
                 margin-bottom: 10px
 
-            .component-settings__section_sp
-                margin-bottom: 5px
-
-            .component-settings__section_sp:last-child
-                margin-bottom: 10px
-
 .component-settings__section
   .constructor__price-container
     position: relative
@@ -587,3 +596,15 @@
 
   .components-panel-settings-price
     display: block
+
+.option-set__item
+  padding-right: 5px
+
+  &:last-child
+    flex: none
+    width: 180px
+    padding-right: 0
+    padding-left: 5px
+
+  input
+    margin-top: 0

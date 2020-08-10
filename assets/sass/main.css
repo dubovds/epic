@@ -2561,6 +2561,13 @@ input:checked + .slider:before {
 .constructor__add-component:hover {
   border-color: #fe544b;
 }
+.constructor__add-component_option {
+  color: #9d9faa;
+  border-color: #434456;
+}
+.constructor__add-component_option:hover {
+  border-color: #ffffff;
+}
 .constructor .custom__select {
   margin-top: 20px;
 }
@@ -2936,6 +2943,21 @@ input:checked + .slider:before {
 .component-settings__row {
   margin-bottom: 6px;
 }
+.component-settings__row_buttons {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 30px;
+}
+.component-settings__row_buttons button {
+  border: none;
+  width: auto;
+  padding: 16px 21px;
+}
+.component-settings__row_option-set {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
 .component-settings__row_option {
   display: flex;
   margin-bottom: 2px;
@@ -3175,12 +3197,6 @@ input:checked + .slider:before {
 .components-panel input:checked ~ .tab-content .component-settings__section-help {
   margin-bottom: 10px;
 }
-.components-panel input:checked ~ .tab-content .component-settings__section_sp {
-  margin-bottom: 5px;
-}
-.components-panel input:checked ~ .tab-content .component-settings__section_sp:last-child {
-  margin-bottom: 10px;
-}
 
 .component-settings__section .constructor__price-container {
   position: relative;
@@ -3330,6 +3346,19 @@ input:checked + .slider:before {
 }
 .component-settings-panel-price-open .components-panel-settings-price {
   display: block;
+}
+
+.option-set__item {
+  padding-right: 5px;
+}
+.option-set__item:last-child {
+  flex: none;
+  width: 180px;
+  padding-right: 0;
+  padding-left: 5px;
+}
+.option-set__item input {
+  margin-top: 0;
 }
 
 /* table styles */
